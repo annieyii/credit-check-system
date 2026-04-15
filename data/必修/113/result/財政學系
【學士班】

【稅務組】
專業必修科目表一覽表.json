@@ -1,0 +1,167 @@
+{
+    "metadata": {
+        "source_file": "財政系稅務組.html",
+        "dept_name": "財政學系\n                         【學士班】\n                         \n                         【稅務組】\n                         專業必修科目表一覽表",
+        "applicable_year": "114",
+        "min_graduation_credits": 128,
+        "compulsory_credits_required": 56
+    },
+    "required_courses": [
+        {
+            "name": "經濟學",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 1,
+            "recognition": "不限",
+            "remarks": "無"
+        },
+        {
+            "name": "民法概要",
+            "type": "必修",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "不限",
+            "remarks": "無"
+        },
+        {
+            "name": "初級會計學（一）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "不限",
+            "remarks": "無"
+        },
+        {
+            "name": "微積分（一）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "不限",
+            "remarks": "無"
+        },
+        {
+            "name": "初級會計學（二）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "不限",
+            "remarks": "初級會計學（一）"
+        },
+        {
+            "name": "財政學",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 2,
+            "recognition": "不限",
+            "remarks": "經濟學"
+        },
+        {
+            "name": "個體經濟學",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "不限",
+            "remarks": "經濟學"
+        },
+        {
+            "name": "統計學 （一）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "不限",
+            "remarks": "無"
+        },
+        {
+            "name": "總體經濟學",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "不限",
+            "remarks": "經濟學"
+        },
+        {
+            "name": "統計學（二）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "不限",
+            "remarks": "統計學（一）"
+        },
+        {
+            "name": "所得稅理論與制度",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "不限",
+            "remarks": "財政學"
+        },
+        {
+            "name": "消費稅理論與制度",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "不限",
+            "remarks": "財政學"
+        },
+        {
+            "name": "財產稅理論與制度",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "不限",
+            "remarks": "財政學"
+        },
+        {
+            "name": "中級會計學（一）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "不限",
+            "remarks": "初級會計學（一）、初級會計學（二）"
+        },
+        {
+            "name": "中級會計學（二）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "不限",
+            "remarks": "中級會計學（一）"
+        },
+        {
+            "name": "租稅法（一）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 4,
+            "recognition": "不限",
+            "remarks": "財政學"
+        },
+        {
+            "name": "租稅法（二）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 4,
+            "recognition": "不限",
+            "remarks": "租稅法（一）"
+        }
+    ],
+    "special_rules": [
+        "修課特殊規定：一、必修限制1、「擋修科目」之規定，即需將擋修科目修畢且及格之後，方得修習有設定擋修之該科目。2、甲乙雙班之必修課，本班學生無優先選修權，同學可自由選修甲、乙班課程。3、上下學期選修不同班級課程，需經授課教師同意。4、為公共經濟組、財政管理組學生，於群修科目：「個體經濟學」、「總體經濟學」二科，需選擇其一修習全學年必修科目之下學期課程。5、全民國防教育軍事訓練及體育選修課不採計為畢業學分。6、可至外系修習本系必修科目表中之必修課，不限修習別，但科目名稱與學分數須與本系必修科目表相同。7、必（群）修科目單學期課程，修習全學年上學期科目學分數逾規定上限時，依本表所訂該科目學分數採計學分，修習該科目下學期課程亦計入本系選修學分計算。二、特別注意事項1、各科目之實習課，未列入正式課程之中，但請同學務必保留實習課程時段，以利安排輔導課程。2、一年級同學於學年第二學期期末考開始前，完成選組，由班代繳交分組名單至系辦公室。完成選組後，於學士班三年級（含）以前欲更換組別，得於每學期期末考結束前，至系辦公室登記更換。※另建議修習科目（不列為必修科目）：成本管理會計（一）、成本管理會計（二）、行政法、稅務會計學、商事法、審計學"
+    ]
+}

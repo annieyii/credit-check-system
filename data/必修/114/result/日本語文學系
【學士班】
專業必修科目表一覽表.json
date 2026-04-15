@@ -1,0 +1,185 @@
+{
+    "metadata": {
+        "source_file": "日文系.html",
+        "dept_name": "日本語文學系\n                         【學士班】\n                         專業必修科目表一覽表",
+        "applicable_year": "114",
+        "min_graduation_credits": 128,
+        "compulsory_credits_required": 50
+    },
+    "required_courses": [
+        {
+            "name": "日語會話演習（一）",
+            "type": "必修",
+            "credits": 8,
+            "semesters": 2,
+            "suggested_year": 1,
+            "recognition": "需為本系開課",
+            "remarks": "A、B分班"
+        },
+        {
+            "name": "初級日語",
+            "type": "必修",
+            "credits": 8,
+            "semesters": 2,
+            "suggested_year": 1,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "中級日語",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "日文習作（一）",
+            "type": "必修",
+            "credits": 4,
+            "semesters": 2,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "A、B分班"
+        },
+        {
+            "name": "日語會話演習（二）",
+            "type": "必修",
+            "credits": 8,
+            "semesters": 2,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "A、B分班"
+        },
+        {
+            "name": "日文習作（二）",
+            "type": "必修",
+            "credits": 4,
+            "semesters": 2,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "A、B分班"
+        },
+        {
+            "name": "高級日語",
+            "type": "必修",
+            "credits": 4,
+            "semesters": 2,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "日本名著選讀Ａ１：語言",
+            "type": "群A",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "群A：三年級名著選讀類群修，需選4學分"
+        },
+        {
+            "name": "日本名著選讀Ｂ１：文學",
+            "type": "群A",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "群A：三年級名著選讀類群修，需選4學分"
+        },
+        {
+            "name": "日本名著選讀Ｃ１：歷史文化",
+            "type": "群A",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "群A：三年級名著選讀類群修，需選4學分"
+        },
+        {
+            "name": "日本名著選讀Ａ２：語言",
+            "type": "群A",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "群A：三年級名著選讀類群修，需選4學分"
+        },
+        {
+            "name": "日本名著選讀Ｂ２：文學",
+            "type": "群A",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "群A：三年級名著選讀類群修，需選4學分"
+        },
+        {
+            "name": "日本名著選讀Ｃ２：歷史文化",
+            "type": "群A",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "群A：三年級名著選讀類群修，需選4學分"
+        },
+        {
+            "name": "日本專題研究Ａ１：語言",
+            "type": "群B",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 4,
+            "recognition": "需為本系開課",
+            "remarks": "群B：四年級專題研究類群修，需選4學分"
+        },
+        {
+            "name": "日本專題研究Ｂ１：文學",
+            "type": "群B",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 4,
+            "recognition": "需為本系開課",
+            "remarks": "群B：四年級專題研究類群修，需選4學分"
+        },
+        {
+            "name": "日本專題研究Ｃ１：歷史文化",
+            "type": "群B",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 4,
+            "recognition": "需為本系開課",
+            "remarks": "群B：四年級專題研究類群修，需選4學分"
+        },
+        {
+            "name": "日本專題研究Ａ２：語言",
+            "type": "群B",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 4,
+            "recognition": "需為本系開課",
+            "remarks": "群B：四年級專題研究類群修，需選4學分"
+        },
+        {
+            "name": "日本專題研究Ｂ２：文學",
+            "type": "群B",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 4,
+            "recognition": "需為本系開課",
+            "remarks": "群B：四年級專題研究類群修，需選4學分"
+        },
+        {
+            "name": "日本專題研究Ｃ２：歷史文化",
+            "type": "群B",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 4,
+            "recognition": "需為本系開課",
+            "remarks": "群B：四年級專題研究類群修，需選4學分"
+        }
+    ],
+    "special_rules": [
+        "修課特殊規定：一、外系課程列入畢業學分計算。二、全民國防教育軍事訓練及體育選修課，各採計2學分為畢業學分。"
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "metadata": {
+        "source_file": "傳院大一大二不分系.html",
+        "dept_name": "傳播學院大一大二不分系\n                         【學士班】\n                         專業必修科目表一覽表",
+        "applicable_year": "114",
+        "min_graduation_credits": 128,
+        "compulsory_credits_required": 18
+    },
+    "required_courses": [
+        {
+            "name": "基礎影音製作",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "需為本院開課",
+            "remarks": "單學期課程"
+        },
+        {
+            "name": "靜態影像設計",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "需為本院開課",
+            "remarks": "單學期課程"
+        },
+        {
+            "name": "傳播概論",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "需為本院開課",
+            "remarks": "無"
+        },
+        {
+            "name": "資料分析基礎與策略",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "需為本院開課",
+            "remarks": "無"
+        },
+        {
+            "name": "傳播與社會",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "需為本院開課",
+            "remarks": "無"
+        },
+        {
+            "name": "傳播與當代思潮",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "需為本院開課",
+            "remarks": "無"
+        }
+    ],
+    "special_rules": [
+        "修課特殊規定：※本院學士班自103學年度起採大一大二不分系招生。入學學生大一大二不分系修課，於大三第一學期開學前依本院之規定進入新聞系、廣告系、廣播電視學系所主導之專業主修或實驗學程。※本院學生除修習上表所列之本院共同必修科目（18學分）之外，並需依本校「通識教育課程實施準則」之規定修習通識課程。學生畢業前須修畢校、院共同必修，另至少修習一專業主修（或實驗學程），其餘學分開放自由選修。最低畢業學分為128學分。※全民國防教育軍事訓練和體育選修課不列入畢業總學分。※群修條件說明:無"
+    ]
+}

@@ -1,0 +1,131 @@
+{
+    "metadata": {
+        "source_file": "社會系.html",
+        "dept_name": "社會學系\n                         【學士班】\n                         專業必修科目表一覽表",
+        "applicable_year": "114",
+        "min_graduation_credits": 128,
+        "compulsory_credits_required": 44
+    },
+    "required_courses": [
+        {
+            "name": "社會學",
+            "type": "必修",
+            "credits": 8,
+            "semesters": 2,
+            "suggested_year": 1,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "社會統計（一）",
+            "type": "必修",
+            "credits": 4,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "社會學理論",
+            "type": "必修",
+            "credits": 8,
+            "semesters": 2,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "社會統計（二）",
+            "type": "必修",
+            "credits": 4,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "社會研究方法（一）",
+            "type": "必修",
+            "credits": 4,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "社會研究方法（二）",
+            "type": "必修",
+            "credits": 4,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "人口、家庭與空間研究",
+            "type": "群A",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 0,
+            "recognition": "需為本系開課",
+            "remarks": "群A四選二"
+        },
+        {
+            "name": "大數據社會分析",
+            "type": "群A",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 0,
+            "recognition": "需為本系開課",
+            "remarks": "群A四選二"
+        },
+        {
+            "name": "進階質性研究方法",
+            "type": "群A",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 0,
+            "recognition": "需為本系開課",
+            "remarks": "群A四選二"
+        },
+        {
+            "name": "質性研究設計",
+            "type": "群A",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 0,
+            "recognition": "需為本系開課",
+            "remarks": "群A四選二"
+        },
+        {
+            "name": "社會組織",
+            "type": "群B",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 0,
+            "recognition": "需為本系開課",
+            "remarks": "群B三選二"
+        },
+        {
+            "name": "區域研究",
+            "type": "群B",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 0,
+            "recognition": "需為本系開課",
+            "remarks": "群B三選二"
+        },
+        {
+            "name": "新社會思想史",
+            "type": "群B",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 0,
+            "recognition": "需為本系開課",
+            "remarks": "群B三選二"
+        }
+    ],
+    "special_rules": [
+        "修課特殊規定：※本系學生必須修滿專業必修課程共計44學分。※體育：必修四期，採計畢業學分四學分；體育選修課、全民國防教育軍事訓練（軍訓）學分不列入畢業學分。※修本系為雙主修之學生畢業前需修畢全部44個必修學分（含群修12學分）"
+    ]
+}

@@ -1,0 +1,95 @@
+{
+    "metadata": {
+        "source_file": "韓語系.html",
+        "dept_name": "韓國語文學系\n                         【學士班】\n                         專業必修科目表一覽表",
+        "applicable_year": "114",
+        "min_graduation_credits": 128,
+        "compulsory_credits_required": 51
+    },
+    "required_courses": [
+        {
+            "name": "初級韓國語",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 1,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "韓語口說訓練（一）",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 1,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "韓國學概論",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "中級韓國語",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "初級韓國語"
+        },
+        {
+            "name": "韓語口說訓練（二）",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "韓語口說訓練（一）"
+        },
+        {
+            "name": "韓語語法與應用",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "初級韓國語"
+        },
+        {
+            "name": "高級韓國語",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "中級韓國語"
+        },
+        {
+            "name": "韓文寫作",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "韓語語法與應用"
+        },
+        {
+            "name": "韓語口說訓練（三）",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "韓語口說訓練（二）"
+        }
+    ],
+    "special_rules": [
+        "修課特殊規定：1.階梯式課程受擋修之限制。2.全民國防教育軍事訓練與體育選修課各採計兩學分為畢業學分。3.歷年國內校際選課學分總數，不得超過最低應修畢業學分數1/4。4.其餘規定依本系選課、學分承認注意事項及學校規定辦理。"
+    ]
+}

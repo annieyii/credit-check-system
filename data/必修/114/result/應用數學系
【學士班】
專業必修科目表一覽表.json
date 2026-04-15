@@ -1,0 +1,131 @@
+{
+    "metadata": {
+        "source_file": "應數系.html",
+        "dept_name": "應用數學系\n                         【學士班】\n                         專業必修科目表一覽表",
+        "applicable_year": "114",
+        "min_graduation_credits": 128,
+        "compulsory_credits_required": 51
+    },
+    "required_courses": [
+        {
+            "name": "微積分",
+            "type": "必修",
+            "credits": 8,
+            "semesters": 2,
+            "suggested_year": 1,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "計算機程式",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "數學導論",
+            "type": "必修",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "離散數學",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "線性代數",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 1,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "高等微積分",
+            "type": "必修",
+            "credits": 8,
+            "semesters": 2,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "微分方程",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "機率論",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "統計學",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "代數學",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "作業研究",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "數值分析",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "複變函數論",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        }
+    ],
+    "special_rules": [
+        "修課特殊規定：1.校共同必修包含通識及體育必修課，依本校規定修習，請注意各類通識必須修畢學分數之上下限，超修通識不採計為畢業學分。2.本系專業必修51學分，請參照本表，且須於本系修習。未經本系核准，不得以外系相同名稱課程替代。單學期必修科目，學生如修習外系相同名稱課程，全學年上學期學分數逾規定上限時，依本表所定科目學分數採計學分；修習該科目下學期課程亦得計入本系選修學分計算。3.選修學分包含本系專業選修、外系(校)選修、學程、輔系及雙主修等。全民國防教育軍事訓練及體育選修課各採計四學分為畢業學分。"
+    ]
+}

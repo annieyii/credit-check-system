@@ -1,0 +1,158 @@
+{
+    "metadata": {
+        "source_file": "風保系.html",
+        "dept_name": "風險管理與保險學系\n                         【學士班】\n                         專業必修科目表一覽表",
+        "applicable_year": "114",
+        "min_graduation_credits": 128,
+        "compulsory_credits_required": 51
+    },
+    "required_courses": [
+        {
+            "name": "微積分",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 1,
+            "recognition": "需為本系開課",
+            "remarks": "院共同必修(3學分)"
+        },
+        {
+            "name": "經濟學",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 1,
+            "recognition": "需為本院開課",
+            "remarks": "院共同必修"
+        },
+        {
+            "name": "民法概要",
+            "type": "必修",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "初級會計學（一）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "需為本院開課",
+            "remarks": "院共同必修"
+        },
+        {
+            "name": "保險學",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "風險管理",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "企業倫理與社會責任",
+            "type": "必修",
+            "credits": 1,
+            "semesters": 1,
+            "suggested_year": 0,
+            "recognition": "需為本院開課",
+            "remarks": "院共同必修"
+        },
+        {
+            "name": "人壽保險",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "統計學（一）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本院開課",
+            "remarks": "院共同必修"
+        },
+        {
+            "name": "財產保險",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "統計學（二）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本院開課",
+            "remarks": "院共同必修"
+        },
+        {
+            "name": "保險契約法",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "先修保險學、人壽保險、民法概要"
+        },
+        {
+            "name": "精算數學",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "再保險",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "先修保險學"
+        },
+        {
+            "name": "社會保險",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "退休金制度管理與理財規劃",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 4,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        }
+    ],
+    "special_rules": [
+        "修課特殊規定：1、本系專業必修課程非經系主任核可，不得至外系修習。2、「全民國防教育軍事訓練」課程不採計為畢業學分；體育選修課採計2學分為畢業學分。3、必(群)修科目單學期課程，修習全學年上學期科目學分數逾規定上限時，依本表所訂該科目學分數採計學分，修習該科目下學期課程亦計入本系選修學分計算。有關修課詳細內容，請洽風險管理與保險學系辦公室（電話：29393091-89071）"
+    ]
+}

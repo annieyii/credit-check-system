@@ -1,0 +1,113 @@
+{
+    "metadata": {
+        "source_file": "心理系.html",
+        "dept_name": "心理學系\n                         【學士班】\n                         專業必修科目表一覽表",
+        "applicable_year": "114",
+        "min_graduation_credits": 128,
+        "compulsory_credits_required": 39
+    },
+    "required_courses": [
+        {
+            "name": "心理及教育統計學",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 1,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "普通心理學",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 1,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "心理實驗法",
+            "type": "必修",
+            "credits": 4,
+            "semesters": 2,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "先修心理及教育統計學"
+        },
+        {
+            "name": "心理實驗法實驗",
+            "type": "必修",
+            "credits": 2,
+            "semesters": 2,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "先修心理及教育統計學"
+        },
+        {
+            "name": "心理測驗",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "先修普通心理學、心理及教育統計學"
+        },
+        {
+            "name": "生理心理學",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "先修普通心理學或人體生理學"
+        },
+        {
+            "name": "性格心理學",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "先修普通心理學"
+        },
+        {
+            "name": "知覺心理學",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "先修普通心理學"
+        },
+        {
+            "name": "發展心理學",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "先修普通心理學"
+        },
+        {
+            "name": "人類學習與認知",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "先修普通心理學"
+        },
+        {
+            "name": "社會心理學",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "先修普通心理學"
+        }
+    ],
+    "special_rules": [
+        "修課特殊規定：1.體育選修課、全民國防教育軍事訓練均不列入畢業學分計算。2.凡本系有開之必修課程，不得至他系或外校修習（有特殊原因請與系辦公室聯絡）。3.本系最低畢業學分中之選修學分(57學分)，得由學生自行決定選修系內或系外課程。"
+    ]
+}

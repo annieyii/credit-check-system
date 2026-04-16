@@ -13,7 +13,20 @@
             "credits": 0,
             "semesters": 1,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "102013",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102013",
             "remarks": "無"
         },
         {
@@ -22,7 +35,20 @@
             "credits": 0,
             "semesters": 1,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "102003",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102003",
             "remarks": "無"
         },
         {
@@ -31,7 +57,20 @@
             "credits": 0,
             "semesters": 1,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "102012",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102012",
             "remarks": "無"
         },
         {
@@ -40,7 +79,20 @@
             "credits": 0,
             "semesters": 1,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "102007",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102007",
             "remarks": "無"
         },
         {
@@ -49,7 +101,20 @@
             "credits": 0,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "102130",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102130",
             "remarks": "無"
         },
         {
@@ -58,7 +123,20 @@
             "credits": 0,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "102005",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102005",
             "remarks": "無"
         },
         {
@@ -67,7 +145,20 @@
             "credits": 0,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "102011",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102011",
             "remarks": "無"
         },
         {
@@ -76,7 +167,20 @@
             "credits": 0,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "102132",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102132",
             "remarks": "無"
         },
         {
@@ -85,7 +189,20 @@
             "credits": 2,
             "semesters": 1,
             "suggested_year": 4,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": true,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "102103",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102103",
             "remarks": "上課4小時"
         },
         {
@@ -94,7 +211,20 @@
             "credits": 0,
             "semesters": 1,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "102129",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102129",
             "remarks": "10科選7"
         },
         {
@@ -103,7 +233,20 @@
             "credits": 0,
             "semesters": 1,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "102093",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102093",
             "remarks": "10科選7"
         },
         {
@@ -112,7 +255,20 @@
             "credits": 0,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "102061",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102061",
             "remarks": "10科選7"
         },
         {
@@ -121,7 +277,20 @@
             "credits": 0,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "102099",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102099",
             "remarks": "10科選7"
         },
         {
@@ -130,7 +299,20 @@
             "credits": 0,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "102023",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102023",
             "remarks": "10科選7"
         },
         {
@@ -139,7 +321,20 @@
             "credits": 0,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "102109",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102109",
             "remarks": "10科選7"
         },
         {
@@ -148,7 +343,20 @@
             "credits": 0,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "102826",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102826",
             "remarks": "10科選7"
         },
         {
@@ -157,7 +365,20 @@
             "credits": 0,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "102091",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102091",
             "remarks": "10科選7"
         },
         {
@@ -166,7 +387,20 @@
             "credits": 0,
             "semesters": 1,
             "suggested_year": 4,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": true,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "102131",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102131",
             "remarks": "10科選7"
         },
         {
@@ -175,7 +409,20 @@
             "credits": 0,
             "semesters": 1,
             "suggested_year": 4,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": true
+            },
             "recognition": "需為本系開課",
+            "course_code": "102112",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102112",
             "remarks": "10科選7"
         },
         {
@@ -184,7 +431,20 @@
             "credits": 2,
             "semesters": 1,
             "suggested_year": 4,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": true
+            },
             "recognition": "需為本系開課",
+            "course_code": "102119",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102119",
             "remarks": "12科選2\n(教材教法與教學實習須為同一類科)"
         },
         {
@@ -193,7 +453,20 @@
             "credits": 2,
             "semesters": 1,
             "suggested_year": 4,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": true
+            },
             "recognition": "需為本系開課",
+            "course_code": "102120",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102120",
             "remarks": "12科選2\n(教材教法與教學實習須為同一類科)"
         },
         {
@@ -202,7 +475,20 @@
             "credits": 2,
             "semesters": 1,
             "suggested_year": 4,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": true
+            },
             "recognition": "需為本系開課",
+            "course_code": "102123",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102123",
             "remarks": "12科選2\n(教材教法與教學實習須為同一類科)"
         },
         {
@@ -211,7 +497,20 @@
             "credits": 2,
             "semesters": 1,
             "suggested_year": 4,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": true
+            },
             "recognition": "需為本系開課",
+            "course_code": "102124",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102124",
             "remarks": "12科選2\n(教材教法與教學實習須為同一類科)"
         },
         {
@@ -220,7 +519,20 @@
             "credits": 2,
             "semesters": 1,
             "suggested_year": 4,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": true
+            },
             "recognition": "需為本系開課",
+            "course_code": "102121",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102121",
             "remarks": "12科選2\n(教材教法與教學實習須為同一類科)"
         },
         {
@@ -229,7 +541,20 @@
             "credits": 2,
             "semesters": 1,
             "suggested_year": 4,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": true
+            },
             "recognition": "需為本系開課",
+            "course_code": "102122",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102122",
             "remarks": "12科選2\n(教材教法與教學實習須為同一類科)"
         },
         {
@@ -238,7 +563,20 @@
             "credits": 2,
             "semesters": 1,
             "suggested_year": 4,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": true
+            },
             "recognition": "需為本系開課",
+            "course_code": "102115",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102115",
             "remarks": "12科選2\n(教材教法與教學實習須為同一類科)"
         },
         {
@@ -247,7 +585,20 @@
             "credits": 2,
             "semesters": 1,
             "suggested_year": 4,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": true
+            },
             "recognition": "需為本系開課",
+            "course_code": "102116",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102116",
             "remarks": "12科選2\n(教材教法與教學實習須為同一類科)"
         },
         {
@@ -256,7 +607,20 @@
             "credits": 2,
             "semesters": 1,
             "suggested_year": 4,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": true
+            },
             "recognition": "需為本系開課",
+            "course_code": "102113",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102113",
             "remarks": "12科選2\n(教材教法與教學實習須為同一類科)"
         },
         {
@@ -265,7 +629,20 @@
             "credits": 2,
             "semesters": 1,
             "suggested_year": 4,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": true
+            },
             "recognition": "需為本系開課",
+            "course_code": "102114",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102114",
             "remarks": "12科選2\n(教材教法與教學實習須為同一類科)"
         },
         {
@@ -274,7 +651,20 @@
             "credits": 2,
             "semesters": 1,
             "suggested_year": 4,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": true
+            },
             "recognition": "需為本系開課",
+            "course_code": "102117",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102117",
             "remarks": "12科選2\n(教材教法與教學實習須為同一類科)"
         },
         {
@@ -283,7 +673,20 @@
             "credits": 2,
             "semesters": 1,
             "suggested_year": 4,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": true
+            },
             "recognition": "需為本系開課",
+            "course_code": "102118",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102118",
             "remarks": "12科選2\n(教材教法與教學實習須為同一類科)"
         }
     ],

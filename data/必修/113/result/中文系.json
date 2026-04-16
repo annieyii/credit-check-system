@@ -13,7 +13,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "無"
         },
         {
@@ -22,7 +35,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "無"
         },
         {
@@ -31,7 +57,20 @@
             "credits": 6,
             "semesters": 2,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "無"
         },
         {
@@ -40,7 +79,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "無"
         },
         {
@@ -49,7 +101,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "無"
         },
         {
@@ -58,7 +123,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "無"
         },
         {
@@ -67,7 +145,20 @@
             "credits": 6,
             "semesters": 2,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "無"
         },
         {
@@ -76,7 +167,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "無"
         },
         {
@@ -85,7 +189,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "無"
         },
         {
@@ -94,7 +211,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 4,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": true,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "無"
         },
         {
@@ -103,7 +233,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群一：思想類課程"
         },
         {
@@ -112,7 +255,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群一：思想類課程"
         },
         {
@@ -121,7 +277,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群一：思想類課程"
         },
         {
@@ -130,7 +299,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群一：思想類課程"
         },
         {
@@ -139,7 +321,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群一：思想類課程"
         },
         {
@@ -148,7 +343,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群一：思想類課程"
         },
         {
@@ -157,7 +365,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群一：思想類課程"
         },
         {
@@ -166,7 +387,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群一：思想類課程"
         },
         {
@@ -175,7 +409,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群一：思想類課程"
         },
         {
@@ -184,7 +431,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群一：思想類課程"
         },
         {
@@ -193,7 +453,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群一：思想類課程"
         },
         {
@@ -202,7 +475,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群一：思想類課程"
         },
         {
@@ -211,7 +497,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群一：思想類課程"
         },
         {
@@ -220,7 +519,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群一：思想類課程"
         },
         {
@@ -229,7 +541,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群一：思想類課程"
         },
         {
@@ -238,7 +563,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群一：思想類課程"
         },
         {
@@ -247,7 +585,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 4,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": true,
+                "Y4S2": true
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群一：思想類課程"
         },
         {
@@ -256,7 +607,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 4,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": true,
+                "Y4S2": true
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群一：思想類課程"
         },
         {
@@ -265,7 +629,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 4,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": true,
+                "Y4S2": true
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群一：思想類課程"
         },
         {
@@ -274,7 +651,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 4,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": true,
+                "Y4S2": true
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群一：思想類課程"
         },
         {
@@ -283,7 +673,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群二：語言文學類課程"
         },
         {
@@ -292,7 +695,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群二：語言文學類課程"
         },
         {
@@ -301,7 +717,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群二：語言文學類課程"
         },
         {
@@ -310,7 +739,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群二：語言文學類課程"
         },
         {
@@ -319,7 +761,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群二：語言文學類課程"
         },
         {
@@ -328,7 +783,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群二：語言文學類課程"
         },
         {
@@ -337,7 +805,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群二：語言文學類課程"
         },
         {
@@ -346,7 +827,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群二：語言文學類課程"
         },
         {
@@ -355,7 +849,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群二：語言文學類課程"
         },
         {
@@ -364,7 +871,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群二：語言文學類課程"
         },
         {
@@ -373,7 +893,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群二：語言文學類課程"
         },
         {
@@ -382,7 +915,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群二：語言文學類課程"
         },
         {
@@ -391,7 +937,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群二：語言文學類課程"
         },
         {
@@ -400,7 +959,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群二：語言文學類課程"
         },
         {
@@ -409,7 +981,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群二：語言文學類課程"
         },
         {
@@ -418,7 +1003,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群二：語言文學類課程"
         },
         {
@@ -427,7 +1025,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群二：語言文學類課程"
         },
         {
@@ -436,7 +1047,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群二：語言文學類課程"
         },
         {
@@ -445,7 +1069,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群二：語言文學類課程"
         },
         {
@@ -454,7 +1091,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群二：語言文學類課程"
         },
         {
@@ -463,7 +1113,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群二：語言文學類課程"
         },
         {
@@ -472,7 +1135,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群二：語言文學類課程"
         },
         {
@@ -481,7 +1157,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群二：語言文學類課程"
         },
         {
@@ -490,7 +1179,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群二：語言文學類課程"
         },
         {
@@ -499,7 +1201,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群二：語言文學類課程"
         },
         {
@@ -508,7 +1223,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 4,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": true,
+                "Y4S2": true
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群二：語言文學類課程"
         },
         {
@@ -517,7 +1245,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 4,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": true,
+                "Y4S2": true
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群二：語言文學類課程"
         },
         {
@@ -526,7 +1267,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 4,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": true,
+                "Y4S2": true
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群二：語言文學類課程"
         },
         {
@@ -535,7 +1289,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 4,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": true,
+                "Y4S2": true
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "學群二：語言文學類課程"
         }
     ],

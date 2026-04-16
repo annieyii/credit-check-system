@@ -13,7 +13,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
             "remarks": "無"
         },
         {
@@ -22,7 +35,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
             "remarks": "無"
         },
         {
@@ -31,7 +57,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
             "remarks": "無"
         },
         {
@@ -40,7 +79,20 @@
             "credits": 2,
             "semesters": 1,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
             "remarks": "無"
         },
         {
@@ -49,7 +101,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
             "remarks": "本科目為3學分課程，但每週上課5小時。"
         },
         {
@@ -58,7 +123,20 @@
             "credits": 8,
             "semesters": 2,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
             "remarks": "1.先修科目為「都市計畫」，並建議先修「電腦繪圖與地理資訊系統」。\n2.本科目每週另開4小時0學分實習課。"
         },
         {
@@ -67,7 +145,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
             "remarks": "建議先修「民法（一）（二）」"
         },
         {
@@ -76,7 +167,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
             "remarks": "無"
         },
         {
@@ -85,7 +189,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
             "remarks": "無"
         },
         {
@@ -94,7 +211,20 @@
             "credits": 2,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
             "remarks": "無"
         },
         {
@@ -103,7 +233,20 @@
             "credits": 2,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
             "remarks": "無"
         },
         {
@@ -112,7 +255,20 @@
             "credits": 8,
             "semesters": 2,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
             "remarks": "1.先修科目為「規劃實務（一）」。\n2.本科目每週另開4小時0學分實習課。"
         },
         {
@@ -121,7 +277,20 @@
             "credits": 2,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
             "remarks": "無"
         },
         {
@@ -130,7 +299,20 @@
             "credits": 2,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
             "remarks": "無"
         },
         {
@@ -139,7 +321,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
             "remarks": "建議先修「土地制度史」"
         }
     ],

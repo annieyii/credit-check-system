@@ -13,7 +13,20 @@
             "credits": 6,
             "semesters": 2,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "702002",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "702002",
             "remarks": "無"
         },
         {
@@ -22,7 +35,20 @@
             "credits": 6,
             "semesters": 2,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "702001",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "702001",
             "remarks": "無"
         },
         {
@@ -31,7 +57,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "702018",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "702018",
             "remarks": "無"
         },
         {
@@ -40,7 +79,20 @@
             "credits": 1,
             "semesters": 1,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "702019",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "702019",
             "remarks": "無"
         },
         {
@@ -49,7 +101,20 @@
             "credits": 4,
             "semesters": 2,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "702004",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "702004",
             "remarks": "先修心理及教育統計學"
         },
         {
@@ -58,7 +123,20 @@
             "credits": 2,
             "semesters": 2,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "702005",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "702005",
             "remarks": "先修心理及教育統計學"
         },
         {
@@ -67,7 +145,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "702023",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "702023",
             "remarks": "先修普通心理學、心理及教育統計學"
         },
         {
@@ -76,7 +167,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "702006",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "702006",
             "remarks": "先修普通心理學或人體生理學"
         },
         {
@@ -85,7 +189,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "702009",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "702009",
             "remarks": "先修普通心理學"
         },
         {
@@ -94,7 +211,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "702013",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "702013",
             "remarks": "先修普通心理學"
         },
         {
@@ -103,7 +233,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "702010",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "702010",
             "remarks": "先修普通心理學"
         },
         {
@@ -112,7 +255,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "702011",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "702011",
             "remarks": "先修普通心理學"
         },
         {
@@ -121,7 +277,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": "702012",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "702012",
             "remarks": "先修普通心理學"
         }
     ],

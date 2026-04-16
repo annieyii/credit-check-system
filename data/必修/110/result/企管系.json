@@ -13,7 +13,20 @@
             "credits": 6,
             "semesters": 2,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "不限",
+            "course_code": "000219",
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": "000219",
             "remarks": "無"
         },
         {
@@ -22,7 +35,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "不限",
+            "course_code": "000314",
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": "000314",
             "remarks": "無"
         },
         {
@@ -31,7 +57,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "不限",
+            "course_code": "000712",
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": "000712",
             "remarks": "無"
         },
         {
@@ -40,7 +79,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "不限",
+            "course_code": "000318",
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": "000318",
             "remarks": "先修:初級會計學(一)"
         },
         {
@@ -49,7 +101,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 1,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "不限",
+            "course_code": "000348",
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": "000348",
             "remarks": "無"
         },
         {
@@ -58,7 +123,20 @@
             "credits": 2,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "不限",
+            "course_code": "000604",
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": "000604",
             "remarks": "無"
         },
         {
@@ -67,7 +145,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本院開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本院開課",
+            "dual_major_course_code": null,
             "remarks": "無"
         },
         {
@@ -76,7 +167,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "先修:管理學"
         },
         {
@@ -85,7 +189,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "先修：管理學"
         },
         {
@@ -94,7 +211,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "先修:管理學與組織行為"
         },
         {
@@ -103,7 +233,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "不限",
+            "course_code": "000350",
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": "000350",
             "remarks": "先修:管理學與經濟學"
         },
         {
@@ -112,7 +255,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "不限",
+            "course_code": "000347",
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": "000347",
             "remarks": "先修：經濟學與初級會計學（一）（二）；二上或二下修習。"
         },
         {
@@ -121,7 +277,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本院開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本院開課",
+            "dual_major_course_code": null,
             "remarks": "無"
         },
         {
@@ -130,7 +299,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
             "remarks": "三上或三下修習"
         },
         {
@@ -139,7 +321,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本院開課",
+            "dual_major_course_code": null,
             "remarks": "無"
         },
         {
@@ -148,7 +343,20 @@
             "credits": 1,
             "semesters": 1,
             "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
             "recognition": "需為本院開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本院開課",
+            "dual_major_course_code": null,
             "remarks": "大三或大四修習"
         },
         {
@@ -157,7 +365,20 @@
             "credits": 3,
             "semesters": 1,
             "suggested_year": 4,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": true,
+                "Y4S2": false
+            },
             "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
             "remarks": "先修：營運與供應鏈管理、行銷管理、人力資源管理、資訊管理及財務管理等五管；四上或四下修習"
         }
     ],

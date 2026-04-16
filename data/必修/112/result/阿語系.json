@@ -1,0 +1,158 @@
+{
+    "metadata": {
+        "source_file": "阿語系.html",
+        "dept_name": "阿拉伯語文學系\n                         【學士班】\n                         專業必修科目表一覽表",
+        "applicable_year": "114",
+        "min_graduation_credits": 128,
+        "compulsory_credits_required": 51
+    },
+    "required_courses": [
+        {
+            "name": "阿拉伯語（一）",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 1,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "應用阿拉伯語（一）",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 1,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "伊斯蘭阿拉伯世界概論：歷史與社會",
+            "type": "必修",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "需為本系開課",
+            "remarks": "修讀學期依實際開課規劃調整"
+        },
+        {
+            "name": "伊斯蘭阿拉伯世界概論：語言與文學",
+            "type": "必修",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "需為本系開課",
+            "remarks": "修讀學期依實際開課規劃調整"
+        },
+        {
+            "name": "阿拉伯語聽力（一）",
+            "type": "必修",
+            "credits": 1,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "阿拉伯語詞法概論",
+            "type": "必修",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "阿拉伯語（一）"
+        },
+        {
+            "name": "阿拉伯語（二）",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "阿拉伯語（一）"
+        },
+        {
+            "name": "阿拉伯語語法（一）",
+            "type": "必修",
+            "credits": 4,
+            "semesters": 2,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "阿拉伯語（一）"
+        },
+        {
+            "name": "應用阿拉伯語（二）",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "應用阿拉伯語（一）"
+        },
+        {
+            "name": "阿拉伯語聽力（二）",
+            "type": "必修",
+            "credits": 1,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "阿拉伯語聽力（一）"
+        },
+        {
+            "name": "阿拉伯語聽力（三）",
+            "type": "必修",
+            "credits": 1,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "阿拉伯語聽力（二）"
+        },
+        {
+            "name": "阿拉伯語（三）",
+            "type": "必修",
+            "credits": 4,
+            "semesters": 2,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "阿拉伯語（二）"
+        },
+        {
+            "name": "阿拉伯語語法（二）",
+            "type": "必修",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "阿拉伯語語法（一）"
+        },
+        {
+            "name": "阿拉伯語詞法學",
+            "type": "必修",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "阿拉伯語詞法概論"
+        },
+        {
+            "name": "阿拉伯語（四）",
+            "type": "必修",
+            "credits": 4,
+            "semesters": 2,
+            "suggested_year": 4,
+            "recognition": "需為本系開課",
+            "remarks": "阿拉伯語（三）"
+        },
+        {
+            "name": "媒體阿拉伯語",
+            "type": "必修",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 4,
+            "recognition": "需為本系開課",
+            "remarks": "阿拉伯語（三）"
+        }
+    ],
+    "special_rules": [
+        "修課特殊規定：一、全民國防教育軍事訓練及體育選修課不列入本系畢業學分。二、其餘規定依本系選課、學分承認注意事項及學校規定辦理。"
+    ]
+}

@@ -1,0 +1,221 @@
+{
+    "metadata": {
+        "source_file": "國貿系.html",
+        "dept_name": "國際經營與貿易學系\n                         【學士班】\n                         專業必修科目表一覽表",
+        "applicable_year": "114",
+        "min_graduation_credits": 128,
+        "compulsory_credits_required": 51
+    },
+    "required_courses": [
+        {
+            "name": "微積分",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 1,
+            "recognition": "不限",
+            "remarks": "院共同必修"
+        },
+        {
+            "name": "經濟學",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 1,
+            "recognition": "不限",
+            "remarks": "院共同必修"
+        },
+        {
+            "name": "初級會計學（一）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "不限",
+            "remarks": "院共同必修"
+        },
+        {
+            "name": "初級會計學（二）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "不限",
+            "remarks": "院共同必修"
+        },
+        {
+            "name": "行銷管理",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "不限",
+            "remarks": "院共同選修"
+        },
+        {
+            "name": "財務管理",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "不限",
+            "remarks": "院共同選修"
+        },
+        {
+            "name": "商事法",
+            "type": "必修",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "不限",
+            "remarks": "院共同必修"
+        },
+        {
+            "name": "管理學",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "不限",
+            "remarks": "院共同必修"
+        },
+        {
+            "name": "統計學（一）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "不限",
+            "remarks": "院共同必修"
+        },
+        {
+            "name": "統計學（二）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "不限",
+            "remarks": "院共同必修"
+        },
+        {
+            "name": "企業倫理與社會責任",
+            "type": "必修",
+            "credits": 1,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "不限",
+            "remarks": "院共同必修"
+        },
+        {
+            "name": "國際買賣法",
+            "type": "群A",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "群A至少修一門"
+        },
+        {
+            "name": "國際經貿法",
+            "type": "群A",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "群A至少修一門"
+        },
+        {
+            "name": "國際經貿法專題",
+            "type": "群A",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "群A至少修一門(先修科目：國際經貿法)"
+        },
+        {
+            "name": "國貿理論與政策",
+            "type": "群B",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "群B至少修一門"
+        },
+        {
+            "name": "國際金融",
+            "type": "群B",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "群B至少修一門"
+        },
+        {
+            "name": "國際金融專題",
+            "type": "群B",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "群B至少修一門"
+        },
+        {
+            "name": "貿易與投資專題",
+            "type": "群B",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "群B至少修一門"
+        },
+        {
+            "name": "國際企業管理",
+            "type": "群C",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "群C至少修一門"
+        },
+        {
+            "name": "國際行銷管理",
+            "type": "群C",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "群C至少修一門"
+        },
+        {
+            "name": "數據化投資分析",
+            "type": "群D",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "群D至少修一門"
+        },
+        {
+            "name": "用Python學財務計量",
+            "type": "群D",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "群D至少修一門"
+        },
+        {
+            "name": "國際財務管理",
+            "type": "群D",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "群D至少修一門"
+        }
+    ],
+    "special_rules": [
+        "修課特殊規定：1.須於群A、群B、群C、群D中至少各修習一門課程，群修課共計須修習五門15學分。2.考量課程銜接，修習「國貿理論與政策」或「貿易與投資專題」前建議選修個體經濟學；修習「國際金融」或「國際金融專題」前建議選修總體經濟學。3.群修課須修讀國貿系開課，不得至外系修讀。4.體育選修課與「全民國防教育軍事訓練」等選修課程均不列入畢業學分計算。5.必(群)修科目單學期課程，修習全學年上學期科目學分數逾規定上限時，依本表所訂該科目學分數採計學分，修習該科目下學期課程亦計入本系選修學分計算。6.其他相關規定請洽系辦查詢或上國貿系網站，網址：https://ib.nccu.edu.tw"
+    ]
+}

@@ -1,0 +1,230 @@
+{
+    "metadata": {
+        "source_file": "統計系.html",
+        "dept_name": "統計學系\n                         【學士班】\n                         專業必修科目表一覽表",
+        "applicable_year": "114",
+        "min_graduation_credits": 128,
+        "compulsory_credits_required": 51
+    },
+    "required_courses": [
+        {
+            "name": "微積分甲",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 1,
+            "recognition": "不限",
+            "remarks": "院共同必修"
+        },
+        {
+            "name": "經濟學",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 1,
+            "recognition": "需為本院開課",
+            "remarks": "院共同必修"
+        },
+        {
+            "name": "線性代數",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 1,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "統計學（一）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "需為本院開課",
+            "remarks": "院共同必修"
+        },
+        {
+            "name": "統計學（二）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "需為本院開課",
+            "remarks": "院共同必修"
+        },
+        {
+            "name": "初級會計學（一）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本院開課",
+            "remarks": "院共同必修"
+        },
+        {
+            "name": "程式設計與統計軟體",
+            "type": "必修",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "機率論",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "先修科目：微積分甲"
+        },
+        {
+            "name": "迴歸分析（一）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "數理統計學（一）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "先修科目：微積分甲、機率論"
+        },
+        {
+            "name": "數理統計學（二）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "先修科目：微積分甲、機率論"
+        },
+        {
+            "name": "企業倫理與社會責任",
+            "type": "必修",
+            "credits": 1,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本院開課",
+            "remarks": "院共同必修"
+        },
+        {
+            "name": "管理學",
+            "type": "群B",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本院開課",
+            "remarks": "院共同群修，八選一"
+        },
+        {
+            "name": "人資管理",
+            "type": "群B",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本院開課",
+            "remarks": "院共同群修，八選一，先修科目：管理學與組織行為"
+        },
+        {
+            "name": "行銷管理",
+            "type": "群B",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本院開課",
+            "remarks": "院共同群修，八選一，先修科目：經濟學、管理學"
+        },
+        {
+            "name": "風險管理",
+            "type": "群B",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本院開課",
+            "remarks": "院共同群修，八選一"
+        },
+        {
+            "name": "財務管理",
+            "type": "群B",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本院開課",
+            "remarks": "院共同群修，八選一，先修科目：初級會計學、經濟學"
+        },
+        {
+            "name": "商業分析",
+            "type": "群B",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本院開課",
+            "remarks": "院共同群修，八選一"
+        },
+        {
+            "name": "資訊管理",
+            "type": "群B",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本院開課",
+            "remarks": "院共同群修，八選一"
+        },
+        {
+            "name": "營運與供應鏈管理",
+            "type": "群B",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本院開課",
+            "remarks": "院共同群修，八選一，先修科目：管理學"
+        },
+        {
+            "name": "抽樣調查方法",
+            "type": "群C",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "四選二"
+        },
+        {
+            "name": "變異數分析與實驗設計",
+            "type": "群C",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "四選二"
+        },
+        {
+            "name": "多變量分析",
+            "type": "群C",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "四選二"
+        },
+        {
+            "name": "時間數列分析",
+            "type": "群C",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "四選二"
+        }
+    ],
+    "special_rules": [
+        "修課特殊規定：1.全民國防教育軍事訓練與體育選修課不採計為畢業學分。2.本系學生均需修習全學年『微積分甲』之課程，不及格重修者(不含棄修)得修習『微積分甲』或全學年『微積分』；修習單學期『微積分』將不採計學分。3.修習『程式設計與統計軟體』課程的同學，建議再選修1學分之『程式設計與統計軟體實務』，始能增加各種程式軟體的實作練習機會。4.(1)機率論：「微積分」上、下學期之平均成績及格者，始可修習。若「微積分」修習二次以上(含)，仍未及格者，勉予同意得修習「機率論」，但未修習「機率論」者，仍不得修習「數理統計學」。(2)數理統計學(一)、數理統計學(二)：「微積分」上、下學期之平均成績及格，且「機率論」成績及格者，始可修習。但「機率論」若修習二次以上(含)，仍未及格者，勉予同意得修習「數理統計學(一)」。5.『商業分析』課程包含不同領域，每學期開課將依師資專長給予不同的副標題，該科目在群修課程(八選一)中至多僅採計(3學分)，其餘修課學分將計入學生的選修學分。6.必(群)修科目單學期課程，修習全學年上學期科目學分數逾規定上限時，依本表所訂該科目學分數採計學分，修習該科目下學期課程亦計入選修學分計算。"
+    ]
+}

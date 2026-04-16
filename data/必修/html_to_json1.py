@@ -4,9 +4,9 @@ import re
 from bs4 import BeautifulSoup
 
 # --- 路徑設定 ---
-input_folder = './113/html' 
-output_folder = './113/result' 
-output_filename = "113_requirements.json"
+input_folder = './114/html' 
+output_folder = './114/result' 
+output_filename = "114_requirements.json"
 
 if not os.path.exists(output_folder):
     os.makedirs(output_folder)

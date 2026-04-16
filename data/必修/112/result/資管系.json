@@ -1,0 +1,194 @@
+{
+    "metadata": {
+        "source_file": "資管系.html",
+        "dept_name": "資訊管理學系\n                         【學士班】\n                         專業必修科目表一覽表",
+        "applicable_year": "114",
+        "min_graduation_credits": 128,
+        "compulsory_credits_required": 57
+    },
+    "required_courses": [
+        {
+            "name": "微積分",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "不限",
+            "remarks": "商院共同必修"
+        },
+        {
+            "name": "初級會計學（一）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "需為本院開課",
+            "remarks": "商院共同必修"
+        },
+        {
+            "name": "計算機概論",
+            "type": "必修",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "程式設計一",
+            "type": "必修",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "經濟學",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "不限",
+            "remarks": "商院共同必修"
+        },
+        {
+            "name": "管理學",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "需為本院開課",
+            "remarks": "商院共同必修"
+        },
+        {
+            "name": "初級會計學（二）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "需為本院開課",
+            "remarks": "商院共同必修"
+        },
+        {
+            "name": "程式設計二",
+            "type": "必修",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "系統分析與設計",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "統計學（一）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本院開課",
+            "remarks": "商院共同必修"
+        },
+        {
+            "name": "資料結構",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "資訊管理",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "必選之商院共同選修"
+        },
+        {
+            "name": "商事法",
+            "type": "必修",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "不限",
+            "remarks": "商院共同必修"
+        },
+        {
+            "name": "資料庫管理",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "管理科學",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "企業倫理與社會責任",
+            "type": "必修",
+            "credits": 1,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本院開課",
+            "remarks": "商院共同必修"
+        },
+        {
+            "name": "資訊系統專案設計",
+            "type": "必修",
+            "credits": 9,
+            "semesters": 3,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "企業資料通訊",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "無"
+        },
+        {
+            "name": "資訊科技創新",
+            "type": "群A",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "先修科目：(1)資料庫管理(2)系統分析與設計。兩門課選一門課"
+        },
+        {
+            "name": "數位商務應用",
+            "type": "群A",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "先修科目：(1)資料庫管理(2)系統分析與設計。兩門課選一門課"
+        }
+    ],
+    "special_rules": [
+        "修課特殊規定：1.本系必修科目第一修需修本系所開，二修以上可至資科、應數或經系上認可之系修習。2.必(群)修科目單學期課程，修習全學年上學期科目學分數逾規定上限時，依本表所訂該科目學分數採計學分，修習該科目下學期課程亦計入本系選修學分計算。3.資訊系統專案設計共計分六組(班)，採志願方式進行分組。4.全民國防教育軍事訓練及體育選修課不採計為畢業學分。5.選修外系學分可承認為畢業學分。6.資訊系統專案設計必須連續修習三學期，否則必須重修，原先取得之學分不列入畢業學分，但若為第三學期不及格或缺修者，只需補修第三學期即可。"
+    ]
+}

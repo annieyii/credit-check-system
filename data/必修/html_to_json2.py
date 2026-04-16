@@ -2,9 +2,10 @@ import os
 import json
 import re
 from bs4 import BeautifulSoup
+from pathlib import Path
 
-input_folder = './113/html' 
-output_folder = './113/result' 
+input_folder = './114/html' 
+output_folder = './114/result' 
 
 if not os.path.exists(output_folder):
     os.makedirs(output_folder)
@@ -83,7 +84,7 @@ for filename in os.listdir(input_folder):
                                 dept_info["required_courses"].append(course_data)
                 
                 # --- 4. 儲存 ---
-                clean_name = dept_info["metadata"]["dept_name"].replace("/", "_").replace(" ", "")
+                clean_name = Path(filename).stem
                 save_path = os.path.join(output_folder, f"{clean_name}.json")
                 with open(save_path, 'w', encoding='utf-8') as f:
                     json.dump(dept_info, f, ensure_ascii=False, indent=4)

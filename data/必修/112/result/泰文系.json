@@ -1,0 +1,248 @@
+{
+    "metadata": {
+        "source_file": "泰文系.html",
+        "dept_name": "東南亞語言與文化學士學位學程\n                         【學士班】\n                         \n                         【泰文組】\n                         專業必修科目表一覽表",
+        "applicable_year": "114",
+        "min_graduation_credits": 128,
+        "compulsory_credits_required": 51
+    },
+    "required_courses": [
+        {
+            "name": "初級泰語",
+            "type": "必修",
+            "credits": 4,
+            "semesters": 2,
+            "suggested_year": 1,
+            "recognition": "需為本系開課",
+            "remarks": "泰國語文類"
+        },
+        {
+            "name": "初級泰語語法與寫作",
+            "type": "必修",
+            "credits": 4,
+            "semesters": 2,
+            "suggested_year": 1,
+            "recognition": "需為本系開課",
+            "remarks": "泰國語文類"
+        },
+        {
+            "name": "初級泰語聽力與會話",
+            "type": "必修",
+            "credits": 4,
+            "semesters": 2,
+            "suggested_year": 1,
+            "recognition": "需為本系開課",
+            "remarks": "泰國語文類"
+        },
+        {
+            "name": "泰國文化與社會",
+            "type": "必修",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 1,
+            "recognition": "需為本系開課",
+            "remarks": "泰國語文類"
+        },
+        {
+            "name": "中級泰語",
+            "type": "必修",
+            "credits": 4,
+            "semesters": 2,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "泰國語文類"
+        },
+        {
+            "name": "中級泰語聽力與會話",
+            "type": "必修",
+            "credits": 4,
+            "semesters": 2,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "泰國語文類"
+        },
+        {
+            "name": "中級泰語語法與寫作",
+            "type": "必修",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 2,
+            "recognition": "需為本系開課",
+            "remarks": "泰國語文類"
+        },
+        {
+            "name": "高級泰語",
+            "type": "必修",
+            "credits": 4,
+            "semesters": 2,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "泰國語文類"
+        },
+        {
+            "name": "高級泰語聽力與會話",
+            "type": "必修",
+            "credits": 4,
+            "semesters": 2,
+            "suggested_year": 3,
+            "recognition": "需為本系開課",
+            "remarks": "泰國語文類"
+        },
+        {
+            "name": "泰國古典文學",
+            "type": "群A",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 0,
+            "recognition": "需為本系開課",
+            "remarks": "進階泰語類：6選3"
+        },
+        {
+            "name": "泰國現代文學",
+            "type": "群A",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 0,
+            "recognition": "需為本系開課",
+            "remarks": "進階泰語類：6選3"
+        },
+        {
+            "name": "泰語口譯",
+            "type": "群A",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 0,
+            "recognition": "需為本系開課",
+            "remarks": "進階泰語類：6選3"
+        },
+        {
+            "name": "泰語翻譯",
+            "type": "群A",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 0,
+            "recognition": "需為本系開課",
+            "remarks": "進階泰語類：6選3"
+        },
+        {
+            "name": "進階泰語：政治經濟",
+            "type": "群A",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 0,
+            "recognition": "需為本系開課",
+            "remarks": "進階泰語類：6選3"
+        },
+        {
+            "name": "進階泰語語法與寫作",
+            "type": "群A",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 0,
+            "recognition": "需為本系開課",
+            "remarks": "進階泰語類：6選3"
+        },
+        {
+            "name": "應用印尼語",
+            "type": "群B",
+            "credits": 4,
+            "semesters": 2,
+            "suggested_year": 0,
+            "recognition": "需為本系開課",
+            "remarks": "第二東南亞語言類：應修讀同一語種4學分"
+        },
+        {
+            "name": "應用越語",
+            "type": "群B",
+            "credits": 4,
+            "semesters": 2,
+            "suggested_year": 0,
+            "recognition": "需為本系開課",
+            "remarks": "第二東南亞語言類：應修讀同一語種4學分"
+        },
+        {
+            "name": "東南亞文化與英語口說及寫作 （Ⅰ）",
+            "type": "群C",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 0,
+            "recognition": "需為本系開課",
+            "remarks": "人文社會類：9選3"
+        },
+        {
+            "name": "東南亞文化與英語口說及寫作 （Ⅱ）",
+            "type": "群C",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 0,
+            "recognition": "需為本系開課",
+            "remarks": "人文社會類：9選3"
+        },
+        {
+            "name": "東南亞民族與現況",
+            "type": "群C",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 0,
+            "recognition": "不限",
+            "remarks": "人文社會類：9選3"
+        },
+        {
+            "name": "東南亞社會與人文",
+            "type": "群C",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 0,
+            "recognition": "不限",
+            "remarks": "人文社會類：9選3"
+        },
+        {
+            "name": "東南亞政府與政治",
+            "type": "群C",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 0,
+            "recognition": "不限",
+            "remarks": "人文社會類：9選3"
+        },
+        {
+            "name": "東南亞國際關係",
+            "type": "群C",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 0,
+            "recognition": "需為本系開課",
+            "remarks": "人文社會類：9選3"
+        },
+        {
+            "name": "東南亞發展與治理",
+            "type": "群C",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 0,
+            "recognition": "不限",
+            "remarks": "人文社會類：9選3"
+        },
+        {
+            "name": "東南亞經濟概論",
+            "type": "群C",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 0,
+            "recognition": "需為本系開課",
+            "remarks": "人文社會類：9選3"
+        },
+        {
+            "name": "東南亞歷史文化",
+            "type": "群C",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 0,
+            "recognition": "需為本系開課",
+            "remarks": "人文社會類：9選3"
+        }
+    ],
+    "special_rules": [
+        "修課特殊規定：1.泰國語文類之必修科目採灌檔方式。2.本學程一、二、三年級必修科目有擋修規定，如初級泰語不及格者，不得修習中級泰語，以此類推。進階泰語類擋修科目為中級泰語。3.全學年之科目，未選修「上學期」者不得跳修「下學期」；補(重)修亦然。4.第二東南亞語言之同一語言需修讀一學年，單學期學分不採計為群修。5.全民國防教育軍事訓練不採計為畢業學分；體育選修課採計2學分為畢業學分。6.多修習之群修科目可視為本學程選修。7.聽力與會話課為2小時1學分。8.其他規定依本學程選課規定、學分承認注意事項及學校規定辦理。"
+    ]
+}

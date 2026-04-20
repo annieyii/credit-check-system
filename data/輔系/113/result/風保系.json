@@ -1,0 +1,103 @@
+{
+  "metadata": {
+    "department": "風險管理與保險學系",
+    "applicable_year": "113",
+    "last_updated": null,
+    "contact_extension": "89071"
+  },
+  "credit_summary": {
+    "total_credits_required": 21,
+    "breakdown": {
+      "required": 15,
+      "group_elective": 6,
+      "general_elective": 0
+    },
+    "foundation_credits_not_counted": 0,
+    "note": "應修總學分：21學分"
+  },
+  "prerequisites_external": [
+    {
+      "subject": "民法或民法概要",
+      "credits": { "min": 2, "max": 0, "display": "2學分以上" },
+      "is_mandatory": true,
+      "can_be_taken_concurrently": false
+    }
+  ],
+  "course_structure": {
+    "required_courses": [
+      {
+        "course_name": "風險管理",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "保險學",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "人壽保險",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "財產保險",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "保險契約法",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": ["保險學", "人壽保險", "民法", "民法概要"],
+        "alternative_courses": [],
+        "recommended_year": null
+      }
+    ],
+    "group_electives": {
+      "selection_rule": "三選二修習 (共6學分)",
+      "groups": [
+        {
+          "group_name": "群修",
+          "min_credits_required": 6,
+          "courses": [
+            {
+              "course_name": "再保險",
+              "credits": { "min": 3, "max": 3, "display": "3" },
+              "offering_type": "隨系附修",
+              "prerequisites_internal": ["保險學"],
+              "alternative_courses": []
+            },
+            {
+              "course_name": "社會保險",
+              "credits": { "min": 3, "max": 3, "display": "3" },
+              "offering_type": "隨系附修",
+              "prerequisites_internal": [],
+              "alternative_courses": []
+            },
+            {
+              "course_name": "精算數學",
+              "credits": { "min": 3, "max": 3, "display": "3" },
+              "offering_type": "隨系附修",
+              "prerequisites_internal": [],
+              "alternative_courses": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "special_regulations": []
+}

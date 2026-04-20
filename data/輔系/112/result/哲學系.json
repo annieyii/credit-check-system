@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "department": "哲學系",
+    "applicable_year": "112",
+    "last_updated": null,
+    "contact_extension": "62361"
+  },
+  "credit_summary": {
+    "total_credits_required": 24,
+    "breakdown": {
+      "required": 6,
+      "group_elective": 0,
+      "general_elective": 18
+    },
+    "foundation_credits_not_counted": 0,
+    "note": "應修總學分：24學分"
+  },
+  "prerequisites_external": [],
+  "course_structure": {
+    "required_courses": [
+      {
+        "course_name": "哲學概論",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "邏輯",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": null
+      }
+    ],
+    "group_electives": {
+      "selection_rule": "自由選修 18 學分",
+      "groups": [
+        {
+          "group_name": "本系專業課程",
+          "min_credits_required": 18,
+          "courses": [
+            {
+              "course_name": "本系各專業選修科目",
+              "credits": { "min": 18, "max": 18, "display": "18" },
+              "offering_type": "隨系附修",
+              "prerequisites_internal": [],
+              "alternative_courses": [],
+              "note": "不含整合開課科目及通識課程"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "special_regulations": [
+    "凡修畢必修課程「哲學概論」與「邏輯」及本系專業課程達 18 學分即可承認輔系資格。",
+    "全學年課程必須修滿（即修完上、下學期）始採計學分。",
+    "「通識課程」不予列入輔系學分計算。",
+    "整合開課科目亦不含在輔系學分之內。"
+  ]
+}

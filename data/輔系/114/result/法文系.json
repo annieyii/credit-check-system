@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "department": "歐洲語文學系法文組",
+    "applicable_year": "114",
+    "last_updated": null,
+    "contact_extension": null
+  },
+  "credit_summary": {
+    "total_credits_required": 19,
+    "breakdown": {
+      "required": 16,
+      "group_elective": 0,
+      "general_elective": 3
+    },
+    "foundation_credits_not_counted": 0,
+    "note": "合計應修 19 學分。選修課若僅為 2 學分者，得以 2 科（4 學分）折抵一門 3 學分全校性選修課。"
+  },
+  "prerequisites_external": [],
+  "course_structure": {
+    "required_courses": [
+      {
+        "course_name": "初級法文閱讀",
+        "credits": { "min": 4, "max": 4, "display": "4" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "初級法文語法",
+        "credits": { "min": 4, "max": 4, "display": "4" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "初級法文聽力會話",
+        "credits": { "min": 4, "max": 4, "display": "4" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "初級法文應用",
+        "credits": { "min": 4, "max": 4, "display": "4" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": null
+      }
+    ],
+    "group_electives": {
+      "selection_rule": "修習一門與「歐洲」或「歐盟」相關之全校選修課（不含通識）。",
+      "groups": [
+        {
+          "group_name": "全校選修課",
+          "min_credits_required": 3,
+          "courses": [
+            {
+              "course_name": "全校選修課一門 (其科目名稱與「歐洲」或「歐盟」相關之選修課)",
+              "credits": { "min": 3, "max": 3, "display": "3" },
+              "offering_type": "隨系附修",
+              "prerequisites_internal": [],
+              "alternative_courses": [],
+              "note": "擴大認可範圍為與歐洲、法文或法語系國家相關即可。"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "special_regulations": [
+    "全學年科目，未選修或未通過上學期不得跳修下學期，重(補)修亦同。",
+    "必修科目皆為本系所開設之課程，採隨班附讀方式。",
+    "選修課不含通識課程。"
+  ]
+}

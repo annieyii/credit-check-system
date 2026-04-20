@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "department": "公共行政學系",
+    "applicable_year": "114",
+    "last_updated": null,
+    "contact_extension": "51158"
+  },
+  "credit_summary": {
+    "total_credits_required": 20,
+    "breakdown": {
+      "required": 10,
+      "group_elective": 10,
+      "general_elective": 0
+    },
+    "foundation_credits_not_counted": 0,
+    "note": "應修總學分：20學分。"
+  },
+  "prerequisites_external": [],
+  "course_structure": {
+    "required_courses": [
+      { "course_name": "行政學", "credits": { "min": 4, "max": 4, "display": "4" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+      { "course_name": "公共政策", "credits": { "min": 2, "max": 2, "display": "2" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+      { "course_name": "行政法", "credits": { "min": 4, "max": 4, "display": "4" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] }
+    ],
+    "group_electives": {
+      "selection_rule": "選修學分數：10學分（請自科目表內選修科目中選擇至少10學分）。",
+      "groups": [
+        {
+          "group_name": "選修",
+          "min_credits_required": 10,
+          "courses": [
+            { "course_name": "公共政策新興議題", "credits": { "min": 1, "max": 1, "display": "1" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "行政統計學", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "公共行政新興議題", "credits": { "min": 1, "max": 1, "display": "1" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "科技與政府", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "中華民國憲法", "credits": { "min": 2, "max": 2, "display": "2" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "比較行政", "credits": { "min": 2, "max": 2, "display": "2" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "研究設計與方法", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "政府預算與財政", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "政策分析", "credits": { "min": 2, "max": 2, "display": "2" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "公共人力資源管理", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "全球公共事務治理", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "公共價值與公務倫理", "credits": { "min": 2, "max": 2, "display": "2" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "公民社會組織與創新", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "地方治理", "credits": { "min": 2, "max": 2, "display": "2" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "組織理論與管理", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "人工智慧與公共治理", "credits": { "min": 2, "max": 2, "display": "2" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] }
+          ]
+        }
+      ]
+    }
+  },
+  "special_regulations": [
+    "行政學為基礎科目，請列為最優先修習。"
+  ]
+}

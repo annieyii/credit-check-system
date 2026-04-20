@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "department": "金融學系",
+    "applicable_year": "113",
+    "last_updated": "113年5月15日",
+    "contact_extension": null
+  },
+  "credit_summary": {
+    "total_credits_required": 23,
+    "breakdown": {
+      "required": 9,
+      "group_elective": 14,
+      "general_elective": 0
+    },
+    "foundation_credits_not_counted": 0,
+    "note": "應修總學分：23學分。包含必修 9 學分及群修課程至少 14 學分。"
+  },
+  "prerequisites_external": [],
+  "course_structure": {
+    "required_courses": [
+      { "course_name": "貨幣銀行學", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["經濟學"], "alternative_courses": [] },
+      { "course_name": "投資學", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["財務管理"], "alternative_courses": [] },
+      { "course_name": "衍生性商品", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["財務管理"], "alternative_courses": [] }
+    ],
+    "group_electives": {
+      "selection_rule": "群修課程至少修習 14 學分，且每一領域至少修習一門。",
+      "groups": [
+        {
+          "group_name": "基礎學科領域",
+          "min_credits_required": 0,
+          "courses": [
+            { "course_name": "貨幣理論與政策", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["貨幣銀行學"], "alternative_courses": [], "course_code": "302043001" }
+          ]
+        },
+        {
+          "group_name": "金融市場領域",
+          "min_credits_required": 0,
+          "courses": [
+            { "course_name": "銀行經營管理", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [], "course_code": "302018001" },
+            { "course_name": "金融機構管理", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [], "course_code": "302044001" },
+            { "course_name": "金融市場", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["經濟學"], "alternative_courses": [], "course_code": "302901001" },
+            { "course_name": "投資銀行策略與實務", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [], "course_code": "302809001, 352785001" },
+            { "course_name": "財金新聞選讀", "credits": { "min": 2, "max": 2, "display": "2" }, "offering_type": "隨系附修", "prerequisites_internal": ["經濟學"], "alternative_courses": [], "course_code": "302838001" },
+            { "course_name": "金融專題研討", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [], "course_code": "302899001, 352045001" }
+          ]
+        },
+        {
+          "group_name": "金融商品及投資領域",
+          "min_credits_required": 0,
+          "courses": [
+            { "course_name": "ESG/永續金融與商品創新", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["財務管理", "投資學"], "alternative_courses": [], "course_code": "352748001" },
+            { "course_name": "ESG/永續金融：責任投資、綠色融資與綠色保險", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["金融機構管理", "財務管理", "投資學"], "alternative_courses": [], "course_code": "302784001" },
+            { "course_name": "金融領域-證券市場", "credits": { "min": 2, "max": 2, "display": "2" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [], "course_code": "302773001, 352729001" },
+            { "course_name": "金融領域-證券市場實務", "credits": { "min": 2, "max": 2, "display": "2" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [], "course_code": "302771001, 352724001" },
+            { "course_name": "投資決策與資產管理", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [], "course_code": "302774001, 352734001" },
+            { "course_name": "固定收益證券", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [], "course_code": "302900011" },
+            { "course_name": "資產管理實務專題", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [], "course_code": "302772001, 352728001" }
+          ]
+        },
+        {
+          "group_name": "數量方法領域",
+          "min_credits_required": 0,
+          "courses": [
+            { "course_name": "金融數量", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [], "course_code": "302833011" },
+            { "course_name": "計量經濟學", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [], "course_code": "302926001" },
+            { "course_name": "機器學習與財務計量", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [], "course_code": "302783001" }
+          ]
+        },
+        {
+          "group_name": "程式設計領域",
+          "min_credits_required": 0,
+          "courses": [
+            { "course_name": "金融計算程式運用(一)", "credits": { "min": 2, "max": 2, "display": "2" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [], "course_code": "302788001, 352751001" },
+            { "course_name": "金融計算程式運用(二)", "credits": { "min": 2, "max": 2, "display": "2" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [], "course_code": "302791001, 352753001" },
+            { "course_name": "計算機程式設計", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [], "course_code": "302795001" }
+          ]
+        },
+        {
+          "group_name": "其他課程",
+          "min_credits_required": 0,
+          "courses": [
+            { "course_name": "財務賽局", "credits": { "min": 2, "max": 3, "display": "2-3" }, "offering_type": "隨系附修", "prerequisites_internal": ["財務管理"], "alternative_courses": [], "course_code": "302826001" },
+            { "course_name": "金融法規", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [], "course_code": "302032011" }
+          ]
+        }
+      ]
+    }
+  },
+  "special_regulations": [
+    "群修課程僅認定本表科目代碼之課程。",
+    "如本系有新增群修課程，會再公告於官網。"
+  ]
+}

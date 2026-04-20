@@ -1,0 +1,100 @@
+{
+  "metadata": {
+    "department": "創新國際學院學士班",
+    "applicable_year": "114",
+    "last_updated": null,
+    "contact_extension": "67757"
+  },
+  "credit_summary": {
+    "total_credits_required": 27,
+    "breakdown": {
+      "required": 12,
+      "group_elective_a": 9,
+      "group_elective_b": 6,
+      "general_elective": 0
+    },
+    "foundation_credits_not_counted": 6,
+    "note": "應修總學分：27學分。不含申請條件需修畢之 6 學分基礎科目。"
+  },
+  "prerequisites_external": [
+    {
+      "course_name": "經濟學(一或上)",
+      "credits": 3,
+      "note": "申請條件，不納入應修總學分"
+    },
+    {
+      "course_name": "統計學(一或上)",
+      "credits": 3,
+      "note": "申請條件，不納入應修總學分"
+    }
+  ],
+  "course_structure": {
+    "required_courses": [
+      {
+        "course_name": "經濟學",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": ["000219032", "000219512"],
+        "note": "必修；需修習本班指定課號"
+      },
+      {
+        "course_name": "統計學(二)",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": ["ZU1016001", "000360211"],
+        "note": "必修；需修習本班指定課號"
+      },
+      {
+        "course_name": "全球研究導論",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "note": ""
+      },
+      {
+        "course_name": "程式設計",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "note": ""
+      }
+    ],
+    "group_electives": {
+      "selection_rule": "需修習群A 9學分及群B 6學分。",
+      "groups": [
+        {
+          "group_name": "群A：全球治理、社會創新、永續發展",
+          "min_credits_required": 9,
+          "courses": [
+            { "course_name": "人類學", "credits": null, "offering_type": "隨系附修", "note": "113-1 開課/二年開一次" },
+            { "course_name": "社會學", "credits": null, "offering_type": "隨系附修" },
+            { "course_name": "國際公法", "credits": null, "offering_type": "隨系附修" },
+            { "course_name": "政治學", "credits": null, "offering_type": "隨系附修" },
+            { "course_name": "行政學", "credits": null, "offering_type": "隨系附修" },
+            { "course_name": "AI 導論", "credits": null, "offering_type": "隨系附修", "note": "114-1 開課/二年開一次" },
+            { "course_name": "科技與當代社會", "credits": null, "offering_type": "隨系附修", "note": "114-2 開課/二年開一次" },
+            { "course_name": "人文地理", "credits": null, "offering_type": "隨系附修" },
+            { "course_name": "資料科學", "credits": null, "offering_type": "隨系附修" },
+            { "course_name": "設計思維", "credits": null, "offering_type": "隨系附修" }
+          ]
+        },
+        {
+          "group_name": "群B：資料科學、AI、科技",
+          "min_credits_required": 6,
+          "courses": [
+            { "course_name": "三軌課程", "credits": null, "offering_type": "隨系附修" }
+          ]
+        }
+      ]
+    }
+  },
+  "special_regulations": [
+    "需已修畢經濟學(一或上)/3學分、統計學(一或上)/3學分。",
+    "修課規定請參考創國 113 學年必修科目表。",
+    "替代科目請至本學士班官網查詢課程檢核表。"
+  ]
+}

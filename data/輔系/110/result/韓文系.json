@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "department": "韓國語文學系",
+    "applicable_year": "110",
+    "last_updated": null,
+    "contact_extension": "2938-7073"
+  },
+  "credit_summary": {
+    "total_credits_required": 26,
+    "breakdown": {
+      "required": 16,
+      "group_elective": 10,
+      "general_elective": 0
+    },
+    "foundation_credits_not_counted": 0,
+    "note": "輔系學生應修習專為擴大輔系生另行開課之必、選修課程。"
+  },
+  "prerequisites_external": [],
+  "course_structure": {
+    "required_courses": [
+      {
+        "course_name": "初級韓國語",
+        "credits": { "min": 6, "max": 6, "display": "6" },
+        "offering_type": "另行開課",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "中級韓國語",
+        "credits": { "min": 6, "max": 6, "display": "6" },
+        "offering_type": "另行開課",
+        "prerequisites_internal": ["初級韓國語"],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "韓語語法(1)",
+        "credits": { "min": 2, "max": 2, "display": "2" },
+        "offering_type": "另行開課",
+        "prerequisites_internal": ["初級韓國語"],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "韓語語法(2)",
+        "credits": { "min": 2, "max": 2, "display": "2" },
+        "offering_type": "另行開課",
+        "prerequisites_internal": ["韓語語法(1)"],
+        "alternative_courses": [],
+        "recommended_year": null
+      }
+    ],
+    "group_electives": {
+      "selection_rule": "應補足 10 學分選修課程，可由下列科目或韓文系所開之選修科目中挑選。",
+      "groups": [
+        {
+          "group_name": "建議選修課程",
+          "min_credits_required": 10,
+          "courses": [
+            { "course_name": "高級韓國語", "credits": { "min": 6, "max": 6, "display": "6" }, "offering_type": "另行開課", "prerequisites_internal": ["初級韓國語", "中級韓國語"], "alternative_courses": [] },
+            { "course_name": "韓語口說訓練(一)", "credits": { "min": 6, "max": 6, "display": "6" }, "offering_type": "另行開課", "prerequisites_internal": ["初級韓國語"], "alternative_courses": [] }
+          ]
+        }
+      ]
+    }
+  },
+  "special_regulations": [
+    "階梯式課程受擋修之限制。",
+    "全學年科目，未選修上學期不得跳修下學期，重(補)修亦同。",
+    "輔系學生應修習專為擴大輔系生另行開課之必、選修課程。"
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "metadata": {
+    "department": "廣播電視學系 (媒體企劃與創新學程)",
+    "applicable_year": "110",
+    "last_updated": null,
+    "contact_extension": null
+  },
+  "credit_summary": {
+    "total_credits_required": 24,
+    "breakdown": {
+      "required": 15,
+      "group_elective": 9,
+      "general_elective": 0
+    },
+    "foundation_credits_not_counted": 0,
+    "note": "輔系生限修習「媒體企劃與創新」學程，包含表一 12 學分與表二 12 學分。"
+  },
+  "prerequisites_external": [],
+  "course_structure": {
+    "required_courses": [
+      {
+        "course_name": "傳播概論",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": null,
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "靜態影像設計",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": null,
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "基礎影音製作",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": null,
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "媒介創新與商業模式",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": null,
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "媒體企劃",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": null,
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": null
+      }
+    ],
+    "group_electives": {
+      "selection_rule": "表一三選一 (3學分) + 表二自由選修 (6學分)。",
+      "groups": [
+        {
+          "group_name": "表一：傳播學院基礎選修",
+          "min_credits_required": 3,
+          "courses": [
+            { "course_name": "新傳播科技", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": null, "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "傳播法規與倫理", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": null, "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "影像概論", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": null, "prerequisites_internal": [], "alternative_courses": [] }
+          ]
+        },
+        {
+          "group_name": "表二：廣電系專業選修",
+          "min_credits_required": 6,
+          "courses": [
+            { "course_name": "節目製作管理", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": null, "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "媒介生態", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": null, "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "電子媒介行銷", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": null, "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "數位媒體創意與實務", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": null, "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "數據分析與創意開發", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": null, "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "新媒體與創業", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": null, "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "行動內容製作與評估", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": null, "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "影視製片與發行", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": null, "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "數位影音大講堂", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": null, "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "媒介經營管理", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": null, "prerequisites_internal": [], "alternative_courses": [] }
+          ]
+        }
+      ]
+    }
+  },
+  "special_regulations": [
+    "廣電系輔系生限修習本系之【媒體企劃與創新】學程。",
+    "不適用灌檔，輔系生需自行選課。"
+  ]
+}

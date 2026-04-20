@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "department": "歷史學系",
+    "applicable_year": "112",
+    "last_updated": null,
+    "contact_extension": "62351"
+  },
+  "credit_summary": {
+    "total_credits_required": 30,
+    "breakdown": {
+      "required": 0,
+      "group_elective": 30,
+      "general_elective": 0
+    },
+    "foundation_credits_not_counted": 0,
+    "note": "應於基礎課程、進階課程中合計修滿 30 學分。"
+  },
+  "prerequisites_external": [],
+  "course_structure": {
+    "required_courses": [],
+    "group_electives": {
+      "selection_rule": "基礎課程任選至少 15 學分，進階課程任選至少 9 學分，總計需達 30 學分。",
+      "groups": [
+        {
+          "group_name": "基礎課程 (群修)",
+          "min_credits_required": 15,
+          "courses": [
+            { "course_name": "臺灣史", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": ["臺灣史(一)", "台灣史(二)"] },
+            { "course_name": "史學導論", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": ["史學理論"] },
+            { "course_name": "中國通史(上)", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": ["中國通史(一)", "中國通史(二)", "中國通史(三)", "中國通史(四)", "中國通史(五)"] },
+            { "course_name": "中國通史(下)", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": ["中國通史(一)", "中國通史(二)", "中國通史(三)", "中國通史(四)", "中國通史(五)"] },
+            { "course_name": "世界通史(上)", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": ["世界通史(一)", "世界通史(二)", "世界通史(三)", "世界通史(四)"] },
+            { "course_name": "世界通史(下)", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": ["世界通史(一)", "世界通史(二)", "世界通史(三)", "世界通史(四)"] }
+          ]
+        },
+        {
+          "group_name": "進階課程",
+          "min_credits_required": 9,
+          "courses": [
+            { "course_name": "專史類課程", "credits": { "min": 2, "max": 3, "display": "2-3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [], "note": "必選 6 學分" },
+            { "course_name": "專題類課程", "credits": { "min": 2, "max": 3, "display": "2-3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [], "note": "必選 3 學分" }
+          ]
+        }
+      ]
+    }
+  },
+  "special_regulations": [
+    "專史類課程必選 6 學分。",
+    "專題類課程必選 3 學分。",
+    "應於基礎課程、進階課程中合計修滿 30 學分。"
+  ]
+}

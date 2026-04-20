@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "department": "社會學系",
+    "applicable_year": "112",
+    "last_updated": null,
+    "contact_extension": "50857"
+  },
+  "credit_summary": {
+    "total_credits_required": 20,
+    "breakdown": {
+      "required": 0,
+      "group_elective": 20,
+      "general_elective": 0
+    },
+    "foundation_credits_not_counted": 0,
+    "note": "應修總學分：20學分。"
+  },
+  "prerequisites_external": [],
+  "course_structure": {
+    "required_courses": [],
+    "group_electives": {
+      "selection_rule": "任選 20 學分。",
+      "groups": [
+        {
+          "group_name": "社會學系選修課程",
+          "min_credits_required": 20,
+          "courses": [
+            { "course_name": "社會學", "credits": { "min": 3, "max": 6, "display": "3-6" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "社會統計", "credits": { "min": 4, "max": 8, "display": "4-8" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "社會學理論", "credits": { "min": 4, "max": 8, "display": "4-8" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "社會研究方法", "credits": { "min": 4, "max": 8, "display": "4-8" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "社會學資料處理", "credits": { "min": 4, "max": 4, "display": "4" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "台灣社會研究", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] }
+          ]
+        }
+      ]
+    }
+  },
+  "special_regulations": [
+    "應修科目由課程列表中任選 20 學分補足。"
+  ]
+}

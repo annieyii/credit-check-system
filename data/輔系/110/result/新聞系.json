@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "department": "新聞學系",
+    "applicable_year": "110",
+    "last_updated": null,
+    "contact_extension": null
+  },
+  "credit_summary": {
+    "total_credits_required": 30,
+    "breakdown": {
+      "required": 18,
+      "group_elective": 12,
+      "general_elective": 0
+    },
+    "foundation_credits_not_counted": 0,
+    "note": "應修總學分：30學分"
+  },
+  "prerequisites_external": [],
+  "course_structure": {
+    "required_courses": [
+      {
+        "course_name": "傳播概論",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "單學期課程 (隨系附修)",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": "一年級"
+      },
+      {
+        "course_name": "傳播與社會",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "單學期課程 (隨系附修)",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": "一年級"
+      },
+      {
+        "course_name": "傳播與當代思潮",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "單學期課程 (隨系附修)",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": "一年級"
+      },
+      {
+        "course_name": "資料分析基礎與策略",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "單學期課程 (隨系附修)",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": "一年級"
+      },
+      {
+        "course_name": "傳播學想像",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "單學期課程 (隨系附修)",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": "三年級"
+      },
+      {
+        "course_name": "傳播方法與實踐",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "單學期課程 (隨系附修)",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": "三年級"
+      }
+    ],
+    "group_electives": {
+      "selection_rule": "由指定選修課中任選 4 門 (共 12 學分)",
+      "groups": [
+        {
+          "group_name": "選修",
+          "min_credits_required": 12,
+          "courses": [
+            { "course_name": "紀實採寫", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [], "recommended_year": "二年級" },
+            { "course_name": "影音新聞——電視", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [], "recommended_year": "三年級" },
+            { "course_name": "國際傳播", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [], "recommended_year": "二年級" },
+            { "course_name": "傳播政治經濟學", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [], "recommended_year": "三年級" },
+            { "course_name": "設計專題-說故事的方式", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [], "recommended_year": "三年級" },
+            { "course_name": "網路數據分析", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [], "recommended_year": "二年級" },
+            { "course_name": "傳播統計", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [], "recommended_year": "二年級" }
+          ]
+        }
+      ]
+    }
+  },
+  "special_regulations": [
+    "應修總學分共 30 學分，包含 6 門 18 學分之必修課及 4 門 12 學分之選修課。",
+    "必修科目之灌檔僅限新聞系本系生。",
+    "輔系生需自行選課，不適用自動灌檔。"
+  ]
+}

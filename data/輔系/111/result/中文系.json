@@ -1,0 +1,221 @@
+{
+  "metadata": {
+    "department": "中國文學系",
+    "applicable_year": "111",
+    "last_updated": null,
+    "contact_extension": "62303"
+  },
+  "credit_summary": {
+    "total_credits_required": 36,
+    "breakdown": {
+      "required": 18,
+      "group_elective": 18,
+      "general_elective": 0
+    },
+    "foundation_credits_not_counted": 0,
+    "note": "應修總學分：36學分"
+  },
+  "prerequisites_external": [],
+  "course_structure": {
+    "required_courses": [
+      {
+        "course_name": "詩選",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [
+          { "course_name": "詩選及習作", "credits": 3 }
+        ],
+        "recommended_year": null
+      },
+      {
+        "course_name": "中國文學史",
+        "credits": { "min": 6, "max": 6, "display": "6" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "中國思想史",
+        "credits": { "min": 6, "max": 6, "display": "6" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [
+          { "course_name": "中國哲學史", "credits": 6 }
+        ],
+        "recommended_year": null
+      },
+      {
+        "course_name": "文字學",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [
+          { "course_name": "聲韻學", "credits": 3 }
+        ],
+        "recommended_year": null
+      }
+    ],
+    "group_electives": {
+      "selection_rule": "須自「現代文學」、「古典文學」、「思想義理」三類中任選兩類，每類至少修習一科",
+      "groups": [
+        {
+          "group_name": "現代文學",
+          "min_credits_required": 0,
+          "courses": [
+            {
+              "course_name": "中國現代文學史",
+              "credits": { "min": 3, "max": 4, "display": "3-4" },
+              "offering_type": "隨系附修",
+              "prerequisites_internal": [],
+              "alternative_courses": [{ "course_name": "台灣文學選讀", "credits": 3 }]
+            },
+            {
+              "course_name": "中國現代詩選讀",
+              "credits": { "min": 3, "max": 4, "display": "3-4" },
+              "offering_type": "隨系附修",
+              "prerequisites_internal": [],
+              "alternative_courses": []
+            },
+            {
+              "course_name": "中國現代散文選讀",
+              "credits": { "min": 3, "max": 4, "display": "3-4" },
+              "offering_type": "隨系附修",
+              "prerequisites_internal": [],
+              "alternative_courses": []
+            },
+            {
+              "course_name": "中國現代小說選讀",
+              "credits": { "min": 3, "max": 4, "display": "3-4" },
+              "offering_type": "隨系附修",
+              "prerequisites_internal": [],
+              "alternative_courses": [{ "course_name": "大陸當代小說選讀", "credits": 3 }]
+            },
+            {
+              "course_name": "中國現代戲劇選讀",
+              "credits": { "min": 3, "max": 4, "display": "3-4" },
+              "offering_type": "隨系附修",
+              "prerequisites_internal": [],
+              "alternative_courses": [{ "course_name": "戲劇與製作", "credits": 3 }]
+            }
+          ]
+        },
+        {
+          "group_name": "古典文學",
+          "min_credits_required": 0,
+          "courses": [
+            {
+              "course_name": "文學概論",
+              "credits": { "min": 3, "max": 4, "display": "3-4" },
+              "offering_type": "隨系附修",
+              "prerequisites_internal": [],
+              "alternative_courses": []
+            },
+            {
+              "course_name": "古典戲曲選讀",
+              "credits": { "min": 3, "max": 4, "display": "3-4" },
+              "offering_type": "隨系附修",
+              "prerequisites_internal": [],
+              "alternative_courses": [{ "course_name": "中國戲曲發展史", "credits": 3 }]
+            },
+            {
+              "course_name": "修辭學",
+              "credits": { "min": 3, "max": 4, "display": "3-4" },
+              "offering_type": "隨系附修",
+              "prerequisites_internal": [],
+              "alternative_courses": [{ "course_name": "文法學", "credits": 3 }]
+            },
+            {
+              "course_name": "古典小說選讀",
+              "credits": { "min": 3, "max": 4, "display": "3-4" },
+              "offering_type": "隨系附修",
+              "prerequisites_internal": [],
+              "alternative_courses": [
+                { "course_name": "紅樓夢", "credits": 3 },
+                { "course_name": "話本小說選讀", "credits": 3 }
+              ]
+            },
+            {
+              "course_name": "詩經",
+              "credits": { "min": 3, "max": 4, "display": "3-4" },
+              "offering_type": "隨系附修",
+              "prerequisites_internal": [],
+              "alternative_courses": [
+                { "course_name": "左傳", "credits": 3 },
+                { "course_name": "楚辭", "credits": 3 }
+              ]
+            },
+            {
+              "course_name": "語言學概論",
+              "credits": { "min": 3, "max": 3, "display": "3" },
+              "offering_type": "隨系附修",
+              "prerequisites_internal": [],
+              "alternative_courses": []
+            },
+            {
+              "course_name": "歷代文選及習作",
+              "credits": { "min": 3, "max": 3, "display": "3" },
+              "offering_type": "隨系附修",
+              "prerequisites_internal": [],
+              "alternative_courses": [{ "course_name": "唐宋文選及習作", "credits": 3 }]
+            }
+          ]
+        },
+        {
+          "group_name": "思想義理",
+          "min_credits_required": 0,
+          "courses": [
+            {
+              "course_name": "論語",
+              "credits": { "min": 3, "max": 4, "display": "3-4" },
+              "offering_type": "隨系附修",
+              "prerequisites_internal": [],
+              "alternative_courses": []
+            },
+            {
+              "course_name": "孟子",
+              "credits": { "min": 3, "max": 4, "display": "3-4" },
+              "offering_type": "隨系附修",
+              "prerequisites_internal": [],
+              "alternative_courses": []
+            },
+            {
+              "course_name": "易經(周易)",
+              "credits": { "min": 3, "max": 4, "display": "3-4" },
+              "offering_type": "隨系附修",
+              "prerequisites_internal": [],
+              "alternative_courses": [{ "course_name": "禮記", "credits": 3 }]
+            },
+            {
+              "course_name": "老子",
+              "credits": { "min": 3, "max": 4, "display": "3-4" },
+              "offering_type": "隨系附修",
+              "prerequisites_internal": [],
+              "alternative_courses": []
+            },
+            {
+              "course_name": "莊子",
+              "credits": { "min": 3, "max": 4, "display": "3-4" },
+              "offering_type": "隨系附修",
+              "prerequisites_internal": [],
+              "alternative_courses": []
+            },
+            {
+              "course_name": "國學導讀",
+              "credits": { "min": 3, "max": 3, "display": "3" },
+              "offering_type": "隨系附修",
+              "prerequisites_internal": [],
+              "alternative_courses": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "special_regulations": [
+    "學生應自三類群修課程中選取其中兩類，每類至少修習一科。",
+    "有意擔任國中或高中國文教師者，群修建議優先修習「語言學概論」及「歷代文選及習作」。",
+    "群修課程開課學分，以開課當學年（期）為準。"
+  ]
+}

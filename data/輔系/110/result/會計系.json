@@ -1,0 +1,126 @@
+{
+  "metadata": {
+    "department": "會計學系",
+    "applicable_year": "110",
+    "last_updated": null,
+    "contact_extension": null
+  },
+  "credit_summary": {
+    "total_credits_required": 36,
+    "breakdown": {
+      "required": 15,
+      "group_elective": 9,
+      "general_elective": 12
+    },
+    "foundation_credits_not_counted": 12,
+    "note": "應修總學分 36 學分。基礎科目 12 學分需修習但不計入上述 36 學分內。"
+  },
+  "prerequisites_external": [],
+  "course_structure": {
+    "required_courses": [
+      {
+        "course_name": "經濟學",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "管理學",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "初級會計學(一)",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "初級會計學(二)",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": ["初級會計學(一)"],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "中級會計學(一)",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": ["初級會計學(二)"],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "中級會計學(二)",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": ["中級會計學(一)"],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "成本管理會計(一)",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": ["初級會計學(二)"],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "成本管理會計(二)",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": ["成本管理會計(一)"],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "稅務法規",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": null
+      }
+    ],
+    "group_electives": {
+      "selection_rule": "五選三 (合計 9 學分)；一般選修任選 4 門 (至少 12 學分)。",
+      "groups": [
+        {
+          "group_name": "群修",
+          "min_credits_required": 9,
+          "courses": [
+            { "course_name": "高級會計學(一)", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["中級會計學(二)"], "alternative_courses": [] },
+            { "course_name": "高級會計學(二)", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["高級會計學(一)"], "alternative_courses": [] },
+            { "course_name": "審計學(一)", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["中級會計學(二)"], "alternative_courses": [] },
+            { "course_name": "審計學(二)", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["審計學(一)"], "alternative_courses": [] },
+            { "course_name": "會計資訊系統", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["資料處理", "軟體應用導論", "初級會計學(二)"], "alternative_courses": ["會計資訊系統(一)"] }
+          ]
+        },
+        {
+          "group_name": "選修",
+          "min_credits_required": 12,
+          "courses": [
+            { "course_name": "中級會計學(三)", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["中級會計學(二)"], "alternative_courses": [] },
+            { "course_name": "財務報表分析", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["中級會計學(二)"], "alternative_courses": [] },
+            { "course_name": "策略性成本管理", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["成本管理會計(二)"], "alternative_courses": [] },
+            { "course_name": "碩士班開放課程", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [], "note": "包含 IFRS、租稅研究、財務揭露等" }
+          ]
+        }
+      ]
+    }
+  },
+  "special_regulations": [
+    "應修總學分數 36 學分，不包含基礎科目之 12 學分。",
+    "必修、群修與選修均有嚴格門數與學分規定。",
+    "階梯式課程具備高度擋修關聯，需嚴格遵守先修科目規定。"
+  ]
+}

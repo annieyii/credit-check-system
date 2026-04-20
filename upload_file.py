@@ -12,4 +12,4 @@ async def upload_file(file: UploadFile = File(...)):
         return True
 
     except Exception as e:
-        raise HTTPException(status_code=400, detail=f"Error: {str(e)}")
+        raise HTTPException(status_code=422, detail=f"Error: {str(e)}")

@@ -5,9 +5,9 @@ from bs4 import BeautifulSoup
 from pathlib import Path
 
 # --- 路徑設定 ---
-input_folder = './110/html'
-output_folder = './110/result'
-output_filename = "110_requirements.json"
+input_folder = './114/html'
+output_folder = './114/result'
+output_filename = "114_requirements.json"
 
 if not os.path.exists(output_folder):
     os.makedirs(output_folder)

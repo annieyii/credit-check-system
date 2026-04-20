@@ -4,8 +4,8 @@ import re
 from bs4 import BeautifulSoup
 from pathlib import Path
 
-input_folder = './110/html'
-output_folder = './110/result'
+input_folder = './114/html'
+output_folder = './114/result'
 
 if not os.path.exists(output_folder):
     os.makedirs(output_folder)

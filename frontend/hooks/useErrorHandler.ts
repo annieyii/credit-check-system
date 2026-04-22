@@ -14,21 +14,6 @@ export function useErrorHandler() {
     setErrorType("")
   }, [])
 
-//   const submitToApi = useCallback(async (file: File) => {
-//   setIsLoading(true)
-//   setError(null)
-//   setErrorType("")
-//   setResult(null)
-
-//   await new Promise(res => setTimeout(res, 1000))
-
-//   // 測試斷線（目前測這個）
-//   setErrorType("network")
-//   setError("無法連線到伺服器，請確認後端是否正常運行")
-
-//   setIsLoading(false)
-// }, [])
-
   const submitToApi = useCallback(async (file: File) => {
     setIsLoading(true)
     setError(null)
@@ -84,5 +69,7 @@ export function useErrorHandler() {
     result,
     clearError,
     submitToApi,
+    setError,      
+    setErrorType,
   }
 }

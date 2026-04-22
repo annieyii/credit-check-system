@@ -13,29 +13,31 @@ export default function Dashboard() {
   const [fileName, setFileName] = useState<string | null>(null)
   const [isDragging, setIsDragging] = useState(false)
 
-  const { error, errorType, isLoading, clearError, submitToApi } = useErrorHandler()
-
+  const { error, errorType, isLoading, clearError, submitToApi, setError, setErrorType } = useErrorHandler()
   const handleFile = useCallback((file: File) => {
-    clearError()
+  clearError()  // 先清空舊的錯誤
 
-    if (!file.name.endsWith(".json")) {
-      return
-    }
+  if (!file.name.endsWith(".json")) {
+    setError("請上傳 .json 格式的檔案")  // 不是 json 才顯示錯誤
+    setErrorType("format")
+    return
+  }
 
-    const reader = new FileReader()
-    reader.onload = (e) => {
-      try {
-        const text = e.target?.result as string
-        const parsed = JSON.parse(text)
-        setJsonData(JSON.stringify(parsed, null, 2))
-        setFileName(file.name)
-        submitToApi(file)
-      } catch {
-        // JSON 解析失敗由 ErrorMessage 顯示
-      }
+  const reader = new FileReader()
+  reader.onload = (e) => {
+    try {
+      const text = e.target?.result as string
+      const parsed = JSON.parse(text)
+      setJsonData(JSON.stringify(parsed, null, 2))
+      setFileName(file.name)
+      submitToApi(file)
+    } catch {
+      setError("無法解析 JSON 檔案，請確認檔案格式正確")
+      setErrorType("format")
     }
-    reader.readAsText(file)
-  }, [clearError, submitToApi])
+  }
+  reader.readAsText(file)
+}, [clearError, submitToApi, setError, setErrorType])
 
   const handleDrop = useCallback((e: React.DragEvent) => {
     e.preventDefault()

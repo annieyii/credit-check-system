@@ -222,5 +222,4 @@ node_modules/
 __pycache__/
 .venv/
 dist/
-**/test_data/exportStudentData.json
 

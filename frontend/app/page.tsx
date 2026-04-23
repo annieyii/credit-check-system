@@ -13,7 +13,7 @@ export default function Dashboard() {
   const [fileName, setFileName] = useState<string | null>(null)
   const [isDragging, setIsDragging] = useState(false)
 
-  const { error, errorType, isLoading, clearError, submitToApi, setError, setErrorType } = useErrorHandler()
+  const { error, errorType, isLoading, result, clearError, submitToApi, setError, setErrorType } = useErrorHandler()
   const handleFile = useCallback((file: File) => {
   clearError()  // 先清空舊的錯誤
 
@@ -148,6 +148,13 @@ export default function Dashboard() {
             {isLoading && (
               <p className="text-center text-muted-foreground text-sm mt-4">
                 分析中，請稍候...
+              </p>
+            )}
+
+            {/* 上傳成功 */}
+            {result && !isLoading && (
+              <p className="text-center text-green-600 text-sm mt-4">
+                ✓ {result.message}
               </p>
             )}
           </CardContent>

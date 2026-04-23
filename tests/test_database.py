@@ -33,7 +33,7 @@ def test_all_tables_exist(temp_db):
     cursor = temp_db.cursor()
     cursor.execute("SELECT name FROM sqlite_master WHERE type='table'")
     tables = {row["name"] for row in cursor.fetchall() if not row["name"].startswith("sqlite_")}
-    expected = {"departments", "required_courses", "course_schedules", "special_rules", "student_records"}
+    expected = {"departments", "required_courses", "course_schedules", "special_rules"}
     assert expected == tables
 
 

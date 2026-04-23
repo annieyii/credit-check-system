@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "department": "政治學系",
+    "applicable_year": "110",
+    "last_updated": "2026-04-18",
+    "contact_extension": null
+  },
+  "credit_summary": {
+    "total_credits_required": 30,
+    "breakdown": {
+      "required": 18,
+      "group_elective": 12,
+      "general_elective": 0
+    },
+    "foundation_credits_not_counted": 0,
+    "note": "應修總學分合計 30 學分。抵免後不足三十學分者，由本系指定其他科目補足之。"
+  },
+  "prerequisites_external": [],
+  "course_structure": {
+    "required_courses": [
+      {
+        "course_name": "政治學",
+        "credits": { "min": 6, "max": 6, "display": "6" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "中華民國憲法與政府",
+        "credits": { "min": 6, "max": 6, "display": "6" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "比較政府與政治",
+        "credits": { "min": 6, "max": 6, "display": "6" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": null
+      }
+    ],
+    "group_electives": {
+      "selection_rule": "於經驗政治、政治思想與歷史、比較政治三學門中任選兩學門，每學門至少選修 6 學分。",
+      "groups": [
+        {
+          "group_name": "經驗政治學門",
+          "min_credits_required": 6,
+          "courses": [
+            { "course_name": "政黨政治", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "計量分析軟體在社會科學的應用", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "國會與立法行為", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "經驗政治理論", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "選舉與投票行為", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "民意與調查", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] }
+          ]
+        },
+        {
+          "group_name": "政治思想與歷史學門",
+          "min_credits_required": 6,
+          "courses": [
+            { "course_name": "中國政治思想史", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "中國政治思想典籍導讀", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "西洋政治思想史", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "西洋政治思想典籍導讀", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "意識型態理論", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "另行開課", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "自由、人權與市民社會", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] }
+          ]
+        },
+        {
+          "group_name": "比較政治學門",
+          "min_credits_required": 6,
+          "courses": [
+            { "course_name": "中國大陸政府與政治", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "兩岸關係概論", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "國際關係", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "歐陸政府與政治", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "拉丁美洲政府與政治", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "東亞政府與政治", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "另行開課", "prerequisites_internal": [], "alternative_courses": [] }
+          ]
+        }
+      ]
+    }
+  },
+  "special_regulations": [
+    "合計應修 30 學分。",
+    "抵免後不足三十學分者，由本系指定其他科目補足之。",
+    "公共行政及外交兩系同學選修本系為輔系者，抵免學分上限為十學分。"
+  ]
+}

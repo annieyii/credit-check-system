@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "department": "金融學系",
+    "applicable_year": "112",
+    "last_updated": null,
+    "contact_extension": null
+  },
+  "credit_summary": {
+    "total_credits_required": 23,
+    "breakdown": {
+      "required": 9,
+      "group_elective": 14,
+      "general_elective": 0
+    },
+    "foundation_credits_not_counted": 0,
+    "note": "應修總學分：23學分 (必修9學分 + 群修至少14學分)"
+  },
+  "prerequisites_external": [
+    {
+      "subject": "經濟學",
+      "credits": { "min": 6, "max": 6, "display": "6" },
+      "is_mandatory": true,
+      "can_be_taken_concurrently": false
+    },
+    {
+      "subject": "財務管理",
+      "credits": { "min": 3, "max": 3, "display": "3" },
+      "is_mandatory": true,
+      "can_be_taken_concurrently": false
+    },
+    {
+      "subject": "統計學",
+      "credits": { "min": 6, "max": 6, "display": "6" },
+      "is_mandatory": false,
+      "can_be_taken_concurrently": false
+    },
+    {
+      "subject": "程式設計",
+      "credits": { "min": 3, "max": 3, "display": "3" },
+      "is_mandatory": false,
+      "can_be_taken_concurrently": false
+    }
+  ],
+  "course_structure": {
+    "required_courses": [
+      {
+        "course_name": "貨幣銀行學",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": ["經濟學"],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "投資學",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": ["財務管理"],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "衍生性商品",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": ["財務管理"],
+        "alternative_courses": [],
+        "recommended_year": null
+      }
+    ],
+    "group_electives": {
+      "selection_rule": "群修課程至少修習 14 學分",
+      "groups": [
+        {
+          "group_name": "金融系群修課程",
+          "min_credits_required": 14,
+          "courses": [
+            { "course_name": "貨幣理論與政策", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["貨幣銀行學"], "alternative_courses": [] },
+            { "course_name": "金融法規", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "銀行經營管理", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "金融機構管理", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "金融市場", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["經濟學"], "alternative_courses": [] },
+            { "course_name": "金融數量", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "金融計量", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["統計學"], "alternative_courses": ["計量經濟學"] },
+            { "course_name": "大數據分析與金融科技", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["程式設計", "投資學"], "alternative_courses": [] },
+            { "course_name": "ESG/永續金融與商品創新", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["財務管理", "投資學"], "alternative_courses": [] },
+            { "course_name": "ESG/永續金融：責任投資、綠色融資、綠色保險", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["金融機構管理", "財務管理", "投資學"], "alternative_courses": [] },
+            { "course_name": "財務賽局", "credits": { "min": 2, "max": 3, "display": "2-3" }, "offering_type": "隨系附修", "prerequisites_internal": ["財務管理"], "alternative_courses": [] }
+          ]
+        }
+      ]
+    }
+  },
+  "special_regulations": [
+    "應修讀輔系規定之科目學分，至多抵免六學分。",
+    "如修習本系教師所開之課程則不受上述抵免學分限制。",
+    "抵免後不足之學分由本系主任指派其它專業課程補足之。"
+  ]
+}

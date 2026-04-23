@@ -1,0 +1,410 @@
+{
+    "metadata": {
+        "source_file": "教育系非師資組.html",
+        "dept_name": "教育學系\n                         【學士班】\n                         \n                         【非師資組】\n                         專業必修科目表一覽表",
+        "applicable_year": "112",
+        "min_graduation_credits": 128,
+        "compulsory_credits_required": 30
+    },
+    "required_courses": [
+        {
+            "name": "教育心理學",
+            "type": "必修",
+            "credits": 0,
+            "semesters": 1,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "102013",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102013",
+            "remarks": "無"
+        },
+        {
+            "name": "教育統計學",
+            "type": "必修",
+            "credits": 0,
+            "semesters": 1,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "102003",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102003",
+            "remarks": "無"
+        },
+        {
+            "name": "教育概論",
+            "type": "必修",
+            "credits": 0,
+            "semesters": 1,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "102012",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102012",
+            "remarks": "無"
+        },
+        {
+            "name": "教育社會學",
+            "type": "必修",
+            "credits": 0,
+            "semesters": 1,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "102007",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102007",
+            "remarks": "無"
+        },
+        {
+            "name": "教育行政",
+            "type": "必修",
+            "credits": 0,
+            "semesters": 1,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "102130",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102130",
+            "remarks": "無"
+        },
+        {
+            "name": "教育研究法",
+            "type": "必修",
+            "credits": 0,
+            "semesters": 1,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "102005",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102005",
+            "remarks": "無"
+        },
+        {
+            "name": "教育哲學",
+            "type": "必修",
+            "credits": 0,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "102011",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102011",
+            "remarks": "無"
+        },
+        {
+            "name": "心理測驗與評量",
+            "type": "必修",
+            "credits": 0,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "102132",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102132",
+            "remarks": "無"
+        },
+        {
+            "name": "教育議題專題",
+            "type": "群A",
+            "credits": 0,
+            "semesters": 1,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "102129",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102129",
+            "remarks": "10科選7"
+        },
+        {
+            "name": "輔導原理與實務",
+            "type": "群A",
+            "credits": 0,
+            "semesters": 1,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "102093",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102093",
+            "remarks": "10科選7"
+        },
+        {
+            "name": "教學媒體與運用",
+            "type": "群A",
+            "credits": 0,
+            "semesters": 1,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "102061",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102061",
+            "remarks": "10科選7"
+        },
+        {
+            "name": "教學原理",
+            "type": "群A",
+            "credits": 0,
+            "semesters": 1,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "102099",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102099",
+            "remarks": "10科選7"
+        },
+        {
+            "name": "學習評量",
+            "type": "群A",
+            "credits": 0,
+            "semesters": 1,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "102023",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102023",
+            "remarks": "10科選7"
+        },
+        {
+            "name": "特殊教育導論",
+            "type": "群A",
+            "credits": 0,
+            "semesters": 1,
+            "suggested_year": 4,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": true
+            },
+            "recognition": "需為本系開課",
+            "course_code": "102112",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102112",
+            "remarks": "10科選7"
+        },
+        {
+            "name": "班級經營",
+            "type": "群A",
+            "credits": 0,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "102109",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102109",
+            "remarks": "10科選7"
+        },
+        {
+            "name": "學校輔導工作",
+            "type": "群A",
+            "credits": 0,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "102826",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102826",
+            "remarks": "10科選7"
+        },
+        {
+            "name": "課程發展與設計",
+            "type": "群A",
+            "credits": 0,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "102091",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102091",
+            "remarks": "10科選7"
+        },
+        {
+            "name": "學校行政",
+            "type": "群A",
+            "credits": 0,
+            "semesters": 1,
+            "suggested_year": 4,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": true,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "102131",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "102131",
+            "remarks": "10科選7"
+        }
+    ],
+    "special_rules": [
+        "修課特殊規定：一、畢業總學分數128（全民國防教育軍事訓練及體育選修課不採計為畢業學分）。二、其餘依政治大學相關課程規定辦理。三、教材教法與教學實習為非師資組之選修課程。惟未選修教材教法者，不得選修教學實習，教材教法與教學實習須為同一類科。教材教法修習及格，該科目計入選修課程，但僅教學實習及格而教材教法未及格(含未修)時，該實習課學分不計入畢業總學分數。"
+    ]
+}

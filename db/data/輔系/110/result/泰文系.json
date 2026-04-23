@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "department": "東南亞語文學程泰文組",
+    "applicable_year": "110",
+    "last_updated": null,
+    "contact_extension": "62745"
+  },
+  "credit_summary": {
+    "total_credits_required": 20,
+    "breakdown": {
+      "required": 12,
+      "group_elective": 0,
+      "general_elective": 8
+    },
+    "foundation_credits_not_counted": 0,
+    "note": "應修總學分：20學分"
+  },
+  "prerequisites_external": [],
+  "course_structure": {
+    "required_courses": [
+      {
+        "course_name": "初級泰語",
+        "credits": { "min": 6, "max": 6, "display": "6" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [
+          { "course_name": "大學外文(一):泰文", "credits": 3 },
+          { "course_name": "大學外文(二):泰文", "credits": 3 }
+        ],
+        "recommended_year": "學年課"
+      },
+      {
+        "course_name": "中級泰語",
+        "credits": { "min": 6, "max": 6, "display": "6" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": ["初級泰語"],
+        "alternative_courses": [
+          { "course_name": "大學外文(三):泰文", "credits": 3 },
+          { "course_name": "大學外文(四):泰文", "credits": 3 }
+        ],
+        "recommended_year": "學年課"
+      }
+    ],
+    "group_electives": {
+      "selection_rule": "選修 8 學分，須從本學程開設之必、群、選修科目中修習",
+      "groups": [
+        {
+          "group_name": "本學程開設科目",
+          "min_credits_required": 8,
+          "courses": []
+        }
+      ]
+    }
+  },
+  "special_regulations": [
+    "全學年課程須修滿始採計學分。",
+    "初級與中級泰語應修習 3 學分之課程。若修讀 2 學分者，須加修語法、寫作或聽力等指定科目始得採計。",
+    "通過 CU-TFL 泰語能力檢定 A2 級以上者得免修初級泰語，但須補足對應之 6 學分。"
+  ]
+}

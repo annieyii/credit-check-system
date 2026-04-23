@@ -1,0 +1,234 @@
+{
+    "metadata": {
+        "source_file": "哲學系.html",
+        "dept_name": "哲學系\n                         【學士班】\n                         專業必修科目表一覽表",
+        "applicable_year": "113",
+        "min_graduation_credits": 128,
+        "compulsory_credits_required": 51
+    },
+    "required_courses": [
+        {
+            "name": "西洋哲學史（一）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "10400700",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "10400700",
+            "remarks": "無"
+        },
+        {
+            "name": "哲學概論",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "10400100",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "10400100",
+            "remarks": "無"
+        },
+        {
+            "name": "西洋哲學史（二）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "10408200",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "10408200",
+            "remarks": "無"
+        },
+        {
+            "name": "邏輯",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "10404900",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "10404900",
+            "remarks": "無"
+        },
+        {
+            "name": "中國哲學史（一）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "10400600",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "10400600",
+            "remarks": "無"
+        },
+        {
+            "name": "倫理學",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "10400500",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "10400500",
+            "remarks": "無"
+        },
+        {
+            "name": "中國哲學史（二）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "10407700",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "10407700",
+            "remarks": "無"
+        },
+        {
+            "name": "知識論",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "10400300",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "10400300",
+            "remarks": "無"
+        },
+        {
+            "name": "形上學",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "10400200",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "10400200",
+            "remarks": "無"
+        },
+        {
+            "name": "哲學進階課程",
+            "type": "群A",
+            "credits": 24,
+            "semesters": 1,
+            "suggested_year": 0,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "無"
+        }
+    ],
+    "special_rules": [
+        "修課特殊規定：1.除專業必修科目（共27學分）外，需修習本系開設之群修「哲學進階課程」24學分。2.體育選修課只承認１學分為畢業學分，全民國防教育軍事訓練不列入畢業學分。"
+    ]
+}

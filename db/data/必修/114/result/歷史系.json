@@ -1,0 +1,190 @@
+{
+    "metadata": {
+        "source_file": "歷史系.html",
+        "dept_name": "歷史學系\n                         【學士班】\n                         專業必修科目表一覽表",
+        "applicable_year": "114",
+        "min_graduation_credits": 128,
+        "compulsory_credits_required": 51
+    },
+    "required_courses": [
+        {
+            "name": "台灣、東亞與世界文明（一）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "10326100",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "10326100",
+            "remarks": "無"
+        },
+        {
+            "name": "歷史思惟與方法",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "10326400",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "10326400",
+            "remarks": "無"
+        },
+        {
+            "name": "台灣、東亞與世界文明（二）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "10326200",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "10326200",
+            "remarks": "無"
+        },
+        {
+            "name": "歷史閱讀與書寫",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "10326500",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "10326500",
+            "remarks": "無"
+        },
+        {
+            "name": "台灣、東亞與世界文明（三）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "10326300",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "10326300",
+            "remarks": "無"
+        },
+        {
+            "name": "史學多元實踐",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "10327700",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "10327700",
+            "remarks": "無"
+        },
+        {
+            "name": "專題類",
+            "type": "群A",
+            "credits": 9,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": true,
+                "Y4S2": true
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "無"
+        },
+        {
+            "name": "專史類",
+            "type": "群B",
+            "credits": 24,
+            "semesters": 1,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": true,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": true,
+                "Y4S2": true
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "無"
+        }
+    ],
+    "special_rules": [
+        "修課特殊規定：1.一般選修可任選本系或外系學分，包括輔系、雙主修、學程及本校各系所開課程，惟選修之全民國防教育軍事訓練、體育選修課、超修之通識不計入畢業學分。2.三、四年級同學可上修本系碩士班「專題類」課程，得計入專題類（群A）學分。"
+    ]
+}

@@ -1,0 +1,366 @@
+{
+    "metadata": {
+        "source_file": "地政系土地資源規劃組.html",
+        "dept_name": "地政學系\n                         【學士班】\n                         \n                         【土地資源規劃組】\n                         專業必修科目表一覽表",
+        "applicable_year": "113",
+        "min_graduation_credits": 128,
+        "compulsory_credits_required": 53
+    },
+    "required_courses": [
+        {
+            "name": "民法（一）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
+            "remarks": "無"
+        },
+        {
+            "name": "都市計畫",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
+            "remarks": "無"
+        },
+        {
+            "name": "經濟學",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
+            "remarks": "無"
+        },
+        {
+            "name": "測量學及實習",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
+            "remarks": "本科目為3學分課程，但每週上課5小時。"
+        },
+        {
+            "name": "電腦繪圖與地理資訊系統",
+            "type": "必修",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
+            "remarks": "無"
+        },
+        {
+            "name": "規劃實務（一）",
+            "type": "必修",
+            "credits": 8,
+            "semesters": 2,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
+            "remarks": "1.先修科目為「都市計畫」，並建議先修「電腦繪圖與地理資訊系統」。\n2.本科目每週另開4小時0學分實習課。"
+        },
+        {
+            "name": "土地法（一）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
+            "remarks": "建議先修「民法（一）（二）」"
+        },
+        {
+            "name": "土地經濟學",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
+            "remarks": "無"
+        },
+        {
+            "name": "統計學（一）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
+            "remarks": "無"
+        },
+        {
+            "name": "都市土地使用計畫",
+            "type": "必修",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
+            "remarks": "無"
+        },
+        {
+            "name": "土地法（二）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
+            "remarks": "建議先修「民法（一）（二）」"
+        },
+        {
+            "name": "都市交通運輸計畫",
+            "type": "必修",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
+            "remarks": "無"
+        },
+        {
+            "name": "規劃實務（二）",
+            "type": "必修",
+            "credits": 8,
+            "semesters": 2,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
+            "remarks": "1.先修科目為「規劃實務（一）」。\n2.本科目每週另開4小時0學分實習課。"
+        },
+        {
+            "name": "公共設施計畫",
+            "type": "必修",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
+            "remarks": "無"
+        },
+        {
+            "name": "都市計畫法規",
+            "type": "必修",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
+            "remarks": "無"
+        },
+        {
+            "name": "土地政策",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
+            "remarks": "建議先修「土地制度史」"
+        }
+    ],
+    "special_rules": [
+        "修課特殊規定：1.學生應依本表科目修習及採計學分數，超修學分數不計入畢業學分。2.經濟學修習全學年上學科目學分數逾規定上限時，依本表所訂該科目學分數採計學分，修習該科目下學期課程亦計入本系選修學分計算。3.全民國防教育軍事訓練（軍訓）選修與體育選修課不計入畢業學分。"
+    ]
+}

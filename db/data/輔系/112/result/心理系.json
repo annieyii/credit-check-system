@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "department": "心理學系",
+    "applicable_year": "112",
+    "last_updated": null,
+    "contact_extension": "62981"
+  },
+  "credit_summary": {
+    "total_credits_required": 31,
+    "breakdown": {
+      "required": 19,
+      "group_elective": 12,
+      "general_elective": 0
+    },
+    "foundation_credits_not_counted": 0,
+    "note": "應修總學分數共計 31 學分。包含必修科目 4 門共 19 學分、群修科目任選 4 門 (含) 以上至少 12 學分。"
+  },
+  "prerequisites_external": [],
+  "course_structure": {
+    "required_courses": [
+      { "course_name": "普通心理學", "credits": { "min": 6, "max": 6, "display": "6" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [], "note": "需為本系開設之必修普通心理學" },
+      { "course_name": "心理及教育統計學", "credits": { "min": 6, "max": 6, "display": "6" }, "offering_type": "隨系附修", "prerequisites_internal": ["普通心理學"], "alternative_courses": [] },
+      { "course_name": "心理實驗法", "credits": { "min": 4, "max": 4, "display": "4" }, "offering_type": "隨系附修", "prerequisites_internal": ["普通心理學"], "alternative_courses": [] },
+      { "course_name": "心理測驗(含實習)", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["普通心理學"], "alternative_courses": [] }
+    ],
+    "group_electives": {
+      "selection_rule": "群修科目任選 4 門 (含) 以上至少 12 學分。",
+      "groups": [
+        {
+          "group_name": "群修",
+          "min_credits_required": 12,
+          "courses": [
+            { "course_name": "人體生理學", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["普通心理學"], "alternative_courses": [] },
+            { "course_name": "生理心理學", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["普通心理學"], "alternative_courses": [] },
+            { "course_name": "性格心理學", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["普通心理學"], "alternative_courses": [] },
+            { "course_name": "發展心理學", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["普通心理學"], "alternative_courses": [] },
+            { "course_name": "人類學習與認知", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["普通心理學"], "alternative_courses": [] },
+            { "course_name": "社會心理學", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["普通心理學"], "alternative_courses": [] },
+            { "course_name": "知覺心理學", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["普通心理學"], "alternative_courses": [] }
+          ]
+        }
+      ]
+    }
+  },
+  "special_regulations": [
+    "指定科目與群修任選科目的選課資格視同本系生。",
+    "若選課人數額滿且輔系生確有選課需要時，可至心理系系辦公室辦理人工選課。",
+    "除上述表列科目外，輔系生選修本系其他科目時需受名額限制。"
+  ]
+}

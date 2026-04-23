@@ -1,0 +1,388 @@
+{
+    "metadata": {
+        "source_file": "企管系.html",
+        "dept_name": "企業管理學系\n                         【學士班】\n                         專業必修科目表一覽表",
+        "applicable_year": "113",
+        "min_graduation_credits": 128,
+        "compulsory_credits_required": 51
+    },
+    "required_courses": [
+        {
+            "name": "經濟學",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "不限",
+            "course_code": "000219",
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": "000219",
+            "remarks": "無"
+        },
+        {
+            "name": "初級會計學（一）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "不限",
+            "course_code": "000314",
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": "000314",
+            "remarks": "無"
+        },
+        {
+            "name": "微積分",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "不限",
+            "course_code": "000712",
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": "000712",
+            "remarks": "無"
+        },
+        {
+            "name": "管理學",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "不限",
+            "course_code": "000348",
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": "000348",
+            "remarks": "無"
+        },
+        {
+            "name": "初級會計學（二）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "不限",
+            "course_code": "000318",
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": "000318",
+            "remarks": "先修：初級會計學(一)"
+        },
+        {
+            "name": "管理科學",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "先修：管理學"
+        },
+        {
+            "name": "商事法",
+            "type": "必修",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "不限",
+            "course_code": "000604",
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": "000604",
+            "remarks": "無"
+        },
+        {
+            "name": "統計學（一）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本院開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本院開課",
+            "dual_major_course_code": null,
+            "remarks": "無"
+        },
+        {
+            "name": "組織行為",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "先修：管理學"
+        },
+        {
+            "name": "人力資源管理",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "先修：管理學與組織行為"
+        },
+        {
+            "name": "行銷管理",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "不限",
+            "course_code": "000350",
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": "000350",
+            "remarks": "先修：管理學與經濟學"
+        },
+        {
+            "name": "財務管理",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "不限",
+            "course_code": "000347",
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": "000347",
+            "remarks": "先修：經濟學與初級會計學（一）（二）；二上或二下修習。"
+        },
+        {
+            "name": "統計學（二）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本院開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本院開課",
+            "dual_major_course_code": null,
+            "remarks": "無"
+        },
+        {
+            "name": "資訊管理",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
+            "remarks": "三上或三下修習"
+        },
+        {
+            "name": "營運與供應鏈管理",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本院開課",
+            "dual_major_course_code": null,
+            "remarks": "無"
+        },
+        {
+            "name": "企業倫理與社會責任",
+            "type": "必修",
+            "credits": 1,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本院開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本院開課",
+            "dual_major_course_code": null,
+            "remarks": "大三或大四修習"
+        },
+        {
+            "name": "策略管理",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 4,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": true,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "先修：營運與供應鏈管理、行銷管理、人力資源管理、資訊管理及財務管理等五管；四上或四下修習"
+        }
+    ],
+    "special_rules": [
+        "修課特殊規定：1.本系必修科目原則上需修本系開課的，不得逕至外系修習；惟修習本院所開之英文授課之同名課程，則予以承認。2.全學年之必修課，若上學期不及格者，是否可續修下學期，由任課教師決定。3.微積分及商事法若修習學年課，須修畢上下學期，方得承認上學期為本系必修科目，上學期科目學分數逾規定上限時，依本表所定該科目學分採計學分，下學期計入選修學分。4.所有必修科目，同年級允許跨班選課人數由任課老師自定。5.有列「先修科目」的部分，原則上均需修過先修科目後才能修此科目。6.「全民國防教育軍事訓練」課程採計4學分為畢業學分；體育選修課不採計為畢業學分。"
+    ]
+}

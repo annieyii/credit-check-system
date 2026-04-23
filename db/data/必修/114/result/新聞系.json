@@ -1,0 +1,146 @@
+{
+    "metadata": {
+        "source_file": "新聞系.html",
+        "dept_name": "新聞學系\n                         【學士班】\n                         專業必修科目表一覽表",
+        "applicable_year": "114",
+        "min_graduation_credits": 128,
+        "compulsory_credits_required": 24
+    },
+    "required_courses": [
+        {
+            "name": "傳播學的想像",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本院開課",
+            "dual_major_course_code": null,
+            "remarks": "「媒體與文化主修」必修"
+        },
+        {
+            "name": "新聞媒體實驗（一）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本院開課",
+            "dual_major_course_code": null,
+            "remarks": "「新聞與資訊主修」必修"
+        },
+        {
+            "name": "傳播方法與實踐",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本院開課",
+            "dual_major_course_code": null,
+            "remarks": "「媒體與文化主修」必修"
+        },
+        {
+            "name": "新聞媒體實驗（二）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本院開課",
+            "dual_major_course_code": null,
+            "remarks": "「新聞與資訊主修」必修"
+        },
+        {
+            "name": "媒體與文化主修群修課程",
+            "type": "群A",
+            "credits": 18,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": true,
+                "Y4S2": true
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本院開課",
+            "dual_major_course_code": null,
+            "remarks": "「媒體與文化主修」群修"
+        },
+        {
+            "name": "新聞與資訊主修群修課程",
+            "type": "群B",
+            "credits": 18,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": true,
+                "Y4S2": true
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本院開課",
+            "dual_major_course_code": null,
+            "remarks": "「新聞與資訊主修」群修"
+        }
+    ],
+    "special_rules": [
+        "修課特殊規定：1.全民國防教育軍事訓練和體育選修課不列入畢業總學分。2.修讀本系者至少須修畢24學分，含各主修的必修2科共6學分；其他18學分必須於「新聞與資訊主修課程」或「媒體與文化主修課程」中修讀。3.「新聞與資訊主修群修課程科目表」、「媒體與文化主修群修課程科目表」請見本系網頁。"
+    ]
+}

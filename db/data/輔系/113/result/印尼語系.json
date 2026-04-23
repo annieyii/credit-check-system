@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "department": "東南亞語文學程印尼文組",
+    "applicable_year": "113",
+    "contact_extension": "62745"
+  },
+  "credit_summary": {
+    "total_credits_required": 20,
+    "breakdown": {
+      "required": 14,
+      "elective": 6
+    },
+    "note": "全學年課程須修滿始採計學分。課程皆為隨系附修。"
+  },
+  "course_structure": {
+    "required_courses": [
+      { "course_name": "初級印尼語", "credits": 4, "type": "學年", "offering": "隨系附修" },
+      { "course_name": "初級印尼語語法", "credits": 4, "type": "學年", "offering": "隨系附修" },
+      { "course_name": "印尼文化與社會", "credits": 2, "type": "單學期", "offering": "隨系附修" },
+      { "course_name": "中級印尼語", "credits": 4, "type": "學年", "offering": "隨系附修", "prerequisites": ["初級印尼語", "初級印尼語語法"] }
+    ],
+    "elective_courses": [
+      { "course_name": "本學程開設之必、群、選修科目", "credits_to_complete": 6, "note": "原則上不予採計第二東南亞語言類及大學外文科目" }
+    ]
+  },
+  "special_regulations": [
+    "通過印尼語能力檢定(UKBI)第一級以上者，經認定得免修初級印尼語及語法，惟須補足8學分。"
+  ]
+}

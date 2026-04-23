@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "department": "地政學系土地測量與資訊組",
+    "applicable_year": "113",
+    "last_updated": null,
+    "contact_extension": "50642"
+  },
+  "credit_summary": {
+    "total_credits_required": 31,
+    "breakdown": {
+      "required": 13,
+      "group_elective": 18,
+      "general_elective": 0
+    },
+    "foundation_credits_not_counted": 0,
+    "note": "除必修13學分外，其餘18學分由群修中選修"
+  },
+  "prerequisites_external": [],
+  "course_structure": {
+    "required_courses": [
+      {
+        "course_name": "測量學及實習",
+        "credits": { "min": 4, "max": 4, "display": "4" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "土地法(一)",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": ["民法(一)", "民法(二)"],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "土地政策",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": ["土地制度史"],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "民法(一)",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": null
+      }
+    ],
+    "group_electives": {
+      "selection_rule": "群修科目為相對必修，應全學年修習完畢始能採認為輔系科目",
+      "groups": [
+        {
+          "group_name": "群修",
+          "min_credits_required": 18,
+          "courses": [
+            { "course_name": "測量平差法(一)", "credits": { "min": 2, "max": 2, "display": "2" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "計算機程式設計", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "大地測量學", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "測量平差法(二)", "credits": { "min": 2, "max": 2, "display": "2" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "地理資訊科學", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "地圖學", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "衛星定位測量", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "空間資料模型", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["建議先修地理資訊科學"], "alternative_courses": [] },
+            { "course_name": "航空攝影測量學及實習", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "地籍測量及實習", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["測量學及實習"], "alternative_courses": [] },
+            { "course_name": "遙感探測", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] }
+          ]
+        }
+      ]
+    }
+  },
+  "special_regulations": [
+    "群修科目為相對必修，應全學年修習完畢始能採認為輔系科目"
+  ]
+}

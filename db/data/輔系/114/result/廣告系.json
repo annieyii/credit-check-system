@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "department": "廣告學系",
+    "applicable_year": "114",
+    "last_updated": null,
+    "contact_extension": null
+  },
+  "credit_summary": {
+    "total_credits_required": 21,
+    "breakdown": {
+      "required": 9,
+      "group_elective": 12,
+      "general_elective": 0
+    },
+    "foundation_credits_not_counted": 0,
+    "note": "本系輔系共需修滿 21 學分，含院必修 9 學分及廣告系選修 12 學分。"
+  },
+  "prerequisites_external": [],
+  "course_structure": {
+    "required_courses": [
+      { "course_name": "傳播概論", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "單學期課程", "prerequisites_internal": [], "alternative_courses": [], "recommended_year": "一年級", "offering_department": "傳播學院"},
+      { "course_name": "傳播與社會", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "單學期課程", "prerequisites_internal": [], "alternative_courses": [], "recommended_year": "一年級", "offering_department": "傳播學院"},
+      { "course_name": "資料分析基礎與策略", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "單學期課程", "prerequisites_internal": [], "alternative_courses": [], "recommended_year": "二年級", "offering_department": "傳播學院"}
+    ],
+    "group_electives": {
+      "selection_rule": "廣告系選修 7 選 4，共 12 學分。",
+      "groups": [
+        {
+          "group_name": "廣告系選修",
+          "min_credits_required": 12,
+          "courses": [
+            { "course_name": "數位行銷企劃實務", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "單學期課程", "recommended_year": "三年級", "offering_department": "廣告系"},
+            { "course_name": "企業公共關係", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "單學期課程", "recommended_year": "四年級", "offering_department": "廣告系"},
+            { "course_name": "消費行為", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "單學期課程", "recommended_year": "三年級", "offering_department": "廣告系"},
+            { "course_name": "行銷公關", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "單學期課程", "recommended_year": "三年級", "offering_department": "廣告系"},
+            { "course_name": "品牌行銷", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "單學期課程", "recommended_year": "三年級", "offering_department": "廣告系"},
+            { "course_name": "公共關係與公眾管理", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "單學期課程", "recommended_year": "三四年級", "offering_department": "廣告系"},
+            { "course_name": "社群媒體行銷", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "單學期課程", "recommended_year": "三四年級", "offering_department": "廣告系"}
+          ]
+        }
+      ]
+    }
+  },
+  "special_regulations": [
+    "必修科目僅針對本系生實施灌檔，輔系生需自行選課。",
+    "考量輔系生有原系必修或其他優先讀課需求，故不適用灌檔制度。"
+  ]
+}

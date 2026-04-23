@@ -218,3 +218,9 @@ __marimo__/
 # additional files to ignore
 .DS_Store
 CLAUDE.md
+node_modules/
+__pycache__/
+.venv/
+dist/
+**/test_data/
+

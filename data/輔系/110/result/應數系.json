@@ -1,0 +1,61 @@
+{
+  "metadata": {
+    "department": "應用數學系",
+    "applicable_year": "110",
+    "last_updated": null,
+    "contact_extension": "62370"
+  },
+  "credit_summary": {
+    "total_credits_required": 28,
+    "breakdown": {
+      "required": 16,
+      "group_elective": 12,
+      "general_elective": 0
+    },
+    "foundation_credits_not_counted": 0,
+    "note": "至少需修滿28學分，其中至少16學分需在本系修習。"
+  },
+  "prerequisites_external": [],
+  "course_structure": {
+    "required_courses": [
+      {
+        "course_name": "微積分",
+        "credits": { "min": 8, "max": 8, "display": "8" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "線性代數",
+        "credits": { "min": 8, "max": 8, "display": "8" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": null
+      }
+    ],
+    "group_electives": {
+      "selection_rule": "選修課程應補足剩餘之 12 學分",
+      "groups": [
+        {
+          "group_name": "應數系選修課程",
+          "min_credits_required": 12,
+          "courses": [
+            { "course_name": "離散數學", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "計算機程式", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "高等微積分", "credits": { "min": 8, "max": 8, "display": "8" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "機率論", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "統計學", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "微分方程", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "代數學", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "數值分析", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "作業研究", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "複變函數論", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] }
+          ]
+        }
+      ]
+    }
+  },
+  "special_regulations": []
+}

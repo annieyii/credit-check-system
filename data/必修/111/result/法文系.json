@@ -1,0 +1,300 @@
+{
+    "metadata": {
+        "source_file": "法文系.html",
+        "dept_name": "歐洲語文學系\n                         【學士班】\n                         \n                         【法文組】\n                         專業必修科目表一覽表",
+        "applicable_year": "111",
+        "min_graduation_credits": 128,
+        "compulsory_credits_required": 50
+    },
+    "required_courses": [
+        {
+            "name": "初級法文語法",
+            "type": "必修",
+            "credits": 4,
+            "semesters": 2,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "無"
+        },
+        {
+            "name": "初級法文閱讀",
+            "type": "必修",
+            "credits": 4,
+            "semesters": 2,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "無"
+        },
+        {
+            "name": "初級法文應用",
+            "type": "必修",
+            "credits": 4,
+            "semesters": 2,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "無"
+        },
+        {
+            "name": "初級法文聽力會話",
+            "type": "必修",
+            "credits": 4,
+            "semesters": 2,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "無"
+        },
+        {
+            "name": "中級法文語法",
+            "type": "必修",
+            "credits": 4,
+            "semesters": 2,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "初級法文語法"
+        },
+        {
+            "name": "中級法文閱讀",
+            "type": "必修",
+            "credits": 4,
+            "semesters": 2,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "初級法文閱讀"
+        },
+        {
+            "name": "中級法文聽力會話",
+            "type": "必修",
+            "credits": 4,
+            "semesters": 2,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "初級法文聽力會話"
+        },
+        {
+            "name": "法國文化概論",
+            "type": "必修",
+            "credits": 4,
+            "semesters": 2,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "無"
+        },
+        {
+            "name": "法國文學概論",
+            "type": "必修",
+            "credits": 4,
+            "semesters": 2,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "無"
+        },
+        {
+            "name": "進階法文寫作",
+            "type": "必修",
+            "credits": 4,
+            "semesters": 2,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "中級法文閱讀"
+        },
+        {
+            "name": "進階法文聽力會話",
+            "type": "必修",
+            "credits": 4,
+            "semesters": 2,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "中級法文聽力會話"
+        },
+        {
+            "name": "法文翻譯實務",
+            "type": "必修",
+            "credits": 2,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "無"
+        },
+        {
+            "name": "專業法文",
+            "type": "必修",
+            "credits": 4,
+            "semesters": 2,
+            "suggested_year": 4,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": true,
+                "Y4S2": true
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "進階法文聽力會話、進階法文寫作"
+        }
+    ],
+    "special_rules": [
+        "修課特殊規定：1.本學系【學士班】必修科目有擋修規定，如初級等相關科目未通過者，不得修習中級等相關科目，以此類推。2.選修之全民國防教育軍事訓練及體育選修課不列入本系畢業學分。"
+    ]
+}

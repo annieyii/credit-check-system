@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "department": "財政學系",
+    "applicable_year": "110",
+    "last_updated": null,
+    "contact_extension": "50960"
+  },
+  "credit_summary": {
+    "total_credits_required": 21,
+    "breakdown": {
+      "required": 21,
+      "group_elective": 0,
+      "general_elective": 0
+    },
+    "foundation_credits_not_counted": 0,
+    "note": "應修總學分：21學分"
+  },
+  "prerequisites_external": [
+    {
+      "subject": "經濟學",
+      "credits": { "min": 0, "max": 0, "display": "未註明" },
+      "is_mandatory": true,
+      "can_be_taken_concurrently": false
+    },
+    {
+      "subject": "會計學",
+      "credits": { "min": 0, "max": 0, "display": "未註明" },
+      "is_mandatory": false,
+      "can_be_taken_concurrently": false
+    }
+  ],
+  "course_structure": {
+    "required_courses": [
+      {
+        "course_name": "財政學",
+        "credits": { "min": 6, "max": 6, "display": "6" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": ["經濟學"],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "財產稅理論與制度",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": ["財政學"],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "所得稅理論與制度",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": ["財政學"],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "消費稅理論與制度",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": ["財政學"],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "租稅法(一)",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": ["財政學"],
+        "alternative_courses": [],
+        "recommended_year": null
+      }
+    ],
+    "group_electives": {
+      "selection_rule": "所得稅問題、稅務會計及現代財政理論需擇一修習",
+      "groups": [
+        {
+          "group_name": "三擇一專業科目",
+          "min_credits_required": 3,
+          "courses": [
+            { "course_name": "所得稅問題", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["財政學"], "alternative_courses": [] },
+            { "course_name": "稅務會計", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["會計學"], "alternative_courses": [{ "course_name": "稅務會計學", "credits": 3 }] },
+            { "course_name": "現代財政理論", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["財政學"], "alternative_courses": [] }
+          ]
+        }
+      ]
+    }
+  },
+  "special_regulations": [
+    "如核定抵免後之科目不足輔系所應修之學分數，應經由本系指定另修專業科目學分補足之。"
+  ]
+}

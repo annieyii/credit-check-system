@@ -1,0 +1,5 @@
+# SQLite 是 Python 內建，不需要額外安裝
+# 如果後端要用 FastAPI 連接資料庫，參考以下
+fastapi
+uvicorn
+python-multipart

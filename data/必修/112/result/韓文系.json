@@ -1,0 +1,212 @@
+{
+    "metadata": {
+        "source_file": "韓文系.html",
+        "dept_name": "韓國語文學系\n                         【學士班】\n                         專業必修科目表一覽表",
+        "applicable_year": "112",
+        "min_graduation_credits": 128,
+        "compulsory_credits_required": 51
+    },
+    "required_courses": [
+        {
+            "name": "初級韓國語",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "無"
+        },
+        {
+            "name": "韓語口說訓練（一）",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "無"
+        },
+        {
+            "name": "中級韓國語",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "初級韓國語"
+        },
+        {
+            "name": "韓語口說訓練（二）",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "韓語口說訓練（一）"
+        },
+        {
+            "name": "韓語語法與應用",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "初級韓國語"
+        },
+        {
+            "name": "高級韓國語",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "中級韓國語"
+        },
+        {
+            "name": "韓文寫作",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "韓語語法與應用"
+        },
+        {
+            "name": "韓語口說訓練（三）",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "韓語口說訓練（二）"
+        },
+        {
+            "name": "韓語翻譯",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 4,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": true,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "中級韓國語"
+        }
+    ],
+    "special_rules": [
+        "修課特殊規定：1.階梯式課程受擋修之限制。2.全民國防教育軍事訓練與體育選修課各採計兩學分為畢業學分。3.其餘規定依本系選課、學分承認注意事項及學校規定辦理。"
+    ]
+}

@@ -1,0 +1,76 @@
+{
+  "metadata": {
+    "department": "法律學系",
+    "applicable_year": "113",
+    "last_updated": null,
+    "contact_extension": null
+  },
+  "credit_summary": {
+    "total_credits_required": 40,
+    "breakdown": {
+      "required": 0,
+      "group_elective": 30,
+      "general_elective": 10
+    },
+    "foundation_credits_not_counted": 0,
+    "note": "應修總學分為 40 學分。其中基礎科目應修畢 30 學分，且需為本系開課；另需修習本系其他法律科目 10 學分。"
+  },
+  "prerequisites_external": [],
+  "course_structure": {
+    "required_courses": [],
+    "group_electives": {
+      "selection_rule": "於基礎科目群中任選修畢 30 學分，並另選本系專業科目 10 學分。",
+      "groups": [
+        {
+          "group_name": "基礎科目",
+          "min_credits_required": 30,
+          "courses": [
+            { "course_name": "刑法(一)", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "刑法(二)", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["刑法(一)"], "alternative_courses": [] },
+            { "course_name": "刑事訴訟法(一)", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "民法總則", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "民法債編總論(一)", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["民法總則"], "alternative_courses": [] },
+            { "course_name": "民法債編總論(二)", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["民法總則"], "alternative_courses": [] },
+            { "course_name": "民法物權", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["民法總則"], "alternative_courses": [] },
+            { "course_name": "身分法", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["民法總則"], "alternative_courses": [] },
+            { "course_name": "民事訴訟法(一)", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "基礎法學導論", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "票據法", "credits": { "min": 2, "max": 2, "display": "2" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "保險法", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "商事法總論與公司法", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "證券交易法", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "憲法", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "行政法(一)", "credits": { "min": 2, "max": 2, "display": "2" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "行政法(二)", "credits": { "min": 2, "max": 2, "display": "2" }, "offering_type": "隨系附修", "prerequisites_internal": ["行政法(一)"], "alternative_courses": [] },
+            { "course_name": "國際公法", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "英美法導論", "credits": { "min": 2, "max": 2, "display": "2" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "法律倫理", "credits": { "min": 2, "max": 2, "display": "2" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "民事綜合研習", "credits": { "min": 2, "max": 2, "display": "2" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "刑事法綜合研習", "credits": { "min": 2, "max": 2, "display": "2" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "公法綜合研習", "credits": { "min": 2, "max": 2, "display": "2" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "財經法綜合研習", "credits": { "min": 2, "max": 2, "display": "2" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] }
+          ]
+        },
+        {
+          "group_name": "其他法律科目",
+          "min_credits_required": 10,
+          "courses": [
+            {
+              "course_name": "本系其他法律科目",
+              "credits": { "min": 10, "max": 10, "display": "10" },
+              "offering_type": "隨系附修",
+              "prerequisites_internal": [],
+              "alternative_courses": [],
+              "note": "指法律系開設之專業科目，不含民法概要、商事法等非法律系學生課程。"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "special_regulations": [
+    "修畢公行、政治系之憲法相關課程可免修法律系憲法；修畢他系行政法 4 學分者可免修法律系行政法(一)(二)。",
+    "因免修而降低之總學分，最低不得低於 20 學分。",
+    "本系開設之日文、德文及法文不計入輔系總學分。"
+  ]
+}

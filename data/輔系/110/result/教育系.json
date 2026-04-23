@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "department": "教育學系",
+    "applicable_year": "110",
+    "last_updated": null,
+    "contact_extension": "62331"
+  },
+  "credit_summary": {
+    "total_credits_required": 30,
+    "breakdown": {
+      "required": 0,
+      "group_elective": 18,
+      "general_elective": 12
+    },
+    "foundation_credits_not_counted": 0,
+    "note": "應修總學分 30 學分，且表列基礎科目應至少修畢 18 學分。"
+  },
+  "prerequisites_external": [],
+  "course_structure": {
+    "required_courses": [],
+    "group_electives": {
+      "selection_rule": "表列基礎科目包含必修與群修課程，應至少修畢 18 學分。其中群修課程為 8 科選 5 科。",
+      "groups": [
+        {
+          "group_name": "基礎必修課程",
+          "min_credits_required": 0,
+          "courses": [
+            { "course_name": "教育概論", "credits": { "min": 2, "max": 3, "display": "2-3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "教育心理學", "credits": { "min": 2, "max": 3, "display": "2-3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "教育哲學", "credits": { "min": 2, "max": 3, "display": "2-3" }, "offering_type": "隨系附修", "prerequisites_internal": ["教育概論（成績需達85分以上）"], "alternative_courses": [] },
+            { "course_name": "教育社會學", "credits": { "min": 2, "max": 3, "display": "2-3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] }
+          ]
+        },
+        {
+          "group_name": "基礎群修課程 (8選5)",
+          "min_credits_required": 10,
+          "courses": [
+            { "course_name": "教學原理", "credits": { "min": 2, "max": 3, "display": "2-3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "班級經營", "credits": { "min": 2, "max": 3, "display": "2-3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "教學媒體與運用", "credits": { "min": 2, "max": 3, "display": "2-3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "課程發展與設計", "credits": { "min": 2, "max": 3, "display": "2-3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "輔導原理與實務", "credits": { "min": 2, "max": 3, "display": "2-3" }, "offering_type": "隨系附修", "prerequisites_internal": ["教育概論（成績需達85分以上）"], "alternative_courses": [] },
+            { "course_name": "特殊教育導論", "credits": { "min": 2, "max": 3, "display": "2-3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "學習評量", "credits": { "min": 2, "max": 3, "display": "2-3" }, "offering_type": "隨系附修", "prerequisites_internal": ["教育概論（成績需達85分以上）"], "alternative_courses": [] },
+            { "course_name": "教育議題專題", "credits": { "min": 2, "max": 3, "display": "2-3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] }
+          ]
+        }
+      ]
+    }
+  },
+  "special_regulations": [
+    "應修學分以本系或本校師資培育中心所開課程為原則。",
+    "辦理學分抵免之科目不足教育系輔系規定之學分數時，依校內雙主修及輔系辦法規定辦理。",
+    "續修門檻：教育概論成績需達 85 分以上，始得續修教育哲學、輔導原理與實務及學習評量。"
+  ]
+}

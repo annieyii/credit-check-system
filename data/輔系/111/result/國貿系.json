@@ -1,0 +1,122 @@
+{
+  "metadata": {
+    "department": "國際經營與貿易學系",
+    "applicable_year": "111",
+    "last_updated": null,
+    "contact_extension": "87006"
+  },
+  "credit_summary": {
+    "total_credits_required": 21,
+    "breakdown": {
+      "required": 6,
+      "group_elective": 15,
+      "general_elective": 0
+    },
+    "foundation_credits_not_counted": 15,
+    "note": "先修科目（微積分、統計、經濟）不計入應修總學分之內。"
+  },
+  "prerequisites_external": [
+    {
+      "subject": "微積分甲",
+      "credits": { "min": 3, "max": 3, "display": "3" },
+      "is_mandatory": true,
+      "can_be_taken_concurrently": false
+    },
+    {
+      "subject": "統計學(一)",
+      "credits": { "min": 3, "max": 3, "display": "3" },
+      "is_mandatory": true,
+      "can_be_taken_concurrently": false
+    },
+    {
+      "subject": "統計學(二)",
+      "credits": { "min": 3, "max": 3, "display": "3" },
+      "is_mandatory": true,
+      "can_be_taken_concurrently": false
+    },
+    {
+      "subject": "經濟學",
+      "credits": { "min": 6, "max": 6, "display": "3/3" },
+      "is_mandatory": true,
+      "can_be_taken_concurrently": false
+    },
+    {
+      "subject": "初級會計學(一)",
+      "credits": { "min": 3, "max": 3, "display": "3" },
+      "is_mandatory": true,
+      "can_be_taken_concurrently": false
+    },
+    {
+      "subject": "初級會計學(二)",
+      "credits": { "min": 3, "max": 3, "display": "3" },
+      "is_mandatory": true,
+      "can_be_taken_concurrently": false
+    }
+  ],
+  "course_structure": {
+    "required_courses": [
+      {
+        "course_name": "行銷管理",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "財務管理",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": ["初級會計學(一)", "初級會計學(二)"],
+        "alternative_courses": [],
+        "recommended_year": null
+      }
+    ],
+    "group_electives": {
+      "selection_rule": "群A、B、C、D中至少各修一門，共五門15學分。",
+      "groups": [
+        {
+          "group_name": "群A：法律 (Group_A_Law)",
+          "min_credits_required": 3,
+          "courses": [
+            { "course_name": "國際買賣法", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "國際經貿法", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "國際經貿法專題", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["國際經貿法"], "alternative_courses": [] }
+          ]
+        },
+        {
+          "group_name": "群B：理論 (Group_B_Theory)",
+          "min_credits_required": 3,
+          "courses": [
+            { "course_name": "國貿理論與政策", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "貿易與投資專題", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "國際金融", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "國際金融專題", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] }
+          ]
+        },
+        {
+          "group_name": "群C：管理 (Group_C_Management)",
+          "min_credits_required": 3,
+          "courses": [
+            { "course_name": "國際企業管理", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["管理學"], "alternative_courses": [] },
+            { "course_name": "國際行銷管理", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] }
+          ]
+        },
+        {
+          "group_name": "群D：財金資料 (Group_D_Finance_Data)",
+          "min_credits_required": 3,
+          "courses": [
+            { "course_name": "國際財務管理", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "投資學", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": ["數據化投資分析"] },
+            { "course_name": "用Python學財務計量", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] }
+          ]
+        }
+      ]
+    }
+  },
+  "special_regulations": [
+    "群修課共計需修習五門 15 學分，且 A、B、C、D 四群中至少各修一門課程。",
+    "群修課需修讀國貿系開課，不得至外系修讀。",
+    "先修科目（微積分、統計、經濟）不計入應修總學分之內。"
+  ]
+}

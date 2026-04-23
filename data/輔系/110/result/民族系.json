@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "department": "民族學系",
+    "applicable_year": "110",
+    "last_updated": null,
+    "contact_extension": null
+  },
+  "credit_summary": {
+    "total_credits_required": 30,
+    "breakdown": {
+      "required": 0,
+      "group_elective": 0,
+      "general_elective": 0
+    },
+    "foundation_credits_not_counted": 0,
+    "note": "應修總學分：30學分。含核心課程至少三門、語言類至少一門、社會文化類至少兩門。"
+  },
+  "prerequisites_external": [],
+  "course_structure": {
+    "required_courses": [],
+    "group_electives": {
+      "selection_rule": "核心課程需選修至少三門，語言類至少一門，社會文化類至少兩門，其餘學分由本系選修補足。",
+      "groups": [
+        {
+          "group_name": "民族核心課程",
+          "min_credits_required": 0,
+          "courses": [
+            { "course_name": "民族學", "credits": { "min": 6, "max": 6, "display": "6" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "中國民族史", "credits": { "min": 6, "max": 6, "display": "6" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "台灣民族史", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "民族誌概論", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "台灣民族誌", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "中國民族誌", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "世界民族誌", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "民族政策", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "民族學研究方法", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "民族語言學概論", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] }
+          ]
+        },
+        {
+          "group_name": "民族語言類",
+          "min_credits_required": 4,
+          "courses": [
+            { "course_name": "滿語", "credits": { "min": 4, "max": 4, "display": "4" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "蒙古語:傳統蒙文", "credits": { "min": 4, "max": 4, "display": "4" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "蒙古語:息利爾蒙文", "credits": { "min": 4, "max": 4, "display": "4" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "維吾爾語", "credits": { "min": 4, "max": 4, "display": "4" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "藏語", "credits": { "min": 4, "max": 4, "display": "4" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "壯語", "credits": { "min": 4, "max": 4, "display": "4" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "台灣原住民語言—阿美語", "credits": { "min": 4, "max": 4, "display": "4" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "台灣原住民語言—賽德克語", "credits": { "min": 4, "max": 4, "display": "4" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] }
+          ]
+        },
+        {
+          "group_name": "民族社會文化類",
+          "min_credits_required": 0,
+          "courses": [
+            { "course_name": "民族宗教", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "民族文學", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "民族經濟", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "民族藝術", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "民族教育", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "民族地理", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "民族理論", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "民族問題", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] }
+          ]
+        }
+      ]
+    }
+  },
+  "special_regulations": [
+    "核心課程需選修至少三門，語言類至少一門，社會文化類至少兩門 。",
+    "一學年課程需上、下學期皆修畢，才承認為本系輔系學分 。"
+  ]
+}

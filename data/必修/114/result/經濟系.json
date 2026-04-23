@@ -1,0 +1,410 @@
+{
+    "metadata": {
+        "source_file": "經濟系.html",
+        "dept_name": "經濟學系\n                         【學士班】\n                         專業必修科目表一覽表",
+        "applicable_year": "114",
+        "min_graduation_credits": 128,
+        "compulsory_credits_required": 51
+    },
+    "required_courses": [
+        {
+            "name": "微積分",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": "000711",
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": "000711",
+            "remarks": "無"
+        },
+        {
+            "name": "經濟學",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 1,
+            "schedule": {
+                "Y1S1": true,
+                "Y1S2": true,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "無"
+        },
+        {
+            "name": "個體經濟學",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "經濟學"
+        },
+        {
+            "name": "統計學（一）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
+            "remarks": "無"
+        },
+        {
+            "name": "統計學（二）",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
+            "remarks": "無"
+        },
+        {
+            "name": "總體經濟學",
+            "type": "必修",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": true,
+                "Y3S1": false,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "經濟學"
+        },
+        {
+            "name": "經濟數學（一）",
+            "type": "群A",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": true,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": true,
+                "Y4S2": true
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本院開課",
+            "dual_major_course_code": null,
+            "remarks": "微積分"
+        },
+        {
+            "name": "貨幣銀行學",
+            "type": "群A",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 2,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": true,
+                "Y2S2": true,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "經濟學"
+        },
+        {
+            "name": "計量經濟學（一）",
+            "type": "群A",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": true,
+                "Y4S2": true
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "統計學（一）（二）"
+        },
+        {
+            "name": "計量經濟學（二）",
+            "type": "群A",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": true,
+                "Y4S2": true
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本院開課",
+            "dual_major_course_code": null,
+            "remarks": "計量經濟學（一）"
+        },
+        {
+            "name": "財政學",
+            "type": "群A",
+            "credits": 6,
+            "semesters": 2,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": true,
+                "Y4S2": true
+            },
+            "recognition": "不限",
+            "course_code": null,
+            "dual_major_recognition": "不限",
+            "dual_major_course_code": null,
+            "remarks": "經濟學"
+        },
+        {
+            "name": "國際金融",
+            "type": "群A",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": true,
+                "Y4S2": true
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "經濟學"
+        },
+        {
+            "name": "國際貿易",
+            "type": "群A",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": true,
+                "Y4S2": true
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "經濟學"
+        },
+        {
+            "name": "產業經濟學（一）",
+            "type": "群A",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": true,
+                "Y4S2": true
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本院開課",
+            "dual_major_course_code": null,
+            "remarks": "經濟學"
+        },
+        {
+            "name": "產業經濟學（二）",
+            "type": "群A",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": true,
+                "Y4S2": true
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本院開課",
+            "dual_major_course_code": null,
+            "remarks": "經濟學"
+        },
+        {
+            "name": "勞動經濟學",
+            "type": "群A",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": true,
+                "Y4S2": true
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本院開課",
+            "dual_major_course_code": null,
+            "remarks": "經濟學"
+        },
+        {
+            "name": "經濟思想史",
+            "type": "群A",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": true,
+                "Y4S2": true
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本系開課",
+            "dual_major_course_code": null,
+            "remarks": "經濟學"
+        },
+        {
+            "name": "環境經濟學",
+            "type": "群A",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": true,
+                "Y4S2": true
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本院開課",
+            "dual_major_course_code": null,
+            "remarks": "經濟學"
+        }
+    ],
+    "special_rules": [
+        "修課特殊規定：1.各課程勾選之學年度為建議修課學年度，學生可依學習情況適度調整，惟須注意先修科目之規定。2.群修42學分須至少修習21學分（含）以上；全學年群修課程，僅修畢上學期或下學期，但成績及格即採計為本系群修學分。3.必修科目51學分須修習本系開設之課程，若欲修習外系或他校（國外）相關替代課程，均須檢附證明並經系主任核可後方能承認其學分。4.全民國防教育軍事訓練及體育選修課不計入畢業學分。"
+    ]
+}

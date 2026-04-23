@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "department": "社會學系",
+    "applicable_year": "114",
+    "last_updated": null,
+    "contact_extension": "50857"
+  },
+  "credit_summary": {
+    "total_credits_required": 23,
+    "breakdown": {
+      "required": 3,
+      "group_elective": 8,
+      "general_elective": 12
+    },
+    "foundation_credits_not_counted": 0,
+    "note": "應修總學分：23學分。"
+  },
+  "prerequisites_external": [],
+  "course_structure": {
+    "required_courses": [
+      { "course_name": "社會學", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] }
+    ],
+    "group_electives": {
+      "selection_rule": "五選二（需修滿 8 學分） [cite: 4]。",
+      "groups": [
+        {
+          "group_name": "群修",
+          "min_credits_required": 8,
+          "courses": [
+            { "course_name": "社會統計(一)", "credits": { "min": 4, "max": 4, "display": "4" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": ["社會統計"] },
+            { "course_name": "社會學理論(上學期)", "credits": { "min": 4, "max": 4, "display": "4" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "社會學理論(下學期)", "credits": { "min": 4, "max": 4, "display": "4" }, "offering_type": "隨系附修", "prerequisites_internal": ["社會學理論(上)"], "alternative_courses": [] },
+            { "course_name": "社會研究法(一)", "credits": { "min": 4, "max": 4, "display": "4" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": ["社會研究方法"] },
+            { "course_name": "社會研究法(二)", "credits": { "min": 4, "max": 4, "display": "4" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": ["社會研究方法"] }
+          ]
+        },
+        {
+          "group_name": "選修",
+          "min_credits_required": 12,
+          "courses": [
+            { "course_name": "社會統計(二)", "credits": { "min": 4, "max": 4, "display": "4" }, "offering_type": "隨系附修", "prerequisites_internal": ["社會統計(一)"], "alternative_courses": [] },
+            { "course_name": "大數據社會分析", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "人口、家庭與空間研究", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "質性研究設計", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "進階質性研究方法", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "社會組織", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "新社會思想史", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "區域研究", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] }          ]
+        }
+      ]
+    }
+  },
+  "special_regulations": [
+    "社會統計(一)(二)可以全學年「社會統計」上下學期課程替代 [cite: 4]。",
+    "社會研究方法(一)(二)可以全學年「社會研究方法」上下學期課程替代 [cite: 4]。"
+  ]
+}

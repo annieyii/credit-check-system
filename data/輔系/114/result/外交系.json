@@ -1,0 +1,95 @@
+{
+  "metadata": {
+    "department": "外交學系",
+    "applicable_year": "114",
+    "last_updated": null,
+    "contact_extension": "50916"
+  },
+  "credit_summary": {
+    "total_credits_required": 30,
+    "breakdown": {
+      "required": 10,
+      "group_elective": 3,
+      "general_elective": 17
+    },
+    "foundation_credits_not_counted": 0,
+    "note": "應修總學分：30學分"
+  },
+  "prerequisites_external": [],
+  "course_structure": {
+    "required_courses": [
+      {
+        "course_name": "國際關係",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "另行開課",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": "需修習輔系專班或外交整合開課，須繳交學分費"
+      },
+      {
+        "course_name": "國際公法",
+        "credits": { "min": 4, "max": 6, "display": "4-6" },
+        "offering_type": "另行開課",
+        "prerequisites_internal": ["國際關係"],
+        "alternative_courses": [],
+        "recommended_year": null
+      },
+      {
+        "course_name": "國際組織",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "另行開課",
+        "prerequisites_internal": ["國際關係"],
+        "alternative_courses": [],
+        "recommended_year": null
+      }
+    ],
+    "group_electives": {
+      "selection_rule": "西洋外交史、中國外交史至少需修習一門課程，且輔系生需修專班",
+      "groups": [
+        {
+          "group_name": "外交史群修",
+          "min_credits_required": 3,
+          "courses": [
+            {
+              "course_name": "西洋外交史",
+              "credits": { "min": 3, "max": 3, "display": "3" },
+              "offering_type": "另行開課",
+              "prerequisites_internal": [],
+              "alternative_courses": []
+            },
+            {
+              "course_name": "中國外交史",
+              "credits": { "min": 3, "max": 3, "display": "3" },
+              "offering_type": "另行開課",
+              "prerequisites_internal": [],
+              "alternative_courses": []
+            }
+          ]
+        },
+        {
+          "group_name": "一般選修",
+          "min_credits_required": 0,
+          "courses": [
+            { "course_name": "中國大陸研究", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "領導與外交決策分析", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["國際關係"], "alternative_courses": [] },
+            { "course_name": "國際政治經濟學", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["國際關係"], "alternative_courses": [] },
+            { "course_name": "國際安全", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "另行開課", "prerequisites_internal": ["國際關係"], "alternative_courses": [] },
+            { "course_name": "國際談判", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": ["國際關係"], "alternative_courses": [] },
+            { "course_name": "區域研究", "credits": { "min": 3, "max": 6, "display": "3-6" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "國際經貿事務", "credits": { "min": 2, "max": 6, "display": "2-6" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "外交學系選修", "credits": { "min": 2, "max": 6, "display": "2-6" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] }
+          ]
+        }
+      ]
+    }
+  },
+  "special_regulations": [
+    "西洋外交史和中國外交史至少需修習一門，且輔系生需修專班 。",
+    "「國際關係」必修課請修習輔系專班或外交整合開課，均須繳交學分費 。",
+    "區域研究與國際經貿事務各類別，各至多選修兩門 。",
+    "外交學系選修限系內開設之課程，以 6 學分為限 。",
+    "設有先修科目之科目需修習完畢後方可修習進階課程 。",
+    "所有科目限修外交系及外交輔系班級，若修讀他系同名科目需徵求本系同意 。",
+    "外交輔系專班（另行開課）之學分費繳交依校方規定辦理 。"
+  ]
+}

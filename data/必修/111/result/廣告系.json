@@ -1,0 +1,146 @@
+{
+    "metadata": {
+        "source_file": "廣告系.html",
+        "dept_name": "廣告學系\n                         【學士班】\n                         專業必修科目表一覽表",
+        "applicable_year": "111",
+        "min_graduation_credits": 128,
+        "compulsory_credits_required": 24
+    },
+    "required_courses": [
+        {
+            "name": "視覺傳達設計",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本院開課",
+            "dual_major_course_code": null,
+            "remarks": "「傳播與設計主修」必修"
+        },
+        {
+            "name": "廣告創意",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本院開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本院開課",
+            "dual_major_course_code": null,
+            "remarks": "「傳播與設計主修」必修"
+        },
+        {
+            "name": "廣告策略與企劃",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": false,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本院開課",
+            "dual_major_course_code": null,
+            "remarks": "「策略與創意溝通主修」必修"
+        },
+        {
+            "name": "公關策略與企劃",
+            "type": "必修",
+            "credits": 3,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": false,
+                "Y3S2": true,
+                "Y4S1": false,
+                "Y4S2": false
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本院開課",
+            "dual_major_course_code": null,
+            "remarks": "「策略與創意溝通主修」必修"
+        },
+        {
+            "name": "策略與創意溝通主修群修課程",
+            "type": "群A",
+            "credits": 18,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": true,
+                "Y4S2": true
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本院開課",
+            "dual_major_course_code": null,
+            "remarks": "「策略與創意溝通主修」群修"
+        },
+        {
+            "name": "傳播與設計主修群修課程",
+            "type": "群B",
+            "credits": 18,
+            "semesters": 1,
+            "suggested_year": 3,
+            "schedule": {
+                "Y1S1": false,
+                "Y1S2": false,
+                "Y2S1": false,
+                "Y2S2": false,
+                "Y3S1": true,
+                "Y3S2": true,
+                "Y4S1": true,
+                "Y4S2": true
+            },
+            "recognition": "需為本系開課",
+            "course_code": null,
+            "dual_major_recognition": "需為本院開課",
+            "dual_major_course_code": null,
+            "remarks": "「傳播與設計主修」群修"
+        }
+    ],
+    "special_rules": [
+        "修課特殊規定：1.「全民國防教育軍事訓練」和「體育」選修課不列入畢業總學分。2.修讀本系者至少須修畢24學分，含各主修的必修2科共6學分；其他18學分必須於「策略與創意溝通主修群修課程」及「傳播與設計主修群修課程」中修讀18學分。3.「策略與創意溝通主修群修課程科目表」、「傳播與設計主修群修課程科目表」請見本系網頁。"
+    ]
+}

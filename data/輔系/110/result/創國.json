@@ -1,0 +1,92 @@
+{
+  "metadata": {
+    "department": "創新國際學院學士班",
+    "applicable_year": "110",
+    "last_updated": null,
+    "contact_extension": "62782"
+  },
+  "credit_summary": {
+    "total_credits_required": 21,
+    "breakdown": {
+      "required": 6,
+      "group_elective": 9,
+      "general_elective": 6
+    },
+    "foundation_credits_not_counted": 12,
+    "note": "應修總學分為 21 學分。先修科目不納入輔系學分合計。"
+  },
+  "prerequisites_external": [
+    {
+      "subject": "經濟學",
+      "credits": { "min": 6, "max": 6, "display": "6" },
+      "is_mandatory": true,
+      "can_be_taken_concurrently": true
+    },
+    {
+      "subject": "統計學(一)",
+      "credits": { "min": 3, "max": 3, "display": "3" },
+      "is_mandatory": true,
+      "can_be_taken_concurrently": true
+    },
+    {
+      "subject": "統計學(二)",
+      "credits": { "min": 3, "max": 3, "display": "3" },
+      "is_mandatory": true,
+      "can_be_taken_concurrently": true
+    }
+  ],
+  "course_structure": {
+    "required_courses": [
+      {
+        "course_name": "程式設計",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [
+          { "course_name": "程式設計(一)", "credits": 3 },
+          { "course_name": "計算思維與Python程式設計", "credits": 3 }
+        ],
+        "recommended_year": null
+      },
+      {
+        "course_name": "全球研究導論",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "隨系附修",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": null
+      }
+    ],
+    "group_electives": {
+      "selection_rule": "須修滿群修A（6學分）及群修B（3學分）。",
+      "groups": [
+        {
+          "group_name": "群修A",
+          "min_credits_required": 6,
+          "courses": [
+            { "course_name": "人類學", "credits": { "min": 0, "max": 0, "display": "未註明" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "政治學", "credits": { "min": 0, "max": 0, "display": "未註明" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "國際公法", "credits": { "min": 0, "max": 0, "display": "未註明" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "國際人權法", "credits": { "min": 0, "max": 0, "display": "未註明" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "資料科學", "credits": { "min": 0, "max": 6, "display": "未註明" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "AI導論", "credits": { "min": 0, "max": 0, "display": "未註明" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [{ "course_name": "電腦科學概論", "credits": 3 }, { "course_name": "程式設計(二)", "credits": 3 }] },
+            { "course_name": "行政學", "credits": { "min": 0, "max": 0, "display": "未註明" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [{ "course_name": "比較政府與政治", "credits": 3 }] },
+            { "course_name": "社會學", "credits": { "min": 0, "max": 0, "display": "未註明" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "國際創新管理", "credits": { "min": 0, "max": 0, "display": "未註明" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] }
+          ]
+        },
+        {
+          "group_name": "群修B",
+          "min_credits_required": 3,
+          "courses": [
+            { "course_name": "專題課程", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "隨系附修", "prerequisites_internal": [], "alternative_courses": [] }
+          ]
+        }
+      ]
+    }
+  },
+  "special_regulations": [
+    "先修科目（經濟學、統計學）可與輔系課程同時修讀。",
+    "先修科目並不納入合計輔系學分之內。"
+  ]
+}

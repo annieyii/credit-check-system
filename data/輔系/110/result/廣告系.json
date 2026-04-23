@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "department": "廣告學系",
+    "applicable_year": "110",
+    "last_updated": null,
+    "contact_extension": null
+  },
+  "credit_summary": {
+    "total_credits_required": 21,
+    "breakdown": {
+      "required": 9,
+      "group_elective": 12,
+      "general_elective": 0
+    },
+    "foundation_credits_not_counted": 0,
+    "note": "本系輔系共需修滿 21 學分，含院必修 9 學分及廣告系選修 12 學分。"
+  },
+  "prerequisites_external": [],
+  "course_structure": {
+    "required_courses": [
+      {
+        "course_name": "傳播概論",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "單學期課程",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": "一年級"
+      },
+      {
+        "course_name": "傳播與社會",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "單學期課程",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": "一年級"
+      },
+      {
+        "course_name": "資料分析基礎與策略",
+        "credits": { "min": 3, "max": 3, "display": "3" },
+        "offering_type": "單學期課程",
+        "prerequisites_internal": [],
+        "alternative_courses": [],
+        "recommended_year": "二年級"
+      }
+    ],
+    "group_electives": {
+      "selection_rule": "由指定的 6 門選修課中，自行選讀 4 門課 (共 12 學分)。",
+      "groups": [
+        {
+          "group_name": "選修",
+          "min_credits_required": 12,
+          "courses": [
+            { "course_name": "數位行銷企劃實務", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "單學期課程", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "組織中的關係管理", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "單學期課程", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "消費行為", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "單學期課程", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "創意溝通專題", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "單學期課程", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "策略溝通專題:品牌行銷", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "單學期課程", "prerequisites_internal": [], "alternative_courses": [] },
+            { "course_name": "公共關係與公眾管理", "credits": { "min": 3, "max": 3, "display": "3" }, "offering_type": "單學期課程", "prerequisites_internal": [], "alternative_courses": [] }
+          ]
+        }
+      ]
+    }
+  },
+  "special_regulations": [
+    "必修科目之灌檔僅限本系生；輔系生需自行選課，不適用灌檔。"
+  ]
+}

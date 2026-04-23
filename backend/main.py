@@ -1,5 +1,7 @@
+from typing import Any
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
 from backend.database import get_db
 
 app = FastAPI()
@@ -62,7 +64,20 @@ def get_required_courses(dept_name: str, year: str = "114"):
     return [dict(row) for row in rows]
 
 
-# --- 3. 健康檢查 ---
+# --- 3. 上傳並分析全人成績單 ---
+class AnalyzeRequest(BaseModel):
+    role: str
+    data: Any
+
+
+@app.post("/api/v1/analyze")
+def analyze(payload: AnalyzeRequest):
+    if not payload.data:
+        raise HTTPException(status_code=422, detail="資料不可為空")
+    return {"message": "上傳成功，資料格式正確"}
+
+
+# --- 4. 健康檢查 ---
 @app.get("/")
 def root():
     return {"status": "ok", "message": "畢業學分計算系統 API 運作中"}

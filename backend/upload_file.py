@@ -1,3 +1,5 @@
+# 目前沒有使用此檔案
+
 import json
 from fastapi import FastAPI, UploadFile, File, HTTPException
 

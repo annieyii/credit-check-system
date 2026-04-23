@@ -62,18 +62,3 @@ CREATE TABLE IF NOT EXISTS special_rules (
 
     FOREIGN KEY (department_id) REFERENCES departments(id)
 );
-
--- =============================================
--- 5. 學生修課紀錄表（給 upload API 寫入用）
--- =============================================
-CREATE TABLE IF NOT EXISTS student_records (
-    id              INTEGER PRIMARY KEY AUTOINCREMENT,
-    student_id      TEXT NOT NULL,      -- 學號
-    course_name     TEXT NOT NULL,      -- 課程名稱
-    course_code     TEXT,               -- 課號
-    credits         INTEGER,            -- 學分
-    grade           TEXT,               -- 成績
-    year            TEXT,               -- 修課學年度
-    semester        TEXT,               -- 修課學期 1 or 2
-    uploaded_at     TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);

@@ -4,35 +4,40 @@ import { useState, useCallback } from "react"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Upload, FileJson, X } from "lucide-react"
+import { useErrorHandler } from "@/hooks/useErrorHandler"
+import ErrorMessage from "@/components/ErrorMessage"
 
 export default function Dashboard() {
   const [studentType, setStudentType] = useState<"general" | "dual">("general")
   const [jsonData, setJsonData] = useState<string | null>(null)
   const [fileName, setFileName] = useState<string | null>(null)
   const [isDragging, setIsDragging] = useState(false)
-  const [error, setError] = useState<string | null>(null)
 
+  const { error, errorType, isLoading, clearError, submitToApi, setError, setErrorType } = useErrorHandler()
   const handleFile = useCallback((file: File) => {
-    setError(null)
-    
-    if (!file.name.endsWith(".json")) {
-      setError("請上傳 .json 格式的檔案")
-      return
-    }
+  clearError()  // 先清空舊的錯誤
 
-    const reader = new FileReader()
-    reader.onload = (e) => {
-      try {
-        const text = e.target?.result as string
-        const parsed = JSON.parse(text)
-        setJsonData(JSON.stringify(parsed, null, 2))
-        setFileName(file.name)
-      } catch {
-        setError("無法解析 JSON 檔案，請確認檔案格式正確")
-      }
+  if (!file.name.endsWith(".json")) {
+    setError("請上傳 .json 格式的檔案")  // 不是 json 才顯示錯誤
+    setErrorType("format")
+    return
+  }
+
+  const reader = new FileReader()
+  reader.onload = (e) => {
+    try {
+      const text = e.target?.result as string
+      const parsed = JSON.parse(text)
+      setJsonData(JSON.stringify(parsed, null, 2))
+      setFileName(file.name)
+      submitToApi(file)
+    } catch {
+      setError("無法解析 JSON 檔案，請確認檔案格式正確")
+      setErrorType("format")
     }
-    reader.readAsText(file)
-  }, [])
+  }
+  reader.readAsText(file)
+}, [clearError, submitToApi, setError, setErrorType])
 
   const handleDrop = useCallback((e: React.DragEvent) => {
     e.preventDefault()
@@ -60,8 +65,8 @@ export default function Dashboard() {
   const clearFile = useCallback(() => {
     setJsonData(null)
     setFileName(null)
-    setError(null)
-  }, [])
+    clearError()
+  }, [clearError])
 
   return (
     <div className="min-h-screen bg-background p-6 md:p-10">
@@ -135,9 +140,15 @@ export default function Dashboard() {
                 </div>
               </div>
             </div>
-            
-            {error && (
-              <p className="text-sm text-destructive mt-3">{error}</p>
+
+            {/* 錯誤訊息 */}
+            <ErrorMessage message={error} type={errorType} onClose={clearError} />
+
+            {/* 載入中 */}
+            {isLoading && (
+              <p className="text-center text-muted-foreground text-sm mt-4">
+                分析中，請稍候...
+              </p>
             )}
           </CardContent>
         </Card>

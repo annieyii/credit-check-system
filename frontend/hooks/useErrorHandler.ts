@@ -14,18 +14,16 @@ export function useErrorHandler() {
     setErrorType("")
   }, [])
 
-  const submitToApi = useCallback(async (file: File) => {
+  const submitToApi = useCallback(async (data: object, role: string) => {
     setIsLoading(true)
     setError(null)
     setErrorType("")
     setResult(null)
 
     try {
-      const formData = new FormData()
-      formData.append("file", file)
-
-      const res = await axios.post("http://127.0.0.1:8000/upload_file", formData, {
-        headers: { "Content-Type": "multipart/form-data" },
+      const res = await axios.post("http://127.0.0.1:8000/api/v1/analyze", {
+        role,
+        data,
       })
       setResult(res.data)
 

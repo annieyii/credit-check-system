@@ -30,7 +30,7 @@ export default function Dashboard() {
       const parsed = JSON.parse(text)
       setJsonData(JSON.stringify(parsed, null, 2))
       setFileName(file.name)
-      submitToApi(file)
+      submitToApi(parsed, studentType)
     } catch {
       setError("無法解析 JSON 檔案，請確認檔案格式正確")
       setErrorType("format")

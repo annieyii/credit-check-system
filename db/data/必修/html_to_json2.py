@@ -38,8 +38,11 @@ for filename in os.listdir(input_folder):
         # --- 1. 系名 ---
         title_tag = soup.find('font', {'face': '標楷體'})
         if title_tag:
-            dept_info["metadata"]["dept_name"] = title_tag.get_text(strip=True)
-
+            # 取得原始文字： "土耳其語文學系\n 【學士班】\n 專業必修科目表一覽表"
+            raw_title = title_tag.get_text(strip=True)
+            # 修正後： "土耳其語文學系"
+            dept_info["metadata"]["dept_name"] = re.sub(r'【學士班】.*|專業必修科目表一覽表.*', '', raw_title).strip()
+        
         # --- 2. 畢業學分與必修學分 ---
         page_text = soup.get_text()
         grad_min = re.search(r'最低畢業總學分數：(\d+)', page_text)

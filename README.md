@@ -100,6 +100,39 @@ pnpm dev
 python db/database/init_db.py
 python db/database/seed_db.py
 ```
+
+### 終端機查詢
+```bash
+sqlite3 db/database/curriculum.db
+```
+```bash
+.tables   # 先看表
+.schema departments      # 看欄位
+.schema required_courses  
+```
+```bash
+-- 先找有哪些系所/年度
+SELECT id, dept_name, applicable_year
+FROM departments
+ORDER BY applicable_year DESC
+LIMIT 20;
+
+-- 查某系某年度的必修課（含建議年級）
+SELECT rc.name, rc.credits, rc.type, rc.suggested_year
+FROM required_courses rc
+JOIN departments d ON rc.department_id = d.id
+WHERE d.dept_name LIKE '資訊%' AND d.applicable_year = '114'
+ORDER BY rc.suggested_year, rc.name;
+
+-- 查特殊規定
+SELECT sr.rule_order, sr.rule_text
+FROM special_rules sr
+JOIN departments d ON sr.department_id = d.id
+WHERE d.dept_name LIKE '資訊%' AND d.applicable_year = '114'
+ORDER BY sr.rule_order;
+```
+
+
 ### 後端查詢範例（Python）
 ```python
 import sqlite3

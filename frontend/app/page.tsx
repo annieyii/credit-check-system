@@ -6,6 +6,144 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Upload, FileJson, X } from "lucide-react"
 import { useErrorHandler } from "@/hooks/useErrorHandler"
 import ErrorMessage from "@/components/ErrorMessage"
+import { z } from "zod"
+
+const coursePlanSchema = z
+  .object({
+    liberalTotal: z.string(),
+    programName: z.string(),
+    requiredPoint: z.string(),
+    groupPoint: z.string(),
+    programRemark: z.string(),
+    groupRemark: z.string(),
+    liberalChinese: z.string(),
+    commonPhysical: z.string(),
+    liberalGeneral: z.string(),
+    commonPhysicalCount: z.string(),
+    requiredRemark: z.string(),
+    graduationCredit: z.string(),
+    commonLanguage: z.string(),
+    coursePlanTimestamp: z.string(),
+    liberalEnglish: z.string(),
+    commonLanguageCount: z.string(),
+    coursePlanSchyy: z.string(),
+  })
+  .passthrough()
+
+const aboutMeSchema = z
+  .object({
+    addMjrYN: z.string(),
+    studentNumber: z.string(),
+    englishName: z.string(),
+    chineseName: z.string(),
+    minor1: z.string(),
+    registerMajor: z.string(),
+    minor2: z.string(),
+    instructor: z.string(),
+    doubleMajor: z.string(),
+    thesisTitle: z.string(),
+    registerMinor: z.string(),
+    program: z.string(),
+    studentIdentity: z.string(),
+    studentIdentity2: z.string(),
+    registrationStatus: z.string(),
+    collegeEnglishExemption: z.string(),
+    registerOtherProgramList: z.array(z.unknown()),
+    registerDoubleMajor: z.string(),
+    departmentProgramGrade: z.string(),
+  })
+  .passthrough()
+
+const enrollmentHistoryItemSchema = z.object({
+  academicYearSemester: z.string(),
+  registerStatus: z.string(),
+  gradeName: z.string(),
+})
+
+const averageScoreItemSchema = z.object({
+  academicYear: z.string(),
+  semester: z.string(),
+  totalCredits: z.string(),
+  averageScore: z.string(),
+  rankingClass: z.string(),
+  averageCreditsOfSameGrader: z.string(),
+  classRankPercentage: z.string(),
+  averageScoresOfSameGrader: z.string(),
+  departmentRankPercentage: z.string(),
+  rankingDepartmentNumer: z.string(),
+  rankingClassDenom: z.string(),
+  rankingDepartmentDenom: z.string(),
+  rankingClassNumer: z.string(),
+  rankingDepartment: z.string(),
+}).passthrough()
+
+const totalAverageScoreSchema = z
+  .object({
+    averageCreditsOfSameGrader: z.string(),
+    classRankPercentage: z.string(),
+    averageScoresOfSameGrader: z.string(),
+    departmentRankPercentage: z.string(),
+    totalCredits: z.string(),
+    averageScore: z.string(),
+    rankingClass: z.string(),
+    rankingDepartmentNumer: z.string(),
+    rankingClassDenom: z.string(),
+    rankingDepartmentDenom: z.string(),
+    rankingClassNumer: z.string(),
+    rankingDepartment: z.string(),
+  })
+  .passthrough()
+
+const conductRecordItemSchema = z.object({
+  score: z.union([z.number(), z.string()]), // 你樣本是 number，但有些系統可能給字串
+  academicYear: z.string(),
+  semester: z.string(),
+})
+
+const gradeRecordItemSchema = z.object({
+  academicYearSemester: z.string(),
+  requiredOrElectiveCourse: z.string(),
+  score: z.string(), // 可能是「成績未到或無成績」
+  academicYear: z.string(),
+  courseCode: z.string(),
+  courseName: z.string(),
+  semester: z.string(),
+  credit: z.string(),
+  remark: z.string(),
+  scoreIfPass: z.string().optional(),
+}).passthrough()
+
+const exportStudentDataSchema = z.array(
+  z.object({
+    "課業學習": z.object({
+      totalCredits: z.string(),
+      coursePlan: coursePlanSchema,
+      aboutMe: aboutMeSchema,
+      showTcres: z.string(),
+      rankingClass: z.string(),
+      abroadGradeRecordList: z.array(z.unknown()),
+      graduationLanguageList: z.array(z.unknown()),
+      rankingClassDenom: z.string(),
+      rankingDepartmentDenom: z.string(),
+      waivedCourseList: z.array(z.unknown()),
+
+      enrollmentHistoryList: z.array(enrollmentHistoryItemSchema),
+      averageScoreList: z.array(averageScoreItemSchema),
+      alertForEvaluationList: z.array(z.unknown()),
+      totalAverageScore: totalAverageScoreSchema,
+      rankingDepartment: z.string(),
+      conductRecordList: z.array(conductRecordItemSchema),
+
+      gradeRecordList: z.array(
+        z.object({
+          AcademicYear: z.string(),
+          GradeRecords: z.array(gradeRecordItemSchema),
+        }).passthrough()
+      ),
+      alertForCreditList: z.array(z.unknown()),
+    }).passthrough(),
+  }).passthrough()
+).min(1)
 
 export default function Dashboard() {
   const [studentType, setStudentType] = useState<"general" | "dual">("general")
@@ -25,16 +163,25 @@ export default function Dashboard() {
 
   const reader = new FileReader()
   reader.onload = (e) => {
-    try {
-      const text = e.target?.result as string
-      const parsed = JSON.parse(text)
-      setJsonData(JSON.stringify(parsed, null, 2))
-      setFileName(file.name)
-      submitToApi(parsed, studentType)
-    } catch {
-      setError("無法解析 JSON 檔案，請確認檔案格式正確")
-      setErrorType("format")
-    }
+      try {
+        const text = e.target?.result as string
+
+        const parsed = JSON.parse(text)
+
+        const result = exportStudentDataSchema.safeParse(parsed)
+        if (!result.success) {
+          const issue = result.error.issues[0]
+          const path = issue?.path?.length ? issue.path.join(".") : "(root)"
+          setError(`JSON 欄位格式不符合範例：${path} ${issue.message}`)
+          return
+        }
+
+        setJsonData(JSON.stringify(parsed, null, 2))
+        setFileName(file.name)
+        
+      } catch {
+        setError("無法解析 JSON 檔案，請確認檔案格式正確")
+      }
   }
   reader.readAsText(file)
 }, [clearError, submitToApi, setError, setErrorType])

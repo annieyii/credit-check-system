@@ -178,6 +178,7 @@ export default function Dashboard() {
 
         setJsonData(JSON.stringify(parsed, null, 2))
         setFileName(file.name)
+        submitToApi(parsed, studentType)  // ← 加這行，才會送給後端
         
       } catch {
         setError("無法解析 JSON 檔案，請確認檔案格式正確")

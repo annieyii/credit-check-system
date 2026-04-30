@@ -3,15 +3,59 @@ import axios from "axios"
 
 export type ErrorType = "format" | "server" | "network" | "unknown" | ""
 
+export interface GraduationResult {
+  dept_name: string
+  applicable_year: string
+  summary: {
+    total_credits_earned: number
+    required_credits_earned: number
+    required_credits_needed: number
+    pe_credits_earned: number
+    pe_credits_needed: number
+    general_credits_earned: number
+    general_credits_needed: number
+    elective_credits_earned: number
+    elective_credits_needed: number
+  }
+  required_courses: {
+    passed: string[]
+    missing: string[]
+  }
+  general_education?: {
+    credits_earned: number
+    credits_needed: number
+    passed: boolean
+    by_category: Record<string, number>
+  }
+  physical_education?: {
+    credits_earned: number
+    credits_needed: number
+    passed: boolean
+    courses: string[]
+  }
+  elective?: {
+    credits_earned: number
+    credits_needed: number
+    passed: boolean
+    in_dept_credits: number
+    out_dept_credits: number
+  }
+  is_eligible_to_graduate: boolean
+}
+
 export function useErrorHandler() {
   const [error, setError] = useState<string | null>(null)
   const [errorType, setErrorType] = useState<ErrorType>("")
   const [isLoading, setIsLoading] = useState(false)
-  const [result, setResult] = useState<any>(null)
+  const [result, setResult] = useState<GraduationResult | null>(null)
 
   const clearError = useCallback(() => {
     setError(null)
     setErrorType("")
+  }, [])
+
+  const clearResult = useCallback(() => {
+    setResult(null)
   }, [])
 
   const submitToApi = useCallback(async (data: object, role: string) => {
@@ -21,14 +65,20 @@ export function useErrorHandler() {
     setResult(null)
 
     try {
-      const res = await axios.post("http://127.0.0.1:8000/api/v1/analyze", {
+      // 開發測試模式：使用 Mock API
+      // 正式環境：改回 "http://127.0.0.1:8000/api/v1/analyze"
+      const API_URL = process.env.NODE_ENV === "development" 
+        ? "/api/v1/analyze"  // Mock API
+        : "http://127.0.0.1:8000/api/v1/analyze"  // 真實後端
+      
+      const res = await axios.post(API_URL, {
         role,
         data,
       })
       setResult(res.data)
 
-    } catch (err: any) {
-      if (err.response) {
+    } catch (err: unknown) {
+      if (axios.isAxiosError(err) && err.response) {
         const status = err.response.status
         const detail = err.response.data?.detail || "請確認 JSON 內容是否正確"
 
@@ -48,12 +98,12 @@ export function useErrorHandler() {
           setErrorType("server")
           setError(`伺服器錯誤（${status}）：${detail}`)
         }
-      } else if (err.request) {
+      } else if (axios.isAxiosError(err) && err.request) {
         setErrorType("network")
         setError("無法連線到伺服器，請確認後端是否正常運行")
       } else {
         setErrorType("unknown")
-        setError(`發生未知錯誤：${err.message}`)
+        setError(`發生未知錯誤：${err instanceof Error ? err.message : "未知錯誤"}`)
       }
     } finally {
       setIsLoading(false)
@@ -66,6 +116,7 @@ export function useErrorHandler() {
     isLoading,
     result,
     clearError,
+    clearResult,
     submitToApi,
     setError,      
     setErrorType,

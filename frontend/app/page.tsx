@@ -3,9 +3,10 @@
 import { useState, useCallback } from "react"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Upload, FileJson, X } from "lucide-react"
+import { Upload, FileJson, X, Loader2 } from "lucide-react"
 import { useErrorHandler } from "@/hooks/useErrorHandler"
 import ErrorMessage from "@/components/ErrorMessage"
+import GraduationResult from "@/components/GraduationResult"
 import { z } from "zod"
 
 const coursePlanSchema = z
@@ -95,7 +96,7 @@ const totalAverageScoreSchema = z
   .passthrough()
 
 const conductRecordItemSchema = z.object({
-  score: z.union([z.number(), z.string()]), // 你樣本是 number，但有些系統可能給字串
+  score: z.union([z.number(), z.string()]),
   academicYear: z.string(),
   semester: z.string(),
 })
@@ -103,7 +104,7 @@ const conductRecordItemSchema = z.object({
 const gradeRecordItemSchema = z.object({
   academicYearSemester: z.string(),
   requiredOrElectiveCourse: z.string(),
-  score: z.string(), // 可能是「成績未到或無成績」
+  score: z.string(),
   academicYear: z.string(),
   courseCode: z.string(),
   courseName: z.string(),
@@ -151,41 +152,76 @@ export default function Dashboard() {
   const [fileName, setFileName] = useState<string | null>(null)
   const [isDragging, setIsDragging] = useState(false)
 
-  const { error, errorType, isLoading, result, clearError, submitToApi, setError, setErrorType } = useErrorHandler()
+  const { error, errorType, isLoading, result, clearError, clearResult, submitToApi, setError, setErrorType } = useErrorHandler()
+
+  // 檢查是否為雙主修/輔系學生
+  const checkStudentIdentity = useCallback((data: z.infer<typeof exportStudentDataSchema>): "general" | "dual" => {
+    const aboutMe = data[0]["課業學習"].aboutMe
+    const doubleMajor = aboutMe.doubleMajor?.trim() || ""
+    const minor1 = aboutMe.minor1?.trim() || ""
+    const minor2 = aboutMe.minor2?.trim() || ""
+    
+    // 如果有雙主修或輔系資料，則為雙輔生
+    if (doubleMajor || minor1 || minor2) {
+      return "dual"
+    }
+    return "general"
+  }, [])
+
   const handleFile = useCallback((file: File) => {
-  clearError()  // 先清空舊的錯誤
+    // 清除之前的結果和錯誤
+    clearError()
+    clearResult()
+    setJsonData(null)
+    setFileName(null)
 
-  if (!file.name.endsWith(".json")) {
-    setError("請上傳 .json 格式的檔案")  // 不是 json 才顯示錯誤
-    setErrorType("format")
-    return
-  }
+    if (!file.name.endsWith(".json")) {
+      setError("請上傳 .json 格式的檔案")
+      setErrorType("format")
+      return
+    }
 
-  const reader = new FileReader()
-  reader.onload = (e) => {
+    const reader = new FileReader()
+    reader.onload = (e) => {
       try {
         const text = e.target?.result as string
-
         const parsed = JSON.parse(text)
 
-        const result = exportStudentDataSchema.safeParse(parsed)
-        if (!result.success) {
-          const issue = result.error.issues[0]
+        const validationResult = exportStudentDataSchema.safeParse(parsed)
+        if (!validationResult.success) {
+          const issue = validationResult.error.issues[0]
           const path = issue?.path?.length ? issue.path.join(".") : "(root)"
           setError(`JSON 欄位格式不符合範例：${path} ${issue.message}`)
+          setErrorType("format")
+          return
+        }
+
+        // 檢查 JSON 中的身分與選擇的身分是否一致
+        const detectedIdentity = checkStudentIdentity(validationResult.data)
+        
+        if (detectedIdentity === "dual" && studentType === "general") {
+          setError("偵測到 JSON 中包含雙主修/輔系資料，請切換至「雙輔生」身分後重新上傳")
+          setErrorType("format")
+          return
+        }
+        
+        if (detectedIdentity === "general" && studentType === "dual") {
+          setError("偵測到 JSON 中無雙主修/輔系資料，請切換至「一般生」身分後重新上傳")
+          setErrorType("format")
           return
         }
 
         setJsonData(JSON.stringify(parsed, null, 2))
         setFileName(file.name)
-        submitToApi(parsed, studentType)  // ← 加這行，才會送給後端
+        submitToApi(parsed, studentType)
         
       } catch {
         setError("無法解析 JSON 檔案，請確認檔案格式正確")
+        setErrorType("format")
       }
-  }
-  reader.readAsText(file)
-}, [clearError, submitToApi, setError, setErrorType])
+    }
+    reader.readAsText(file)
+  }, [clearError, clearResult, submitToApi, setError, setErrorType, studentType, checkStudentIdentity])
 
   const handleDrop = useCallback((e: React.DragEvent) => {
     e.preventDefault()
@@ -214,7 +250,8 @@ export default function Dashboard() {
     setJsonData(null)
     setFileName(null)
     clearError()
-  }, [clearError])
+    clearResult()
+  }, [clearError, clearResult])
 
   return (
     <div className="min-h-screen bg-background p-6 md:p-10">
@@ -230,7 +267,18 @@ export default function Dashboard() {
         </div>
 
         {/* Tabs */}
-        <Tabs value={studentType} onValueChange={(v) => setStudentType(v as "general" | "dual")} className="w-full">
+        <Tabs 
+          value={studentType} 
+          onValueChange={(v) => {
+            setStudentType(v as "general" | "dual")
+            // 切換身分時清除之前的錯誤和結果，讓用戶重新上傳
+            clearError()
+            clearResult()
+            setJsonData(null)
+            setFileName(null)
+          }} 
+          className="w-full"
+        >
           <TabsList className="grid w-full grid-cols-2 max-w-md mx-auto">
             <TabsTrigger value="general" className="text-base">
               一般生
@@ -294,19 +342,18 @@ export default function Dashboard() {
 
             {/* 載入中 */}
             {isLoading && (
-              <p className="text-center text-muted-foreground text-sm mt-4">
-                分析中，請稍候...
-              </p>
-            )}
-
-            {/* 上傳成功 */}
-            {result && !isLoading && (
-              <p className="text-center text-green-600 text-sm mt-4">
-                ✓ {result.message}
-              </p>
+              <div className="flex items-center justify-center gap-2 text-muted-foreground text-sm mt-4">
+                <Loader2 className="h-4 w-4 animate-spin" />
+                <span>分析中，請稍候...</span>
+              </div>
             )}
           </CardContent>
         </Card>
+
+        {/* 畢業審查結果 */}
+        {result && !isLoading && (
+          <GraduationResult result={result} />
+        )}
 
         {/* JSON Preview */}
         {jsonData && (
@@ -314,7 +361,7 @@ export default function Dashboard() {
             <CardHeader className="pb-4">
               <div className="flex items-center justify-between">
                 <CardTitle className="text-lg flex items-center gap-2">
-                  <FileJson className="h-5 w-5 text-accent" />
+                  <FileJson className="h-5 w-5 text-primary" />
                   {fileName}
                 </CardTitle>
                 <button

@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useCallback } from "react"
+import { useState, useCallback, useRef } from "react"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Upload, FileJson, X, Loader2 } from "lucide-react"
@@ -151,8 +151,20 @@ export default function Dashboard() {
   const [jsonData, setJsonData] = useState<string | null>(null)
   const [fileName, setFileName] = useState<string | null>(null)
   const [isDragging, setIsDragging] = useState(false)
+  const inputRef = useRef<HTMLInputElement | null>(null)
 
   const { error, errorType, isLoading, result, clearError, clearResult, submitToApi, setError, setErrorType } = useErrorHandler()
+
+  // 重置文件輸入（解決同檔重複上傳問題）
+  const resetFileInput = useCallback(() => {
+    try {
+      if (inputRef.current) {
+        inputRef.current.value = ""
+      }
+    } catch (e) {
+      // 忽略錯誤
+    }
+  }, [])
 
   // 檢查是否為雙主修/輔系學生
   const checkStudentIdentity = useCallback((data: z.infer<typeof exportStudentDataSchema>): "general" | "dual" => {
@@ -178,6 +190,7 @@ export default function Dashboard() {
     if (!file.name.endsWith(".json")) {
       setError("請上傳 .json 格式的檔案")
       setErrorType("format")
+      resetFileInput()
       return
     }
 
@@ -193,6 +206,7 @@ export default function Dashboard() {
           const path = issue?.path?.length ? issue.path.join(".") : "(root)"
           setError(`JSON 欄位格式不符合範例：${path} ${issue.message}`)
           setErrorType("format")
+          resetFileInput()
           return
         }
 
@@ -202,26 +216,31 @@ export default function Dashboard() {
         if (detectedIdentity === "dual" && studentType === "general") {
           setError("偵測到 JSON 中包含雙主修/輔系資料，請切換至「雙輔生」身分後重新上傳")
           setErrorType("format")
+          resetFileInput()
           return
         }
         
         if (detectedIdentity === "general" && studentType === "dual") {
           setError("偵測到 JSON 中無雙主修/輔系資料，請切換至「一般生」身分後重新上傳")
           setErrorType("format")
+          resetFileInput()
           return
         }
 
         setJsonData(JSON.stringify(parsed, null, 2))
         setFileName(file.name)
         submitToApi(parsed, studentType)
+        // 上傳成功後也要重置，這樣使用者可以再次選擇相同的檔案
+        resetFileInput()
         
       } catch {
         setError("無法解析 JSON 檔案，請確認檔案格式正確")
         setErrorType("format")
+        resetFileInput()
       }
     }
     reader.readAsText(file)
-  }, [clearError, clearResult, submitToApi, setError, setErrorType, studentType, checkStudentIdentity])
+  }, [clearError, clearResult, submitToApi, setError, setErrorType, studentType, checkStudentIdentity, resetFileInput])
 
   const handleDrop = useCallback((e: React.DragEvent) => {
     e.preventDefault()
@@ -251,7 +270,8 @@ export default function Dashboard() {
     setFileName(null)
     clearError()
     clearResult()
-  }, [clearError, clearResult])
+    resetFileInput()
+  }, [clearError, clearResult, resetFileInput])
 
   return (
     <div className="min-h-screen bg-background p-6 md:p-10">
@@ -276,6 +296,7 @@ export default function Dashboard() {
             clearResult()
             setJsonData(null)
             setFileName(null)
+            resetFileInput()
           }} 
           className="w-full"
         >
@@ -316,6 +337,7 @@ export default function Dashboard() {
               <input
                 type="file"
                 accept=".json"
+                ref={inputRef}
                 onChange={handleInputChange}
                 className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
               />

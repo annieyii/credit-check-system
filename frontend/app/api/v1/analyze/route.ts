@@ -15,14 +15,26 @@ export async function POST(request: NextRequest) {
       required_credits_needed: 72,
       pe_credits_earned: 2,
       pe_credits_needed: 4,
-      general_credits_earned: 8,
+      general_credits_earned: 6,
       general_credits_needed: 8,
       elective_credits_earned: 20,
       elective_credits_needed: 18
     },
+    // 必修課程回傳
     required_courses: {
-      passed: ["計算機概論", "資料結構", "微積分甲", "線性代數"],
+      passed: ["計算機概論", "資料結構"],
       missing: ["作業系統", "編譯器"]
+    },
+    // 通識詳細資料 (來自 analyze_general_education)
+    general_education: {
+      credits_earned: 6,
+      credits_needed: 8,
+      passed: false,
+      by_category: {
+        "人文": 3,
+        "社會": 3,
+        "自然": 0
+      }
     },
     // 體育詳細資料 (來自 analyze_pe)
     physical_education: {

@@ -9,7 +9,7 @@ def sync_cs_requirements():
     depts = cursor.fetchall()
     
     for dept_id, year in depts:
-        # 插入資科系通識規則：28學分、國英12、三向度各3
+        # 插入資科系通識規則：28學分、國英12、三領域各3
         cursor.execute("""
             INSERT INTO general_education_requirements 
             (department_id, total_required, compulsory_lang, min_humanities, min_social, min_natural)

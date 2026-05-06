@@ -14,12 +14,12 @@ def analyze_general(session_data, dept_name, year):
         session_data = session_data.model_dump()
 
     # 2. 處理 NCCU 匯出的 List 格式
-    # 根據你的資料，這是一個包含字典的列表
+    # 這是一個包含字典的列表
     if isinstance(session_data, list) and len(session_data) > 0:
         session_data = session_data[0]
     
     # 3. 如果 session_data 裡面還有一層 "data" (視你的 Payload 結構而定)
-    # 根據你提供的 payload，資料可能藏在 data 鍵值中
+    # 根據提供的 payload，資料可能藏在 data 鍵值中
     actual_data = session_data.get("data") if isinstance(session_data, dict) else None
     if isinstance(actual_data, list) and len(actual_data) > 0:
         session_data = actual_data[0]
@@ -73,7 +73,7 @@ def analyze_general(session_data, dept_name, year):
             score_raw = course.get("score", "") 
             course_name = course.get("courseName", "")
             
-            # 修正：碩班資料會有 "成績未到或無成績"，需安全轉換[cite: 2]
+            # 修正：碩班資料會有 "成績未到或無成績"，需安全轉換
             try:
                 score = float(score_raw)
                 if score < 60: continue 
@@ -206,7 +206,7 @@ def analyze_general(session_data, dept_name, year):
             score_raw = course.get("score", "") 
             course_name = course.get("courseName", "")
             
-            # 修正：碩班資料會有 "成績未到或無成績"，需安全轉換[cite: 2]
+            # 修正：碩班資料會有 "成績未到或無成績"，需安全轉換
             try:
                 score = float(score_raw)
                 if score < 60: continue 

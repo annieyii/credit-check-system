@@ -62,3 +62,13 @@ CREATE TABLE IF NOT EXISTS special_rules (
 
     FOREIGN KEY (department_id) REFERENCES departments(id)
 );
+
+CREATE TABLE IF NOT EXISTS general_courses (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    code TEXT,            -- 課程代碼
+    credit INTEGER,       -- 學分數
+    course_name TEXT,     -- 課程名稱
+    semester TEXT,        -- 學期
+    type TEXT,            -- 領域（人文/社會/自然...）
+    is_core TEXT          -- 是否為核通
+);

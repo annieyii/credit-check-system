@@ -14,17 +14,17 @@ def analyze_general(session_data, dept_name, year):
         session_data = session_data.model_dump()
 
     # 2. 處理 NCCU 匯出的 List 格式
-    # 這是一個包含字典的列表
+    # 包含字典的列表
     if isinstance(session_data, list) and len(session_data) > 0:
         session_data = session_data[0]
     
-    # 3. 如果 session_data 裡面還有一層 "data" (視你的 Payload 結構而定)
+    # 3. 如果 session_data 裡面還有一層 "data" (視 Payload 結構而定)
     # 根據提供的 payload，資料可能藏在 data 鍵值中
     actual_data = session_data.get("data") if isinstance(session_data, dict) else None
     if isinstance(actual_data, list) and len(actual_data) > 0:
         session_data = actual_data[0]
 
-    # 4. 現在可以安全地定位到「課業學習」了
+    # 4. 定位到「課業學習」
     study_data = session_data.get("課業學習")
     if not study_data:
         return {"error": "JSON 結構錯誤：找不到 '課業學習' 欄位"}
@@ -57,7 +57,7 @@ def analyze_general(session_data, dept_name, year):
 
     # 修正：直接存取字典鍵值，移除 .data
     try:
-        # 3. 正確提取清單
+        # 正確提取清單
         course_data = study_data["gradeRecordList"]
         waived_data = study_data["waivedCourseList"]
     except KeyError as e:

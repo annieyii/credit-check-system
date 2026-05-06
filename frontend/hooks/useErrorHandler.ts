@@ -58,57 +58,51 @@ export function useErrorHandler() {
     setResult(null)
   }, [])
 
-  const submitToApi = useCallback(async (data: object, role: string) => {
-    setIsLoading(true)
-    setError(null)
-    setErrorType("")
-    setResult(null)
+const submitToApi = useCallback(async (parsed: object, role: string) => {
+  setIsLoading(true)
+  setError(null)
+  setErrorType("")
+  setResult(null)
 
-    try {
-      // 開發測試模式：使用 Mock API
-      // 正式環境：改回 "http://127.0.0.1:8000/api/v1/analyze"
-      const API_URL = process.env.NODE_ENV === "development" 
-        ? "/api/v1/analyze"  // Mock API
-        : "http://127.0.0.1:8000/api/v1/analyze"  // 真實後端
-      
-      const res = await axios.post(API_URL, {
-        role,
-        data,
-      })
-      setResult(res.data)
+  try {
+    const res = await axios.post("http://127.0.0.1:8000/api/v1/analyze", {
+      role,
+      data: parsed,
+    })
+    setResult(res.data)
 
-    } catch (err: unknown) {
-      if (axios.isAxiosError(err) && err.response) {
-        const status = err.response.status
-        const detail = err.response.data?.detail || "請確認 JSON 內容是否正確"
+  } catch (err: unknown) {
+    if (axios.isAxiosError(err) && err.response) {
+      const status = err.response.status
+      const detail = err.response.data?.detail || "請確認 JSON 內容是否正確"
 
-        if (status === 400) {
-          setErrorType("format")
-          setError(`JSON 格式錯誤：${detail}`)
-        } else if (status === 404) {
-          setErrorType("server")
-          setError("找不到伺服器，請確認 API 網址是否正確")
-        } else if (status === 422) {
-          setErrorType("format")
-          setError(`資料驗證失敗：${detail}`)
-        } else if (status === 500) {
-          setErrorType("server")
-          setError("伺服器內部錯誤，請稍後再試")
-        } else {
-          setErrorType("server")
-          setError(`伺服器錯誤（${status}）：${detail}`)
-        }
-      } else if (axios.isAxiosError(err) && err.request) {
-        setErrorType("network")
-        setError("無法連線到伺服器，請確認後端是否正常運行")
+      if (status === 400) {
+        setErrorType("format")
+        setError(`JSON 格式錯誤：${detail}`)
+      } else if (status === 404) {
+        setErrorType("server")
+        setError("找不到伺服器，請確認 API 網址是否正確")
+      } else if (status === 422) {
+        setErrorType("format")
+        setError(`資料驗證失敗：${detail}`)
+      } else if (status === 500) {
+        setErrorType("server")
+        setError("伺服器內部錯誤，請稍後再試")
       } else {
-        setErrorType("unknown")
-        setError(`發生未知錯誤：${err instanceof Error ? err.message : "未知錯誤"}`)
+        setErrorType("server")
+        setError(`伺服器錯誤（${status}）：${detail}`)
       }
-    } finally {
-      setIsLoading(false)
+    } else if (axios.isAxiosError(err) && err.request) {
+      setErrorType("network")
+      setError("無法連線到伺服器，請確認後端是否正常運行")
+    } else {
+      setErrorType("unknown")
+      setError(`發生未知錯誤：${err instanceof Error ? err.message : "未知錯誤"}`)
     }
-  }, [])
+  } finally {
+    setIsLoading(false)
+  }
+}, [])
 
   return {
     error,

@@ -15,10 +15,11 @@ credit-check-system/
 ├── db/
 │   ├── data/            ← 各系所必修 HTML / JSON 原始資料
 │   └── database/
-│       ├── schema.sql   ← 資料表定義
-│       ├── init_db.py   ← 建立資料庫
-│       ├── seed_db.py   ← 匯入 JSON 資料
-│       └── curriculum.db← SQLite 資料庫（不 commit）
+│       ├── schema.sql        ← 資料表定義
+│       ├── init_db.py        ← 建立資料庫
+│       ├── seed_db.py        ← 匯入必修 JSON 資料
+│       ├── seed_minor_db.py  ← 匯入輔系 JSON 資料
+│       └── curriculum.db     ← SQLite 資料庫（不 commit）
 ├── frontend/
 │   ├── app/page.tsx     ← 上傳主頁面（Next.js）
 │   ├── hooks/useErrorHandler.ts ← API 呼叫 + 錯誤處理
@@ -94,12 +95,21 @@ pnpm dev
 | `required_courses` | 各系各年度必修課程清單 |
 | `course_schedules` | 每門課開課學期（Y1S1 ～ Y4S2，與 required_courses 1對1） |
 | `special_rules` | 各系修課特殊規定 |
+| `minor_departments` | 輔系資料（必選修課程、選修群組、特殊規定，以 JSON 欄位儲存） |
 
 **初始化資料庫（首次或重建時）：**
 ```bash
-python db/database/init_db.py
-python db/database/seed_db.py
+# 1. 建立所有資料表
+python -m db.database.init_db
+
+# 2. 匯入必修資料（約 230 筆）
+python -m db.database.seed_db
+
+# 3. 匯入輔系資料（210 筆，42 系 × 5 學年）
+python -m db.database.seed_minor_db | tee seed_minor.log
+# ⚠️ 若有警告會印出，可用 grep ⚠️ seed_minor.log 查看
 ```
+
 
 ### 終端機查詢
 ```bash

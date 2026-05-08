@@ -3,6 +3,10 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from backend.database import get_db
+from backend.general import analyze_general
+from backend.pe_elective import analyze_pe, analyze_elective
+from backend.required import analyze_required
+from backend.waiver import analyze_waiver
 
 app = FastAPI()
 
@@ -74,7 +78,74 @@ class AnalyzeRequest(BaseModel):
 def analyze(payload: AnalyzeRequest):
     if not payload.data:
         raise HTTPException(status_code=422, detail="資料不可為空")
-    return {"message": "上傳成功，資料格式正確"}
+
+    session_data = payload.data
+    if not isinstance(session_data, list) or len(session_data) == 0:
+        raise HTTPException(status_code=422, detail="資料格式錯誤：應為陣列")
+
+    about = session_data[0].get("課業學習", {}).get("aboutMe", {})
+    dept_name = about.get("registerMajor", "").strip()
+    student_number = about.get("studentNumber", "")
+    year = student_number[:3] if student_number else ""
+
+    if not dept_name or not year:
+        raise HTTPException(status_code=422, detail="無法從資料中取得系所或入學年度")
+
+    conn = get_db()
+    try:
+        required = analyze_required(session_data, dept_name, year, conn)
+        general = analyze_general(session_data, dept_name, year)
+        pe = analyze_pe(session_data, dept_name, year)
+        elective = analyze_elective(session_data, dept_name, year)
+    finally:
+        conn.close()
+
+    waiver = analyze_waiver(session_data)
+
+    required_credits_earned = required.get("credits_earned", 0)
+    required_credits_needed = required.get("credits_needed", 0)
+    pe_credits_earned = pe.get("credits_earned", 0)
+    pe_credits_needed = pe.get("credits_needed", 0)
+    general_credits_earned = general.get("credits_earned", 0)
+    general_credits_needed = general.get("credits_needed", 0)
+    elective_credits_earned = elective.get("credits_earned", 0)
+    elective_credits_needed = elective.get("credits_needed", 0)
+    total_credits_earned = (
+        required_credits_earned + pe_credits_earned +
+        general_credits_earned + elective_credits_earned
+    )
+
+    is_eligible_to_graduate = (
+        len(required.get("missing", [])) == 0 and
+        pe.get("passed", False) and
+        general.get("passed", False) and
+        elective.get("passed", False)
+    )
+
+    return {
+        "dept_name": dept_name,
+        "applicable_year": year,
+        "summary": {
+            "total_credits_earned": total_credits_earned,
+            "required_credits_earned": required_credits_earned,
+            "required_credits_needed": required_credits_needed,
+            "pe_credits_earned": pe_credits_earned,
+            "pe_credits_needed": pe_credits_needed,
+            "general_credits_earned": general_credits_earned,
+            "general_credits_needed": general_credits_needed,
+            "elective_credits_earned": elective_credits_earned,
+            "elective_credits_needed": elective_credits_needed,
+        },
+        "required_courses": {
+            "passed": required.get("passed", []),
+            "missing": required.get("missing", []),
+        },
+        "general_education": general,
+        "physical_education": pe,
+        "elective": elective,
+        "waiver": waiver,
+        "is_eligible_to_graduate": is_eligible_to_graduate,
+    }
 
 
 # --- 4. 健康檢查 ---

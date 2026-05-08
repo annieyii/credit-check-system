@@ -5,32 +5,36 @@ from backend.main import app
 
 client = TestClient(app)
 
-FAKE_DATA_PATH = "tests/test_data/exportStudentData_fake.json"
+FAKE_DATA_PATH = "tests/test_data/112cs_fake.json"
 
 
-def _load_fake_data() -> dict:
+def _load_fake_data() -> list:
     with open(FAKE_DATA_PATH, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
 def test_upload_valid_json():
-    """合法的全人 JSON 應回傳 200 且包含 message"""
+    """合法的全人 JSON 應回傳 200 且包含各分析結果"""
     response = client.post("/api/v1/analyze", json={
         "role": "general",
-        "data": _load_fake_data()[0]
+        "data": _load_fake_data()
     })
     assert response.status_code == 200
-    assert "message" in response.json()
+    body = response.json()
+    assert "required" in body
+    assert "general" in body
+    assert "pe" in body
+    assert "elective" in body
 
 
 def test_upload_fake_data_with_failing_grades():
-    """含不及格科目的假資料應仍能正常上傳（格式合法）"""
+    """含不及格科目的假資料應仍能正常分析（格式合法）"""
     response = client.post("/api/v1/analyze", json={
         "role": "dual",
-        "data": _load_fake_data()[0]
+        "data": _load_fake_data()
     })
     assert response.status_code == 200
-    assert "message" in response.json()
+    assert "required" in response.json()
 
 
 def test_upload_empty_data():
@@ -45,7 +49,7 @@ def test_upload_empty_data():
 def test_upload_missing_role():
     """缺少 role 欄位應回傳 422"""
     response = client.post("/api/v1/analyze", json={
-        "data": _load_fake_data()[0]
+        "data": _load_fake_data()
     })
     assert response.status_code == 422
 

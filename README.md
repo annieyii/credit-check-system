@@ -163,14 +163,16 @@ pnpm dev
 | `special_rules` | 各系修課特殊規定 |
 | `general_education_requirements` | 各系通識門檻（總學分、語言通識、人文／社會／自然最低要求） |
 | `general_courses` | 通識課程清單（課號、課名、領域、是否核通） |
+| `minor_departments` | 各輔系必修／選修課程結構（JSON 欄位，由 seed_minor_db.py 填入） |
 
 ### 初始化資料庫（首次或重建時）
 
 ```bash
-python db/database/init_db.py          # 建立資料表
-python db/database/seed_db.py          # 匯入必修課程
-python db/database/seed_general.py     # 匯入通識門檻
+python db/database/init_db.py              # 建立資料表
+python db/database/seed_db.py              # 匯入必修課程
+python db/database/seed_general.py         # 匯入通識門檻
 python db/database/seed_general_course.py  # 匯入通識課程清單
+python db/database/seed_minor_db.py        # 匯入輔系課程資料
 ```
 
 ### 終端機查詢

@@ -64,18 +64,29 @@ CREATE TABLE IF NOT EXISTS special_rules (
 );
 
 -- =============================================
--- 5. 輔系系所資料表
+-- 5. 通識教育門檻表
 -- =============================================
-CREATE TABLE IF NOT EXISTS minor_departments (
-    id                     INTEGER PRIMARY KEY AUTOINCREMENT,
-    dept_name              TEXT NOT NULL,       -- 系所名稱（用檔名，e.g. "資訊系"）
-    applicable_year        TEXT NOT NULL,       -- 學年度 e.g. "114"
-    total_credits_required INTEGER DEFAULT 0,   -- 輔系應修總學分
-    required_credits       INTEGER DEFAULT 0,   -- 必選修學分
-    group_elective_credits INTEGER DEFAULT 0,   -- 選修群組學分（多群組時取總和）
-    required_courses       TEXT,               -- JSON: [{course_name, credits, alternatives:[str]}]
-    elective_groups        TEXT,               -- JSON: [{group_name, min_credits, courses:[{course_name, credits}]}]
-    special_regulations    TEXT,               -- JSON: [str]
+CREATE TABLE IF NOT EXISTS general_education_requirements (
+    id                  INTEGER PRIMARY KEY AUTOINCREMENT,
+    department_id       INTEGER NOT NULL,
+    total_required      INTEGER DEFAULT 28,
+    compulsory_lang     INTEGER DEFAULT 12,
+    min_humanities      INTEGER DEFAULT 3,
+    min_social          INTEGER DEFAULT 3,
+    min_natural         INTEGER DEFAULT 3,
 
-    UNIQUE(dept_name, applicable_year)
+    FOREIGN KEY (department_id) REFERENCES departments(id)
+);
+
+-- =============================================
+-- 6. 通識課程清單表
+-- =============================================
+CREATE TABLE IF NOT EXISTS general_courses (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    code TEXT,            -- 課程代碼
+    credit INTEGER,       -- 學分數
+    course_name TEXT,     -- 課程名稱
+    semester TEXT,        -- 學期
+    type TEXT,            -- 領域（人文/社會/自然...）
+    is_core TEXT          -- 是否為核通
 );

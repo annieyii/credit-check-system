@@ -152,6 +152,76 @@ export default function GraduationResult({ result }: GraduationResultProps) {
           </CardContent>
         </Card>
 
+        {/* 輔系學分 */}
+        {result.minor && (
+          <Card className="md:row-span-2">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <BookOpen className="h-5 w-5" />
+                輔系學分
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className={`p-4 rounded-lg border ${result.minor.credits_earned >= result.minor.credits_needed ? "bg-green-50 border-green-200" : "bg-red-50 border-red-200"}`}>
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center">
+                    <span className="text-muted-foreground">已修學分</span>
+                    <span className="text-2xl font-bold">{result.minor.credits_earned}</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-muted-foreground">需修學分</span>
+                    <span className="text-lg">{result.minor.credits_needed}</span>
+                  </div>
+                  {result.minor.credits_earned >= result.minor.credits_needed ? (
+                    <div className="flex items-center justify-center gap-2 pt-2 border-t text-green-600">
+                      <CheckCircle2 className="h-4 w-4" />
+                      <span className="font-medium">已完成</span>
+                    </div>
+                  ) : (
+                    <div className="flex justify-between items-center pt-2 border-t">
+                      <span className="text-red-600 font-medium">缺少學分</span>
+                      <span className="text-red-600 font-bold">{result.minor.credits_needed - result.minor.credits_earned}</span>
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              <div className="mt-6 space-y-4">
+                {result.minor.passed.length > 0 && (
+                  <div>
+                    <p className="text-sm font-semibold text-green-700 mb-2">✓ 已通過 ({result.minor.passed.length})</p>
+                    <div className="flex flex-wrap gap-2">
+                      {result.minor.passed.map((course, index) => (
+                        <span
+                          key={index}
+                          className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm"
+                        >
+                          {course}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+                {result.minor.missing.length > 0 && (
+                  <div>
+                    <p className="text-sm font-semibold text-red-700 mb-2">✗ 缺少 ({result.minor.missing.length})</p>
+                    <div className="flex flex-wrap gap-2">
+                      {result.minor.missing.map((course, index) => (
+                        <span
+                          key={index}
+                          className="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm"
+                        >
+                          {course}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            </CardContent>
+          </Card>
+        )}
+
         {/* 選修學分 */}
         <Card>
           <CardHeader>

@@ -287,7 +287,7 @@ def analyze_elective(session_data, dept_name,year):
                            "grade": course.get("grade", "")
                         })
     pass_credit_count = pass_credit_count_indept + pass_credit_count_outdept
-    
+
     cursor.execute("""
         SELECT compulsory_credits_required
         FROM departments

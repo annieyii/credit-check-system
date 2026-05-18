@@ -252,23 +252,52 @@ def analyze_required(
             raise ValueError(f"找不到系所：{dept_name}（{year}）")
 
         required = _get_required_courses(conn, dept["id"])
-        passed, missing, credits_earned = _match_required(required, passed_courses, dept_name, year)
-        credits_needed = dept["compulsory_credits_required"]
+        main_passed, main_missing, main_credits_earned = _match_required(
+            required, passed_courses, dept_name, year
+        )
+        main_credits_needed = dept["compulsory_credits_required"]
+
+        # 主修分項（獨立回傳，不含雙主修）
+        main_major = {
+            "dept_name": dept_name,
+            "year": year,
+            "passed": main_passed,
+            "missing": main_missing,
+            "credits_earned": main_credits_earned,
+            "credits_needed": main_credits_needed,
+        }
 
         about = session_data[0]["課業學習"].get("aboutMe", {})
-        double_major = _parse_double_major(about, fallback_year=year)
-        if double_major:
-            double_major_dept_name, double_major_year = double_major
+        double_major_info = _parse_double_major(about, fallback_year=year)
+        double_major_block = None
+        passed = list(main_passed)
+        missing = list(main_missing)
+        credits_earned = main_credits_earned
+        credits_needed = main_credits_needed
+
+        if double_major_info:
+            double_major_dept_name, double_major_year = double_major_info
             double_major_dept = _get_dept_row(conn, double_major_dept_name, double_major_year)
             if double_major_dept is not None:
                 double_major_required = _get_required_courses(conn, double_major_dept["id"])
-                double_major_passed, double_major_missing, double_major_credits_earned = _match_required(
+                dm_passed, dm_missing, dm_credits_earned = _match_required(
                     double_major_required, passed_courses, double_major_dept_name, double_major_year
                 )
-                passed += double_major_passed
-                missing += double_major_missing
-                credits_earned += double_major_credits_earned
-                credits_needed += double_major_dept["compulsory_credits_required"]
+                dm_credits_needed = double_major_dept["compulsory_credits_required"]
+
+                double_major_block = {
+                    "dept_name": double_major_dept_name,
+                    "year": double_major_year,
+                    "passed": dm_passed,
+                    "missing": dm_missing,
+                    "credits_earned": dm_credits_earned,
+                    "credits_needed": dm_credits_needed,
+                }
+
+                passed += dm_passed
+                missing += dm_missing
+                credits_earned += dm_credits_earned
+                credits_needed += dm_credits_needed
 
         # 同一門課可能同時出現在主修與雙主修清單，去重後以 passed 優先
         seen_passed = set()
@@ -286,10 +315,15 @@ def analyze_required(
                 deduped_missing.append(name)
 
         return {
+            # 合計（向後相容）
             "passed": deduped_passed,
             "missing": deduped_missing,
             "credits_earned": credits_earned,
             "credits_needed": credits_needed,
+            # 分項：主修必修
+            "main_major": main_major,
+            # 分項：雙主修必修（無雙主修時為 None）
+            "double_major": double_major_block,
         }
     finally:
         if should_close:

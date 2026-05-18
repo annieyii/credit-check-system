@@ -1,0 +1,168 @@
+{
+  "personalInfo": {
+    "studentName": "王小明",
+    "studentNumber": "112703080",
+    "department": "資訊科學系",
+    "class": "資訊四甲",
+    "email": "student@nccu.edu.tw"
+  },
+  "課業學習": {
+    "aboutMe": {
+      "studentNumber": "112703080",
+      "minor1": "財管系（114）",
+      "registerMinor": "財管系"
+    },
+    "gradeRecordList": [
+      {
+        "academicYear": "112",
+        "GradeRecords": [
+          {
+            "requiredOrElectiveCourse": "必",
+            "academicYearSemester": "1121",
+            "credit": "3.0",
+            "courseName": "財務管理",
+            "scoreIfPass": "",
+            "academicYear": "112",
+            "score": "85.00",
+            "remark": "",
+            "semester": "1",
+            "courseCode": "FIN301"
+          },
+          {
+            "requiredOrElectiveCourse": "必",
+            "academicYearSemester": "1121",
+            "credit": "3.0",
+            "courseName": "投資學",
+            "scoreIfPass": "",
+            "academicYear": "112",
+            "score": "78.00",
+            "remark": "",
+            "semester": "1",
+            "courseCode": "FIN302"
+          },
+          {
+            "requiredOrElectiveCourse": "選",
+            "academicYearSemester": "1121",
+            "credit": "3.0",
+            "courseName": "進階財務管理",
+            "scoreIfPass": "",
+            "academicYear": "112",
+            "score": "82.00",
+            "remark": "",
+            "semester": "1",
+            "courseCode": "FIN401"
+          },
+          {
+            "requiredOrElectiveCourse": "選",
+            "academicYearSemester": "1121",
+            "credit": "3.0",
+            "courseName": "衍生性金融商品",
+            "scoreIfPass": "",
+            "academicYear": "112",
+            "score": "76.00",
+            "remark": "",
+            "semester": "1",
+            "courseCode": "FIN402"
+          },
+          {
+            "requiredOrElectiveCourse": "選",
+            "academicYearSemester": "1122",
+            "credit": "3.0",
+            "courseName": "國際財務管理",
+            "scoreIfPass": "",
+            "academicYear": "112",
+            "score": "88.00",
+            "remark": "",
+            "semester": "2",
+            "courseCode": "FIN403"
+          },
+          {
+            "requiredOrElectiveCourse": "選",
+            "academicYearSemester": "1122",
+            "credit": "3.0",
+            "courseName": "債券市場",
+            "scoreIfPass": "",
+            "academicYear": "112",
+            "score": "79.00",
+            "remark": "",
+            "semester": "2",
+            "courseCode": "FIN404"
+          },
+          {
+            "requiredOrElectiveCourse": "選",
+            "academicYearSemester": "1131",
+            "credit": "3.0",
+            "courseName": "企業評價",
+            "scoreIfPass": "",
+            "academicYear": "113",
+            "score": "83.00",
+            "remark": "",
+            "semester": "1",
+            "courseCode": "FIN405"
+          },
+          {
+            "requiredOrElectiveCourse": "選",
+            "academicYearSemester": "1131",
+            "credit": "3.0",
+            "courseName": "證券分析",
+            "scoreIfPass": "",
+            "academicYear": "113",
+            "score": "80.00",
+            "remark": "",
+            "semester": "1",
+            "courseCode": "FIN406"
+          },
+          {
+            "requiredOrElectiveCourse": "選",
+            "academicYearSemester": "1132",
+            "credit": "3.0",
+            "courseName": "投資組合管理",
+            "scoreIfPass": "",
+            "academicYear": "113",
+            "score": "77.00",
+            "remark": "",
+            "semester": "2",
+            "courseCode": "FIN407"
+          },
+          {
+            "requiredOrElectiveCourse": "選",
+            "academicYearSemester": "1132",
+            "credit": "3.0",
+            "courseName": "財務管理個案",
+            "scoreIfPass": "",
+            "academicYear": "113",
+            "score": "85.00",
+            "remark": "",
+            "semester": "2",
+            "courseCode": "FIN408"
+          },
+          {
+            "requiredOrElectiveCourse": "選",
+            "academicYearSemester": "1141",
+            "credit": "3.0",
+            "courseName": "不動產投資",
+            "scoreIfPass": "",
+            "academicYear": "114",
+            "score": "81.00",
+            "remark": "",
+            "semester": "1",
+            "courseCode": "FIN409"
+          },
+          {
+            "requiredOrElectiveCourse": "選",
+            "academicYearSemester": "1141",
+            "credit": "3.0",
+            "courseName": "財務報表分析",
+            "scoreIfPass": "",
+            "academicYear": "114",
+            "score": "84.00",
+            "remark": "",
+            "semester": "1",
+            "courseCode": "FIN410"
+          }
+        ]
+      }
+    ],
+    "waivedCourseList": []
+  }
+}

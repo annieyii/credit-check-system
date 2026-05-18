@@ -58,8 +58,10 @@ def _normalize(data):
             "alternatives": _normalize_alternatives(c.get("alternative_courses", [])),
         })
 
-    # elective_groups（foundation_courses / elective_courses / general_electives 忽略）
+    # elective_groups（處理 group_electives 和 elective_courses）
     elective_groups = []
+    
+    # 處理 group_electives
     for group in cs.get("group_electives", {}).get("groups", []):
         courses = []
         for c in group.get("courses", []):
@@ -75,6 +77,17 @@ def _normalize(data):
             "min_credits": int(group.get("min_credits_required", 0)),
             "courses": courses,
         })
+    
+    # 處理 elective_courses（越文系等特殊情況）
+    for elective in cs.get("elective_courses", []):
+        course_name = elective.get("course_name", "").strip()
+        credits_to_complete = elective.get("credits_to_complete", 0)
+        if course_name and credits_to_complete > 0:
+            elective_groups.append({
+                "group_name": course_name,
+                "min_credits": int(credits_to_complete),
+                "courses": [],  # 空課程列表，透過課程代碼判斷
+            })
 
     # group_elective_credits：創國用 a+b，東南亞語系用 elective，其餘用 group_elective
     if "group_elective" in breakdown:

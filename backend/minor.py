@@ -37,16 +37,16 @@ def _collect_all_passed_courses(session_data: list) -> dict[str, float]:
     for c in kl.get("waivedCourseList", []):
         name = c.get("courseName", "").strip()
         credit = float(c.get("credit") or 0)
-        if name:
-            passed[name] = credit
+        if name and credit > 0:
+            passed[name] = passed.get(name, 0) + credit
 
     for yr in kl.get("gradeRecordList", []):
         for c in yr.get("GradeRecords", []):
             name = c.get("courseName", "").strip()
             score = c.get("score", "")
             credit = float(c.get("credit") or 0)
-            if name and _is_passing(score):
-                passed[name] = credit
+            if name and _is_passing(score) and credit > 0:
+                passed[name] = passed.get(name, 0) + credit
 
     return passed
 

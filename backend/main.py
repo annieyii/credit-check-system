@@ -24,7 +24,7 @@ def get_departments():
     conn = get_db()
     cursor = conn.cursor()
     cursor.execute("""
-        SELECT DISTINCT dept_name, applicable_year, 
+        SELECT DISTINCT dept_name, applicable_year,
                min_graduation_credits, compulsory_credits_required
         FROM departments
         ORDER BY applicable_year, dept_name

@@ -10,7 +10,7 @@ async def upload_file(file: UploadFile = File(...)):
     content = await file.read()
 
     try:
-        raw_data = json.loads(content)
+        json.loads(content)
         return True
 
     except Exception as e:

@@ -11,7 +11,7 @@ default:
   image: python:3.10-slim
   before_script:
     - pip install uv --quiet
-    - uv sync --all-group 
+    - uv sync --all-groups 
   cache:
     key:
       files:

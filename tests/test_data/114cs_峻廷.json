@@ -1,0 +1,206 @@
+[
+    {
+        "課業學習": {
+            "totalCredits": "13",
+            "coursePlan": {
+                "programRemark": "僅採計碩士班課程 (Course Level >= M)",
+                "liberalTotal": "不適用",
+                "requiredPoint": "2.0",
+                "programName": "",
+                "groupRemark": "[本系選修需 12 學分，外系選修上限 12 學分]",
+                "groupPoint": "24.0",
+                "liberalGeneral": "",
+                "liberalChinese": "",
+                "liberalEnglish": "",
+                "commonPhysical": "",
+                "commonPhysicalCount": "",
+                "commonLanguage": "",
+                "commonLanguageCount": "0",
+                "requiredRemark": "[專題研討(一)~(二) 必修，目前已修 1.0]",
+                "graduationCredit": "26.0",
+                "coursePlanTimestamp": "20260509",
+                "coursePlanSchyy": "114"
+            },
+            "rankingClass": "0",
+            "aboutMe": {
+                "addMjrYN": "N",
+                "registerMinor": "",
+                "doubleMajor": "",
+                "minor1": "",
+                "program": "",
+                "thesisTitle": "",
+                "registerMajor": "資訊科學系",
+                "minor2": "",
+                "chineseName": "郭峻廷",
+                "englishName": "GUO, JUN-TING",
+                "instructor": "",
+                "studentNumber": "114753122",
+                "studentIdentity2": "",
+                "studentIdentity": "台生(碩博甄試)",
+                "registrationStatus": "碩士",
+                "registerDoubleMajor": "",
+                "registerOtherProgramList": [],
+                "collegeEnglishExemption": "未申請",
+                "departmentProgramGrade": "資碩工一"
+            },
+            "showTcres": "",
+            "graduationLanguageList": [],
+            "abroadGradeRecordList": [],
+            "rankingDepartmentDenom": "0",
+            "rankingClassDenom": "0",
+            "alertForEvaluationList": [],
+            "totalAverageScore": {
+                "totalCredits": "13",
+                "averageScore": "91.22",
+                "averageCreditsOfSameGrader": "",
+                "averageScoresOfSameGrader": "",
+                "classRankPercentage": "0.0 %",
+                "departmentRankPercentage": "0.0 %",
+                "rankingClassNumer": "0",
+                "rankingDepartmentNumer": "0",
+                "rankingDepartmentDenom": "0",
+                "rankingClassDenom": "0",
+                "rankingClass": "0 / 0",
+                "rankingDepartment": "0 / 0"
+            },
+            "alertForCreditList": [],
+            "conductRecordList": [
+                {
+                    "semester": "1",
+                    "academicYear": "114",
+                    "score": 85.0
+                }
+            ],
+            "waivedCourseList": [],
+            "enrollmentHistoryList": [
+                {
+                    "gradeName": "資碩工一",
+                    "academicYearSemester": "114-2",
+                    "registerStatus": "註冊"
+                },
+                {
+                    "gradeName": "資碩工一",
+                    "academicYearSemester": "114-1",
+                    "registerStatus": "註冊"
+                }
+            ],
+            "rankingDepartment": "0",
+            "averageScoreList": [],
+            "gradeRecordList": [
+                {
+                    "AcademicYear": "114",
+                    "GradeRecords": [
+                        {
+                            "semester": "2",
+                            "courseCode": "464797001",
+                            "courseName": "社會傳播導向的大數據分析",
+                            "credit": "3.0",
+                            "remark": "外系選修",
+                            "academicYear": "114",
+                            "score": "成績未到或無成績",
+                            "academicYearSemester": "1142",
+                            "requiredOrElectiveCourse": "選",
+                            "scoreIfPass": ""
+                        },
+                        {
+                            "semester": "2",
+                            "courseCode": "753019001",
+                            "courseName": "密碼協定設計與分析",
+                            "credit": "3.0",
+                            "remark": "系內選修",
+                            "academicYear": "114",
+                            "score": "成績未到或無成績",
+                            "academicYearSemester": "1142",
+                            "requiredOrElectiveCourse": "選",
+                            "scoreIfPass": ""
+                        },
+                        {
+                            "semester": "2",
+                            "courseCode": "753886001",
+                            "courseName": "軟體工程概論",
+                            "credit": "3.0",
+                            "remark": "系內選修",
+                            "academicYear": "114",
+                            "score": "成績未到或無成績",
+                            "academicYearSemester": "1142",
+                            "requiredOrElectiveCourse": "選",
+                            "scoreIfPass": ""
+                        },
+                        {
+                            "semester": "2",
+                            "courseCode": "753933001",
+                            "courseName": "自然語言處理",
+                            "credit": "3.0",
+                            "remark": "系內選修",
+                            "academicYear": "114",
+                            "score": "成績未到或無成績",
+                            "academicYearSemester": "1142",
+                            "requiredOrElectiveCourse": "選",
+                            "scoreIfPass": ""
+                        },
+                        {
+                            "semester": "1",
+                            "courseCode": "753002001",
+                            "courseName": "專題研討（一）",
+                            "credit": "1.0",
+                            "remark": "必修",
+                            "academicYear": "114",
+                            "score": "96.00",
+                            "academicYearSemester": "1141",
+                            "requiredOrElectiveCourse": "必",
+                            "scoreIfPass": ""
+                        },
+                        {
+                            "semester": "1",
+                            "courseCode": "753810001",
+                            "courseName": "行動通訊網路",
+                            "credit": "3.0",
+                            "remark": "外系選修",
+                            "academicYear": "114",
+                            "score": "84.00",
+                            "academicYearSemester": "1141",
+                            "requiredOrElectiveCourse": "選",
+                            "scoreIfPass": ""
+                        },
+                        {
+                            "semester": "1",
+                            "courseCode": "753826001",
+                            "courseName": "深度學習：基礎及應用",
+                            "credit": "3.0",
+                            "remark": "系內選修",
+                            "academicYear": "114",
+                            "score": "88.10",
+                            "academicYearSemester": "1141",
+                            "requiredOrElectiveCourse": "選",
+                            "scoreIfPass": ""
+                        },
+                        {
+                            "semester": "1",
+                            "courseCode": "753836001",
+                            "courseName": "現代密碼學",
+                            "credit": "3.0",
+                            "remark": "系內選修",
+                            "academicYear": "114",
+                            "score": "100.00",
+                            "academicYearSemester": "1141",
+                            "requiredOrElectiveCourse": "選",
+                            "scoreIfPass": ""
+                        },
+                        {
+                            "semester": "1",
+                            "courseCode": "753863001",
+                            "courseName": "網路搜索與探勘",
+                            "credit": "3.0",
+                            "remark": "系內選修",
+                            "academicYear": "114",
+                            "score": "88.00",
+                            "academicYearSemester": "1141",
+                            "requiredOrElectiveCourse": "選",
+                            "scoreIfPass": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]

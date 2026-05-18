@@ -52,6 +52,20 @@ def _collect_passed_courses(session_data: list) -> dict:
     return passed
 
 
+def _count_group_course_semesters(session_data: list) -> dict[str, int]:
+    """全人 JSON → {群修課名: 及格學期數}（同名課出現多次時分別計算，用於群A多學期判定）"""
+    counts: dict[str, int] = {}
+    kl = session_data[0]["課業學習"]
+    for yr in kl.get("gradeRecordList", []):
+        for c in yr.get("GradeRecords", []):
+            if c.get("requiredOrElectiveCourse") != "群":
+                continue
+            name = c.get("courseName", "").strip()
+            if name and _is_passing(c.get("score", "")):
+                counts[name] = counts.get(name, 0) + 1
+    return counts
+
+
 # ── 雙主修解析 ────────────────────────────────────────────────────────────────
 
 def _parse_double_major(about: dict, fallback_year: str) -> Optional[tuple]:
@@ -184,11 +198,13 @@ def _match_required(
     passed_courses: dict,
     dept_name: str = "",
     year: str = "",
+    group_counts: dict = None,
 ) -> tuple:
     """必修清單 × 已修課程 → (passed_names, missing_names, credits_earned)"""
     passed_names: list[str] = []
     missing_names: list[str] = []
     credits_earned: int = 0
+    group_counts = group_counts or {}
 
     plain = [c for c in required_courses if c["type"] == "必修"]
     groups: dict[str, list] = {}
@@ -214,6 +230,7 @@ def _match_required(
                 missing_names.append(name)
 
     # 群修：每組只需一門通過，課名為佔位符時查 _GROUP_COURSE_MAP
+    # group_counts 追蹤同名課修了幾學期（如資訊専題上下學期各3學分）
     dept_group_map = _GROUP_COURSE_MAP.get((dept_name, year), {})
     for group_type, courses in sorted(groups.items()):
         matched = [c for c in courses if c["name"] in passed_courses]
@@ -222,8 +239,11 @@ def _match_required(
             if aliases & passed_courses.keys():
                 matched = [courses[0]]
         if matched:
-            passed_names.append(matched[0]["name"])
-            credits_earned += matched[0]["credits"]
+            course_name = matched[0]["name"]
+            unit = matched[0]["credits"]
+            semesters = group_counts.get(course_name, 1)
+            passed_names.append(course_name)
+            credits_earned += unit * semesters
         else:
             missing_names.append(courses[0]["name"])
 
@@ -248,13 +268,14 @@ def analyze_required(
 
     try:
         passed_courses = _collect_passed_courses(session_data)
+        group_counts = _count_group_course_semesters(session_data)
 
         dept = _get_dept_row(conn, dept_name, year)
         if dept is None:
             raise ValueError(f"找不到系所：{dept_name}（{year}）")
 
         required = _get_required_courses(conn, dept["id"])
-        passed, missing, credits_earned = _match_required(required, passed_courses, dept_name, year)
+        passed, missing, credits_earned = _match_required(required, passed_courses, dept_name, year, group_counts)
         credits_needed = dept["compulsory_credits_required"]
 
         about = session_data[0]["課業學習"].get("aboutMe", {})
@@ -265,7 +286,7 @@ def analyze_required(
             if double_major_dept is not None:
                 double_major_required = _get_required_courses(conn, double_major_dept["id"])
                 double_major_passed, double_major_missing, double_major_credits_earned = _match_required(
-                    double_major_required, passed_courses, double_major_dept_name, double_major_year
+                    double_major_required, passed_courses, double_major_dept_name, double_major_year, group_counts
                 )
                 passed += double_major_passed
                 missing += double_major_missing

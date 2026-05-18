@@ -21,9 +21,9 @@ def test_upload_valid_json():
     })
     assert response.status_code == 200
     body = response.json()
-    assert "required" in body
-    assert "general" in body
-    assert "pe" in body
+    assert "required_courses" in body
+    assert "general_education" in body
+    assert "physical_education" in body
     assert "elective" in body
 
 
@@ -34,7 +34,7 @@ def test_upload_fake_data_with_failing_grades():
         "data": _load_fake_data()
     })
     assert response.status_code == 200
-    assert "required" in response.json()
+    assert "required_courses" in response.json()
 
 
 def test_upload_empty_data():

@@ -25,6 +25,13 @@ export async function POST(request: NextRequest) {
       passed: ["計算機概論", "資料結構"],
       missing: ["作業系統", "編譯器"]
     },
+    // 輔系詳細資料
+    minor: {
+      passed: ["日語初級（一）", "日語初級（二）"],
+      missing: ["日本文學概論", "日語會話"],
+      credits_earned: 20,
+      credits_needed: 50
+    },
     // 通識詳細資料 (來自 analyze_general_education)
     general_education: {
       credits_earned: 6,

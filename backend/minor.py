@@ -2,7 +2,7 @@ import json
 import sqlite3
 from typing import Optional
 
-from backend.database import get_db
+from backend.database import get_db, normalize_name
 
 
 # ── 成績判定 ──────────────────────────────────────────────────────────────────
@@ -39,6 +39,7 @@ def _collect_all_passed_courses(session_data: list) -> dict[str, float]:
         credit = float(c.get("credit") or 0)
         if name:
             passed[name] = credit
+            passed[normalize_name(name)] = credit
 
     for yr in kl.get("gradeRecordList", []):
         for c in yr.get("GradeRecords", []):
@@ -47,6 +48,7 @@ def _collect_all_passed_courses(session_data: list) -> dict[str, float]:
             credit = float(c.get("credit") or 0)
             if name and _is_passing(score):
                 passed[name] = credit
+                passed[normalize_name(name)] = credit
 
     return passed
 

@@ -3,7 +3,7 @@ import re
 import sqlite3
 from typing import Optional
 
-from backend.database import get_db
+from backend.database import get_db, normalize_name
 
 
 # ── 成績判定 ──────────────────────────────────────────────────────────────────
@@ -119,13 +119,14 @@ def _flatten_elective_groups(elective_groups) -> list[dict]:
 
 
 def _match_course(course: dict, passed_courses: dict[str, float]) -> str | None:
-    """單一課程 × passed_courses → 實際命中的課名或 None"""
+    """單一課程 × passed_courses → 實際命中的課名或 None（括號全半形皆可命中）"""
+    norm_to_orig = {normalize_name(k): k for k in passed_courses}
     name = course["course_name"]
-    if name in passed_courses:
-        return name
+    if normalize_name(name) in norm_to_orig:
+        return norm_to_orig[normalize_name(name)]
     for alt in _course_alternatives(course):
-        if alt in passed_courses:
-            return alt
+        if normalize_name(alt) in norm_to_orig:
+            return norm_to_orig[normalize_name(alt)]
     return None
 
 

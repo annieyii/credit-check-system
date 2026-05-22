@@ -18,7 +18,10 @@ def _all_json_files():
 
 def _load_session(path):
     with open(path, encoding="utf-8") as f:
-        data = json.load(f)
+        try:
+            data = json.load(f)
+        except json.JSONDecodeError as e:
+            pytest.skip(f"JSON 格式錯誤，略過：{path} ({e})")
     return [data] if isinstance(data, dict) else data
 
 

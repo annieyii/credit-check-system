@@ -10,7 +10,6 @@ variables:
 default:
   image: python:3.10-slim
   before_script:
-    - command -v uv > /dev/null 2>&1 || pip install uv --quiet
     - uv sync --all-groups
   cache:
     key:

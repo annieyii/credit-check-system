@@ -42,41 +42,12 @@ lint:
   stage: lint
   <<: *backend-rules
   script:
-    - |
-      touch lint-output.log
-      uv run ruff check backend/ tests/ 2>&1 | tee lint-output.log
-      exit "${PIPESTATUS[0]}"
-  artifacts:
-    paths:
-      - lint-output.log
-    expire_in: 7 days
-    when: always
+    - uv run ruff check backend/ tests/
 
 # ─── Job 2: Test ───────────────────────────────────────────
 test:
   stage: test
   <<: *backend-rules
   script:
-    - |
-      touch test-output.log
-      uv run pytest tests/ \
-        --cov=backend \
-        --cov-report=xml \
-        --cov-report=term-missing \
-        --junitxml=test-results.xml \
-        -v \
-        2>&1 | tee test-output.log
-      exit "${PIPESTATUS[0]}"
+    - uv run pytest tests/ --cov=backend --cov-report=term-missing -v
   coverage: '/TOTAL.*\s+(\d+%)$/'
-  artifacts:
-    paths:
-      - test-output.log
-      - test-results.xml
-      - coverage.xml
-    reports:
-      junit: test-results.xml
-      coverage_report:
-        coverage_format: cobertura
-        path: coverage.xml
-    expire_in: 7 days
-    when: always

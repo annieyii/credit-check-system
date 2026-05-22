@@ -42,7 +42,8 @@ credit-check-system/
 │   ├── conftest.py           ← temp_db fixture
 │   └── test_data/            ← 測試用假資料
 ├── pyproject.toml        ← Python 套件設定（uv 管理）
-└── .env                  ← 本地環境變數（不 commit）
+├── .env                  ← 本地環境變數（不 commit，請複製 .env.example）
+└── .env.example          ← 環境變數範本（commit 追蹤）
 ```
 
 ---
@@ -62,7 +63,13 @@ uv run uvicorn backend.main:app --reload
 # → http://127.0.0.1:8000
 ```
 
-`.env` 設定（放根目錄，可省略使用預設值）：
+`.env` 設定（放根目錄，不 commit）：
+```bash
+cp .env.example .env
+# 依需要修改後使用
+```
+
+`.env.example`（預設值）：
 ```
 DB_PATH=db/database/curriculum.db
 ```

@@ -79,7 +79,7 @@ def analyze_student_minor_info(file_path: str):
         return None
 
 
-def test_all_group1_minors(student_file: str):
+def run_all_group1_minors(student_file: str):
     """測試所有 Group 1 系所的輔系分析"""
     print("\n🎯 測試所有 Group 1 輔系")
     print("="*60)
@@ -268,7 +268,7 @@ def main():
     analyze_student_minor_info(test_file)
 
     # 2. 測試所有 Group 1 輔系
-    test_all_group1_minors(test_file)
+    run_all_group1_minors(test_file)
 
     print("\n🎉 分析完成！")
 

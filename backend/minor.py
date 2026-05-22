@@ -3,7 +3,7 @@ import re
 import sqlite3
 from typing import Optional
 
-from backend.database import get_db, normalize_name
+from backend.database import get_db
 
 
 # ── 成績判定 ──────────────────────────────────────────────────────────────────

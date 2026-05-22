@@ -1,4 +1,3 @@
-import pytest
 from backend.pe_elective import analyze_pe
 
 

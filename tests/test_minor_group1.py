@@ -8,7 +8,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
 
-from backend.minor_group1 import analyze_minor_group1, _detect_minor_info, _parse_minor_courses
+from backend.minor import analyze_minor as analyze_minor_group1, _detect_minor_info, _parse_minor_courses
 from backend.database import get_db
 
 

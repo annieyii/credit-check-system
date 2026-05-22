@@ -4,6 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from backend.database import get_db
 from backend.general import analyze_general
+from backend.minor import analyze_minor
 from backend.pe_elective import analyze_pe, analyze_elective
 from backend.required import analyze_required
 from backend.waiver import analyze_waiver
@@ -91,12 +92,19 @@ def analyze(payload: AnalyzeRequest):
     if not dept_name or not year:
         raise HTTPException(status_code=422, detail="無法從資料中取得系所或入學年度")
 
+    about = session_data[0].get("課業學習", {}).get("aboutMe", {})
+    minor_dept = about.get("registerMinor", "").strip() or about.get("minor1", "").strip()
+
     conn = get_db()
     try:
         required = analyze_required(session_data, dept_name, year, conn)
         general = analyze_general(session_data, dept_name, year)
         pe = analyze_pe(session_data, dept_name, year)
         elective = analyze_elective(session_data, dept_name, year)
+        try:
+            minor = analyze_minor(session_data, minor_dept, year, conn) if minor_dept else None
+        except ValueError:
+            minor = None
     finally:
         conn.close()
 
@@ -144,6 +152,7 @@ def analyze(payload: AnalyzeRequest):
         "physical_education": pe,
         "elective": elective,
         "waiver": waiver,
+        "minor": minor,
         "is_eligible_to_graduate": is_eligible_to_graduate,
     }
 

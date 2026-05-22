@@ -33,7 +33,7 @@ new_group_E = ["計算機網路", "行動通訊網路", "網路與通訊概論",
 def analyze_pe(session_data, dept_name,year):
     data = session_data
     kl = data[0].get("課業學習", {})
-    pe_require = kl.get("coursePlan", {}).get("commonPhysicalCount", "未知體育必修學分")
+    pe_require = kl.get("coursePlan", {}).get("commonPhysicalCount", "") or "4"
 
     pe_classes = []
     pass_count = 0

@@ -239,7 +239,7 @@ def analyze_general(session_data, dept_name, year):
                 # 按照「目前最低分」的領域優先填補，直到該領域滿 8 或學分用完
                 while remaining_credit > 0:
                     # 找出還沒滿 8 分的相關領域
-                    incomplete_fields = [f for f in possible_fields if current_credits[f] < MAX_VAL]
+                    incomplete_fields = [f for f in possible_fields if f in current_credits and current_credits[f] < MAX_VAL]
 
                     if not incomplete_fields:
                         # 如果通通都滿 8 分了，剩下的學分不再計入這三個領域

@@ -14,7 +14,8 @@ credit-check-system/
 │   ├── required.py       ← 必修學分分析
 │   ├── general.py        ← 通識學分分析
 │   ├── pe_elective.py    ← 體育／選修學分分析
-│   └── waiver.py         ← 抵免課程分析
+│   ├── waiver.py         ← 抵免課程分析
+│   └── minor.py          ← 輔系學分分析（所有系所）
 ├── db/
 │   ├── data/
 │   │   ├── 通識/         ← 各學期通識課程 xlsx 原始資料
@@ -209,4 +210,53 @@ ORDER BY rc.suggested_year, rc.name;
 ```bash
 uv sync --all-groups
 uv run pytest tests/ -v
+```
+
+---
+
+## CI/CD 本地 Runner 設定
+
+GitLab 免費帳號的 shared runner 配額有限。**每位成員**需在自己的電腦設定本地 runner，各自產生獨立的 token（token 與機器綁定，不共用）。
+
+### 安裝
+
+**macOS**
+```bash
+brew install gitlab-runner
+```
+
+**Linux**
+```bash
+sudo curl -L --output /usr/local/bin/gitlab-runner \
+  https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-linux-amd64
+sudo chmod +x /usr/local/bin/gitlab-runner
+sudo gitlab-runner install
+```
+
+### 取得 Token（每人各自操作）
+
+到 GitLab 專案 **Settings → CI/CD → Runners → New project runner**：
+- 勾選 **Run untagged jobs**
+- 按 **Create runner**，複製產生的 `glrt-` token
+
+### 註冊
+
+```bash
+gitlab-runner register \
+  --url https://gitlab.com \
+  --token <你自己的 glrt- token>
+# 詢問 name → 自訂（例如 local-mac）
+# 詢問 executor → shell
+```
+
+### 啟動
+
+**macOS**
+```bash
+brew services start gitlab-runner
+```
+
+**Linux**
+```bash
+sudo gitlab-runner start
 ```

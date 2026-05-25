@@ -10,8 +10,16 @@ variables:
 default:
   image: python:3.10-slim
   before_script:
+    # 1. 安裝 uv
     - curl -LsSf https://astral.sh/uv/install.sh | sh
-    - source $HOME/.local/bin/env
+    
+    # 2. 直接把 uv 的安裝路徑加入到目前的 PATH 環境變數中
+    - export PATH="$HOME/.local/bin:$PATH"
+    
+    # 3. 測試看看系統認不認得 uv（這行可以幫忙在 Log 確認狀態）
+    - uv --version
+    
+    # 4. 執行同步
     - uv sync --all-groups
   cache:
     key:

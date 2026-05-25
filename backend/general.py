@@ -54,7 +54,6 @@ def analyze_general(session_data, dept_name, year):
     english = 0
     chinese = 0
     info_literacy = 0  # 資訊通識學分
-    others = 0 # 存放無法分類但屬於通識的學分
 
     # 核心通識追蹤：記錄已修過核心通識的領域（人文/社會/自然）
     core_domains_taken = set()
@@ -396,7 +395,6 @@ def analyze_general(session_data, dept_name, year):
     counted_natural = min(natural_sciences, MAX_DOMAIN)
     counted_college = min(college_general_course, MAX_COLLEGE)
     counted_info_literacy = min(info_literacy, MAX_INFO_LITERACY) if is_info_dept else 0
-    total_lang = counted_chinese + counted_english
 
     # 加總後再套用總上限 28
     total_earned_raw = (counted_chinese + counted_english + counted_humanities +
@@ -465,10 +463,14 @@ def analyze_general(session_data, dept_name, year):
                 return "資訊通識"
             return db_type
         # 課號開頭 fallback
-        if course_code.startswith("041"): return "人文"
-        if course_code.startswith("042"): return "社會"
-        if course_code.startswith("043"): return "自然"
-        if course_code.startswith("045"): return "書院"
+        if course_code.startswith("041"):
+            return "人文"
+        if course_code.startswith("042"):
+            return "社會"
+        if course_code.startswith("043"):
+            return "自然"
+        if course_code.startswith("045"):
+            return "書院"
         return ""
 
     taken_courses = []

@@ -176,7 +176,7 @@ def analyze_pe(session_data, dept_name, year):
 def analyze_elective(session_data, dept_name, year, total_required_credits=None):
     required_courses = get_required_courses(dept_name, year)
     required_course_names = {course["name"] for course in required_courses}
-    
+
     # 獲取已修必修課程清單（含雙主修），避免在選修中重複計算
     from backend.required import analyze_required
     conn = get_db()

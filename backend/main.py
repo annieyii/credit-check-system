@@ -106,7 +106,8 @@ def analyze(payload: AnalyzeRequest):
         raise HTTPException(status_code=422, detail="無法從資料中取得系所或入學年度")
 
     about = session_data[0].get("課業學習", {}).get("aboutMe", {})
-    minor_dept = about.get("registerMinor", "").strip() or about.get("minor1", "").strip()
+    register_minor_raw = about.get("registerMinor", "").strip()
+    minor_dept = register_minor_raw.split("、")[0].strip() or about.get("minor1", "").strip()
 
     conn = get_db()
     try:

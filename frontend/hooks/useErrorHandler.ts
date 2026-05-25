@@ -137,14 +137,12 @@ export function useErrorHandler() {
 
     try {
       const payload = { role, data: parsed }
-      console.log("Request payload size:", JSON.stringify(payload).length, "bytes")
       const res = await axios.post("http://127.0.0.1:8000/api/v1/analyze", payload, {
         timeout: 30000,
       })
       setResult(res.data)
 
     } catch (err: unknown) {
-      console.error("API request error:", err)
       if (axios.isAxiosError(err) && err.response) {
         const status = err.response.status
         const detail = err.response.data?.detail || "請確認 JSON 內容是否正確"

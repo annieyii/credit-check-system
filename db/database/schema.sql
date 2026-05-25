@@ -90,3 +90,20 @@ CREATE TABLE IF NOT EXISTS general_courses (
     type TEXT,            -- 領域（人文/社會/自然...）
     is_core TEXT          -- 是否為核通
 );
+
+-- =============================================
+-- 7. 輔系資料表
+-- =============================================
+CREATE TABLE IF NOT EXISTS minor_departments (
+    id                     INTEGER PRIMARY KEY AUTOINCREMENT,
+    dept_name              TEXT NOT NULL,       -- 系所名稱（用檔名，e.g. "資訊系"）
+    applicable_year        TEXT NOT NULL,       -- 學年度 e.g. "114"
+    total_credits_required INTEGER DEFAULT 0,   -- 輔系應修總學分
+    required_credits       INTEGER DEFAULT 0,   -- 必選修學分
+    group_elective_credits INTEGER DEFAULT 0,   -- 選修群組學分（多群組時取總和）
+    required_courses       TEXT,               -- JSON: [{course_name, credits, alternatives:[str]}]
+    elective_groups        TEXT,               -- JSON: [{group_name, min_credits, courses:[{course_name, credits}]}]
+    special_regulations    TEXT,               -- JSON: [str]
+
+    UNIQUE(dept_name, applicable_year)
+);

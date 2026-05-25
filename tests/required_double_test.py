@@ -7,19 +7,16 @@
 import json
 import sys
 import os
-
-# 確保專案根目錄在 sys.path，無論從哪裡執行
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-if ROOT not in sys.path:
-    sys.path.insert(0, ROOT)
-
 from backend.database import get_db
 from backend.general import analyze_general
 from backend.pe_elective import analyze_pe, analyze_elective
 from backend.required import analyze_required
 from backend.waiver import analyze_waiver
 
-
+# 確保專案根目錄在 sys.path，無論從哪裡執行
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if ROOT not in sys.path:
+    sys.path.insert(0, ROOT)
 SEP  = "─" * 50
 SEP2 = "═" * 50
 
@@ -47,7 +44,7 @@ def print_general(g: dict):
     status = "✅ 通過" if g["passed"] else f"❌ 不足（差 {g['credits_needed']:.1f} 學分）"
     print(f"\n{'通識課程':═<20}")
     print(f"  已修：{g['credits_earned']} / {total:.0f} 學分  {status}")
-    print(f"  各領域：")
+    print("  各領域：")
     for field, credit in g["by_category"].items():
         print(f"    {field}：{credit} 學分")
 
@@ -55,7 +52,7 @@ def print_general(g: dict):
 def print_pe(p: dict):
     print(f"\n{'體育':═<20}")
     print(f"  已修：{p['credits_earned']} / {p['credits_needed']} 學分  {_check(p['credits_earned'], p['credits_needed'])}")
-    print(f"  課程：")
+    print("  課程：")
     for c in p["courses"]:
         print(f"    ✓ {c}")
 
@@ -71,10 +68,10 @@ def print_waiver(w: dict):
     print(f"\n{'抵免課程':═<20}")
     print(f"  總抵免：{w['total_credits']} 學分（共 {w['course_count']} 門）")
     if w["by_category"]:
-        print(f"  各類別：")
+        print("  各類別：")
         for cat, credit in w["by_category"].items():
             print(f"    {cat}：{credit} 學分")
-        print(f"  明細：")
+        print("  明細：")
         for c in w["courses"]:
             print(f"    [{c['category']}] {c['courseName']}  {c['credits']} 學分")
     else:

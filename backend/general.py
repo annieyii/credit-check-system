@@ -17,7 +17,7 @@ def analyze_general(session_data, dept_name, year):
     # 包含字典的列表
     if isinstance(session_data, list) and len(session_data) > 0:
         session_data = session_data[0]
-    
+
     # 3. 如果 session_data 裡面還有一層 "data" (視 Payload 結構而定)
     # 根據提供的 payload，資料可能藏在 data 鍵值中
     actual_data = session_data.get("data") if isinstance(session_data, dict) else None
@@ -34,13 +34,13 @@ def analyze_general(session_data, dept_name, year):
     cursor = conn.cursor()
     # 根據系名與入學年搜尋門檻 (例如: 資科系 111)
     cursor.execute("""
-        SELECT ger.total_required, ger.compulsory_lang, ger.min_humanities, 
+        SELECT ger.total_required, ger.compulsory_lang, ger.min_humanities,
                ger.min_social, ger.min_natural
         FROM general_education_requirements ger
         JOIN departments d ON ger.department_id = d.id
         WHERE d.dept_name LIKE ? AND d.applicable_year = ?
     """, (f"{dept_name}%", year))
-    
+
     threshold = cursor.fetchone()
 
     # 門檻預設值 (避免查不到時程式崩潰)
@@ -70,20 +70,21 @@ def analyze_general(session_data, dept_name, year):
             remark = course.get("remark", "")
 
             # 關鍵修正點：在這裡定義 score_raw
-            score_raw = course.get("score", "") 
+            score_raw = course.get("score", "")
             course_name = course.get("courseName", "")
-            
+
             # 修正：碩班資料會有 "成績未到或無成績"，需安全轉換
             try:
                 score = float(score_raw)
-                if score < 60: continue 
+                if score < 60:
+                    continue
             except (ValueError, TypeError):
                 # 如果是「成績未到」，在畢業判定中通常不計入
                 continue
-            
+
             cursor.execute("SELECT type, is_core FROM general_courses WHERE course_name = ?", (course_name,))
             db_row = cursor.fetchone()
-            
+
             # 判斷是否為核心通識
             db_type = db_row[0] if db_row else ""
             # 修正原代碼變數命名衝突：將資料庫讀取的值存為 db_is_core
@@ -114,21 +115,25 @@ def analyze_general(session_data, dept_name, year):
 
             elif remark == "自然通":
                 natural_sciences += credit
-            
+
             elif remark == "書院通":
                 college_general_course += credit
-            
+
             else:
                 course_code = course.get("courseCode", "")
                 cursor.execute("SELECT type FROM general_courses WHERE code = ?", (course_code,))
                 code_row = cursor.fetchone()
-                
+
                 if code_row:
                     code_type = code_row[0]
-                    if code_type == "人文": humanities += credit
-                    elif code_type == "社會": social_sciences += credit
-                    elif code_type == "自然": natural_sciences += credit
-                    elif code_type == "書院": college_general_course += credit
+                    if code_type == "人文":
+                        humanities += credit
+                    elif code_type == "社會":
+                        social_sciences += credit
+                    elif code_type == "自然":
+                        natural_sciences += credit
+                    elif code_type == "書院":
+                        college_general_course += credit
 
     # 4. 單一領域抵免通識計算
     for course in waived_data:
@@ -142,7 +147,7 @@ def analyze_general(session_data, dept_name, year):
         # 優先查詢資料庫判斷類別與核心通識
         cursor.execute("SELECT type, is_core FROM general_courses WHERE course_name = ?", (course_name,))
         db_row = cursor.fetchone()
-        
+
         db_type = db_row[0] if db_row else ""
         db_is_core = (str(db_row[1]).lower() == 'yes') if db_row else False
 
@@ -154,7 +159,7 @@ def analyze_general(session_data, dept_name, year):
                 social_sciences += credit
             elif db_type == "自然":
                 natural_sciences += credit
-            continue 
+            continue
 
         # --- 邏輯 B：語文通識 ---
         if course_name.startswith("大學英文"):
@@ -195,7 +200,7 @@ def analyze_general(session_data, dept_name, year):
                 natural_sciences += credit
             elif target_type == "書院" or course_code.startswith("045"):
                 college_general_course += credit
-            
+
     # 跨領域通識計算
     for year_data in course_data:
         for course in year_data["GradeRecords"]:
@@ -203,17 +208,18 @@ def analyze_general(session_data, dept_name, year):
             remark = course.get("remark", "")
 
             # 關鍵修正點：在這裡定義 score_raw
-            score_raw = course.get("score", "") 
+            score_raw = course.get("score", "")
             course_name = course.get("courseName", "")
-            
+
             # 修正：碩班資料會有 "成績未到或無成績"，需安全轉換
             try:
                 score = float(score_raw)
-                if score < 60: continue 
+                if score < 60:
+                    continue
             except (ValueError, TypeError):
                 # 如果是「成績未到」，在畢業判定中通常不計入
                 continue
-            
+
             # 1. 狀態初始化 (假設門檻都是 8)
             current_credits = {
                 "人文": humanities,
@@ -225,31 +231,31 @@ def analyze_general(session_data, dept_name, year):
             if len(remark.split("、")) >= 2:
                 # 提取領域，例如 ["人文", "社會", "自然"]
                 possible_fields = [r.replace("通", "") for r in remark.split("、")]
-                
+
                 # 剩餘可分配的學分
                 remaining_credit = credit
-                
+
                 # --- 策略：循環分配直到學分用完或領域全滿 ---
                 # 按照「目前最低分」的領域優先填補，直到該領域滿 8 或學分用完
                 while remaining_credit > 0:
                     # 找出還沒滿 8 分的相關領域
-                    incomplete_fields = [f for f in possible_fields if current_credits[f] < MAX_VAL]
-                    
+                    incomplete_fields = [f for f in possible_fields if f in current_credits and current_credits[f] < MAX_VAL]
+
                     if not incomplete_fields:
                         # 如果通通都滿 8 分了，剩下的學分不再計入這三個領域
                         # 可以選擇跳出，或存入一個「通識超修」變數
-                        # excess_credits += remaining_credit 
+                        # excess_credits += remaining_credit
                         break
-                        
+
                     # 挑選目前學分最少的領域來補
                     target_field = min(incomplete_fields, key=lambda f: current_credits[f])
-                    
+
                     # 計算該領域還差多少才滿 8
                     gap = MAX_VAL - current_credits[target_field]
-                    
+
                     # 實際能填入的學分 (取「剩下的學分」與「缺口」的最小值)
                     fill = min(remaining_credit, gap)
-                    
+
                     current_credits[target_field] += fill
                     remaining_credit -= fill
 
@@ -263,7 +269,7 @@ def analyze_general(session_data, dept_name, year):
         credit = float(course.get("credit", 0))
         course_name = course.get("courseName", "")
         course_code = course.get("courseCode", "")
-        
+
         # 1. 從資料庫取得該課號的 type
         cursor.execute("SELECT type FROM general_courses WHERE code = ?", (course_code,))
         db_row = cursor.fetchone()
@@ -272,10 +278,10 @@ def analyze_general(session_data, dept_name, year):
         # 2. 判斷是否為跨領域 (字串中包含 "、")
         if "、" in db_type:
             print(f"處理跨領域抵免: {course_code} {course_name}, 類別: {db_type}, 學分: {credit}")
-            
+
             # 提取領域列表，例如 ["人文", "社會"]
             possible_fields = [f.strip() for f in db_type.split("、")]
-            
+
             # 當前狀態快照
             current_credits = {
                 "人文": humanities,
@@ -289,18 +295,18 @@ def analyze_general(session_data, dept_name, year):
             while remaining_credit > 0:
                 # 僅考慮此課程涵蓋、且尚未達標 (8學分) 的領域
                 incomplete_fields = [f for f in possible_fields if f in current_credits and current_credits[f] < MAX_VAL]
-                
+
                 if not incomplete_fields:
                     # 所有對應領域都已滿 8 學分，剩餘學分跳出（或依需求計入超修）
                     break
-                    
+
                 # 找到目前學分最少的目標領域
                 target_field = min(incomplete_fields, key=lambda f: current_credits[f])
-                
+
                 # 計算該領域缺口與實際可分配學分
                 gap = MAX_VAL - current_credits[target_field]
                 fill = min(remaining_credit, gap)
-                
+
                 current_credits[target_field] += fill
                 remaining_credit -= fill
 
@@ -313,12 +319,12 @@ def analyze_general(session_data, dept_name, year):
     total_lang = english + chinese
     # 總分計算包含所有向度與語言通識
     total_earned = humanities + social_sciences + natural_sciences + college_general_course + others + total_lang
-    
+
     # 判定是否合格 (總學分達標且各向度皆達標)
-    passed = (total_earned >= req_total and 
+    passed = (total_earned >= req_total and
               total_lang >= req_lang and
-              humanities >= req_hum and 
-              social_sciences >= req_soc and 
+              humanities >= req_hum and
+              social_sciences >= req_soc and
               natural_sciences >= req_nat)
 
     conn.close()

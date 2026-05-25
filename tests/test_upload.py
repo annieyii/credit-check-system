@@ -1,5 +1,4 @@
 import json
-import pytest
 from fastapi.testclient import TestClient
 from backend.main import app
 
@@ -21,9 +20,9 @@ def test_upload_valid_json():
     })
     assert response.status_code == 200
     body = response.json()
-    assert "required" in body
-    assert "general" in body
-    assert "pe" in body
+    assert "required_courses" in body
+    assert "general_education" in body
+    assert "physical_education" in body
     assert "elective" in body
 
 
@@ -34,7 +33,7 @@ def test_upload_fake_data_with_failing_grades():
         "data": _load_fake_data()
     })
     assert response.status_code == 200
-    assert "required" in response.json()
+    assert "required_courses" in response.json()
 
 
 def test_upload_empty_data():
@@ -60,3 +59,40 @@ def test_upload_missing_data():
         "role": "general"
     })
     assert response.status_code == 422
+
+
+def test_upload_response_includes_minor_key():
+    """有輔系的學生，response 應包含非 None 的 minor 欄位"""
+    session_data = [{
+        "課業學習": {
+            "aboutMe": {
+                "registerMajor": "資訊科學系",
+                "registerMinor": "財管系",
+                "studentNumber": "112703001",
+                "chineseName": "測試學生",
+            },
+            "gradeRecordList": [],
+            "waivedCourseList": [],
+            "coursePlan": {"commonPhysicalCount": "4"},
+        }
+    }]
+    response = client.post("/api/v1/analyze", json={
+        "role": "dual",
+        "data": session_data,
+    })
+    assert response.status_code == 200
+    body = response.json()
+    assert "minor" in body
+    assert body["minor"] is not None
+
+
+def test_upload_response_no_minor_key_is_none():
+    """無輔系的學生，minor 欄位應為 None"""
+    response = client.post("/api/v1/analyze", json={
+        "role": "general",
+        "data": _load_fake_data(),
+    })
+    assert response.status_code == 200
+    body = response.json()
+    assert "minor" in body
+    assert body["minor"] is None

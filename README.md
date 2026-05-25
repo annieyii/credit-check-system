@@ -14,7 +14,8 @@ credit-check-system/
 │   ├── required.py       ← 必修學分分析
 │   ├── general.py        ← 通識學分分析
 │   ├── pe_elective.py    ← 體育／選修學分分析
-│   └── waiver.py         ← 抵免課程分析
+│   ├── waiver.py         ← 抵免課程分析
+│   └── minor.py          ← 輔系學分分析（所有系所）
 ├── db/
 │   ├── data/
 │   │   ├── 通識/         ← 各學期通識課程 xlsx 原始資料
@@ -42,7 +43,8 @@ credit-check-system/
 │   ├── conftest.py           ← temp_db fixture
 │   └── test_data/            ← 測試用假資料
 ├── pyproject.toml        ← Python 套件設定（uv 管理）
-└── .env                  ← 本地環境變數（不 commit）
+├── .env                  ← 本地環境變數（不 commit，請複製 .env.example）
+└── .env.example          ← 環境變數範本（commit 追蹤）
 ```
 
 ---
@@ -62,7 +64,13 @@ uv run uvicorn backend.main:app --reload
 # → http://127.0.0.1:8000
 ```
 
-`.env` 設定（放根目錄，可省略使用預設值）：
+`.env` 設定（放根目錄，不 commit）：
+```bash
+cp .env.example .env
+# 依需要修改後使用
+```
+
+`.env.example`（預設值）：
 ```
 DB_PATH=db/database/curriculum.db
 ```
@@ -163,14 +171,16 @@ pnpm dev
 | `special_rules` | 各系修課特殊規定 |
 | `general_education_requirements` | 各系通識門檻（總學分、語言通識、人文／社會／自然最低要求） |
 | `general_courses` | 通識課程清單（課號、課名、領域、是否核通） |
+| `minor_departments` | 各輔系必修／選修課程結構（JSON 欄位，由 seed_minor_db.py 填入） |
 
 ### 初始化資料庫（首次或重建時）
 
 ```bash
-python db/database/init_db.py          # 建立資料表
-python db/database/seed_db.py          # 匯入必修課程
-python db/database/seed_general.py     # 匯入通識門檻
+python db/database/init_db.py              # 建立資料表
+python db/database/seed_db.py              # 匯入必修課程
+python db/database/seed_general.py         # 匯入通識門檻
 python db/database/seed_general_course.py  # 匯入通識課程清單
+python db/database/seed_minor_db.py        # 匯入輔系課程資料
 ```
 
 ### 終端機查詢
@@ -200,4 +210,53 @@ ORDER BY rc.suggested_year, rc.name;
 ```bash
 uv sync --all-groups
 uv run pytest tests/ -v
+```
+
+---
+
+## CI/CD 本地 Runner 設定
+
+GitLab 免費帳號的 shared runner 配額有限。**每位成員**需在自己的電腦設定本地 runner，各自產生獨立的 token（token 與機器綁定，不共用）。
+
+### 安裝
+
+**macOS**
+```bash
+brew install gitlab-runner
+```
+
+**Linux**
+```bash
+sudo curl -L --output /usr/local/bin/gitlab-runner \
+  https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-linux-amd64
+sudo chmod +x /usr/local/bin/gitlab-runner
+sudo gitlab-runner install
+```
+
+### 取得 Token（每人各自操作）
+
+到 GitLab 專案 **Settings → CI/CD → Runners → New project runner**：
+- 勾選 **Run untagged jobs**
+- 按 **Create runner**，複製產生的 `glrt-` token
+
+### 註冊
+
+```bash
+gitlab-runner register \
+  --url https://gitlab.com \
+  --token <你自己的 glrt- token>
+# 詢問 name → 自訂（例如 local-mac）
+# 詢問 executor → shell
+```
+
+### 啟動
+
+**macOS**
+```bash
+brew services start gitlab-runner
+```
+
+**Linux**
+```bash
+sudo gitlab-runner start
 ```

@@ -22,6 +22,7 @@ default:
 # 只在以下情況觸發：backend/tests/db 有變動，且是 MR 或指定分支的 push
 .backend-rules: &backend-rules
   rules:
+    # 情況 1：如果是 Merge Request，則有改動才跑
     - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
       changes:
         - backend/**/*
@@ -29,7 +30,12 @@ default:
         - db/**/*
         - pyproject.toml
         - .gitlab-ci.yml
-    - if: '$CI_COMMIT_BRANCH =~ /^(main|backend-.*|integration\/.*)$/'
+    
+    # 情況 2：如果是 main 分支，無論如何都「強制執行」（拔掉 changes 限制）
+    - if: '$CI_COMMIT_BRANCH == "main"'
+
+    # 情況 3：如果是其他後端開發分支，有改動才跑
+    - if: '$CI_COMMIT_BRANCH =~ /^(backend-.*|integration\/.*)$/'
       changes:
         - backend/**/*
         - tests/**/*

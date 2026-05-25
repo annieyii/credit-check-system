@@ -10,6 +10,7 @@ variables:
 default:
   image: python:3.10-slim
   before_script:
+    - pip install uv
     - uv sync --all-groups
   cache:
     key:

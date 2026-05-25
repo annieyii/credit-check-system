@@ -31,7 +31,7 @@ default:
         - db/**/*
         - pyproject.toml
         - .gitlab-ci.yml
-    
+
     # 情況 2：如果是 main 分支，無論如何都「強制執行」（拔掉 changes 限制）
     - if: '$CI_COMMIT_BRANCH == "main"'
 

@@ -53,7 +53,17 @@ def analyze_general(session_data, dept_name, year):
     college_general_course = 0
     english = 0
     chinese = 0
-    others = 0 # 存放無法分類但屬於通識的學分
+    info_literacy = 0  # 資訊通識學分
+
+    # 核心通識追蹤：記錄已修過核心通識的領域（人文/社會/自然）
+    core_domains_taken = set()
+    # 核心通識課程清單（供前端顯示）
+    core_courses = []
+    # 資訊通識課程清單（供前端顯示）
+    info_literacy_courses = []
+
+    # 判斷是否為資科系（資訊科學系）
+    is_info_dept = ("資科" in (dept_name or "")) or ("資訊科學" in (dept_name or ""))
 
     # 修正：直接存取字典鍵值，移除 .data
     try:
@@ -90,14 +100,36 @@ def analyze_general(session_data, dept_name, year):
             # 修正原代碼變數命名衝突：將資料庫讀取的值存為 db_is_core
             db_is_core = (str(db_row[1]).lower() == 'yes') if db_row else False
 
+            # 檢查是否為資訊通識（資科系可計入0-3學分）
+            if is_info_dept and ("資訊通" in remark or db_type == "資訊"):
+                info_literacy_courses.append({
+                    "courseCode": course.get("courseCode", ""),
+                    "courseName": course_name,
+                    "credits": credit,
+                    "category": "資訊通識",
+                })
+                info_literacy += credit
+                continue  # 資科系修資訊通識，計入資訊通識學分
+
             # 如果是核心通識，直接根據 DB 裡的 type 累加
             if db_is_core:
                 if db_type == "人文":
                     humanities += credit
+                    core_domains_taken.add("人文")
                 elif db_type == "社會":
                     social_sciences += credit
+                    core_domains_taken.add("社會")
                 elif db_type == "自然":
                     natural_sciences += credit
+                    core_domains_taken.add("自然")
+                if db_type in ("人文", "社會", "自然"):
+                    core_courses.append({
+                        "courseCode": course.get("courseCode", ""),
+                        "courseName": course_name,
+                        "credits": credit,
+                        "category": db_type,
+                        "source": "regular",
+                    })
                 # 如果有其他核心類別可在這裡擴充
                 continue # 已處理完核心通識，跳過後面的非核心判斷
 
@@ -151,14 +183,37 @@ def analyze_general(session_data, dept_name, year):
         db_type = db_row[0] if db_row else ""
         db_is_core = (str(db_row[1]).lower() == 'yes') if db_row else False
 
-        # --- 邏輯 A：核心通識 (優先判定) ---
+        # --- 邏輯 A：資訊通識 (資科系專用) ---
+        if is_info_dept and ("資訊通" in remark or db_type == "資訊"):
+            info_literacy_courses.append({
+                "courseCode": course_code,
+                "courseName": course_name,
+                "credits": credit,
+                "category": "資訊通識",
+                "source": "waived",
+            })
+            info_literacy += credit
+            continue
+
+        # --- 邏輯 B：核心通識 (優先判定) ---
         if db_is_core:
             if db_type == "人文":
                 humanities += credit
+                core_domains_taken.add("人文")
             elif db_type == "社會":
                 social_sciences += credit
+                core_domains_taken.add("社會")
             elif db_type == "自然":
                 natural_sciences += credit
+                core_domains_taken.add("自然")
+            if db_type in ("人文", "社會", "自然"):
+                core_courses.append({
+                    "courseCode": course_code,
+                    "courseName": course_name,
+                    "credits": credit,
+                    "category": db_type,
+                    "source": "waived",
+                })
             continue
 
         # --- 邏輯 B：語文通識 ---
@@ -226,11 +281,15 @@ def analyze_general(session_data, dept_name, year):
                 "社會": social_sciences,
                 "自然": natural_sciences
             }
-            MAX_VAL = 8.0
+            MAX_VAL = 7.0
 
             if len(remark.split("、")) >= 2:
                 # 提取領域，例如 ["人文", "社會", "自然"]
                 possible_fields = [r.replace("通", "") for r in remark.split("、")]
+                # 過濾掉 current_credits 不認識的領域（資訊、書院、語言等不參與跨領域分配）
+                possible_fields = [f for f in possible_fields if f in current_credits]
+                if not possible_fields:
+                    continue
 
                 # 剩餘可分配的學分
                 remaining_credit = credit
@@ -288,7 +347,7 @@ def analyze_general(session_data, dept_name, year):
                 "社會": social_sciences,
                 "自然": natural_sciences
             }
-            MAX_VAL = 8.0
+            MAX_VAL = 7.0
             remaining_credit = credit
 
             # 3. 循環分配邏輯：優先填補學分最低的領域
@@ -315,29 +374,191 @@ def analyze_general(session_data, dept_name, year):
             social_sciences = current_credits["社會"]
             natural_sciences = current_credits["自然"]
 
-    # --- 5. 新增：最終判定邏輯 ---
-    total_lang = english + chinese
-    # 總分計算包含所有向度與語言通識
-    total_earned = humanities + social_sciences + natural_sciences + college_general_course + others + total_lang
+    # --- 5. 最終判定邏輯（依據通識規則套用上下限） ---
+    # 規則上限：中文 6、英文 6、人/社/自 各 7、書院 3、資訊通識 3、總學分 28
+    MAX_CHINESE = 6
+    MAX_ENGLISH = 6
+    MAX_DOMAIN = 7
+    MAX_COLLEGE = 3
+    MAX_INFO_LITERACY = 3  # 資訊通識上限
+    TOTAL_REQUIRED = 28
+    MIN_CHINESE = 3
+    MIN_ENGLISH = 6
+    MIN_DOMAIN = 3
+    CORE_REQUIRED = 2  # 核心通識需至少 2 個不同領域
 
-    # 判定是否合格 (總學分達標且各向度皆達標)
-    passed = (total_earned >= req_total and
-              total_lang >= req_lang and
-              humanities >= req_hum and
-              social_sciences >= req_soc and
-              natural_sciences >= req_nat)
+    # 對每個領域套用上限（超過部分不採計）
+    counted_chinese = min(chinese, MAX_CHINESE)
+    counted_english = min(english, MAX_ENGLISH)
+    counted_humanities = min(humanities, MAX_DOMAIN)
+    counted_social = min(social_sciences, MAX_DOMAIN)
+    counted_natural = min(natural_sciences, MAX_DOMAIN)
+    counted_college = min(college_general_course, MAX_COLLEGE)
+    counted_info_literacy = min(info_literacy, MAX_INFO_LITERACY) if is_info_dept else 0
+
+    # 加總後再套用總上限 28
+    total_earned_raw = (counted_chinese + counted_english + counted_humanities +
+                       counted_social + counted_natural + counted_college + counted_info_literacy)
+    total_earned = min(total_earned_raw, TOTAL_REQUIRED)
+
+    # 收集違規／不足項目（供前端顯示）
+    violations = []
+    if counted_chinese < MIN_CHINESE:
+        violations.append(f"中國語文不足（{counted_chinese}/{MIN_CHINESE} 學分）")
+    if counted_english < MIN_ENGLISH:
+        violations.append(f"外國語文不足（{counted_english}/{MIN_ENGLISH} 學分）")
+    if counted_humanities < MIN_DOMAIN:
+        violations.append(f"人文領域不足（{counted_humanities}/{MIN_DOMAIN} 學分）")
+    if counted_social < MIN_DOMAIN:
+        violations.append(f"社會領域不足（{counted_social}/{MIN_DOMAIN} 學分）")
+    if counted_natural < MIN_DOMAIN:
+        violations.append(f"自然領域不足（{counted_natural}/{MIN_DOMAIN} 學分）")
+    if len(core_domains_taken) < CORE_REQUIRED:
+        violations.append(
+            f"核心通識領域不足（{len(core_domains_taken)}/{CORE_REQUIRED} 個不同領域；"
+            f"已修：{'、'.join(core_domains_taken) if core_domains_taken else '無'}）"
+        )
+    if total_earned_raw < TOTAL_REQUIRED:
+        violations.append(f"通識總學分不足（{total_earned_raw}/{TOTAL_REQUIRED} 學分）")
+
+    # 判定是否合格
+    passed = (total_earned >= TOTAL_REQUIRED and
+              counted_chinese >= MIN_CHINESE and
+              counted_english >= MIN_ENGLISH and
+              counted_humanities >= MIN_DOMAIN and
+              counted_social >= MIN_DOMAIN and
+              counted_natural >= MIN_DOMAIN and
+              len(core_domains_taken) >= CORE_REQUIRED)
+
+    # --- 6. 收集已修通識課程（僅供前端展示，不影響上方計分） ---
+    def _classify(course_name: str, course_code: str, remark: str) -> str:
+        """回傳該課程的通識類別標籤；非通識則回傳空字串"""
+        if course_name.startswith("大學英文"):
+            return "英文"
+        if course_name.startswith("國文") or course_name.startswith("進階國文"):
+            return "國文"
+        # 跨領域 remark（含「、」）
+        if "、" in remark and "通" in remark:
+            fields = [r.replace("通", "") for r in remark.split("、")]
+            return "/".join(fields)
+        if remark == "人文通":
+            return "人文"
+        if remark == "社會通":
+            return "社會"
+        if remark == "自然通":
+            return "自然"
+        if remark == "書院通":
+            return "書院"
+        # 資訊通識
+        if remark == "資訊通":
+            return "資訊通識"
+        # 查資料庫
+        cursor.execute("SELECT type FROM general_courses WHERE course_name = ? OR code = ?",
+                       (course_name, course_code))
+        row = cursor.fetchone()
+        if row and row[0]:
+            db_type = row[0]
+            # 如果資料庫顯示為資訊相關類型，回傳資訊通識
+            if db_type == "資訊":
+                return "資訊通識"
+            return db_type
+        # 課號開頭 fallback
+        if course_code.startswith("041"):
+            return "人文"
+        if course_code.startswith("042"):
+            return "社會"
+        if course_code.startswith("043"):
+            return "自然"
+        if course_code.startswith("045"):
+            return "書院"
+        return ""
+
+    taken_courses = []
+    seen = set()
+    # 一般成績單
+    for year_data in course_data:
+        for course in year_data.get("GradeRecords", []):
+            score_raw = course.get("score", "")
+            try:
+                if float(score_raw) < 60:
+                    continue
+            except (ValueError, TypeError):
+                if score_raw != "通過":
+                    continue
+            name = course.get("courseName", "")
+            code = course.get("courseCode", "")
+            cat = _classify(name, code, course.get("remark", ""))
+            if not cat:
+                continue
+            key = (code, name)
+            if key in seen:
+                continue
+            seen.add(key)
+            taken_courses.append({
+                "courseCode": code,
+                "courseName": name,
+                "credits": course.get("credit", "0.0"),
+                "category": cat,
+                "source": "regular",
+            })
+    # 抵免
+    for course in waived_data:
+        name = course.get("courseName", "")
+        code = course.get("courseCode", "")
+        cat = _classify(name, code, course.get("remark", ""))
+        if not cat:
+            continue
+        key = (code, name)
+        if key in seen:
+            continue
+        seen.add(key)
+        taken_courses.append({
+            "courseCode": code,
+            "courseName": name,
+            "credits": course.get("credit", "0.0"),
+            "category": cat,
+            "source": "waived",
+        })
 
     conn.close()
 
     return {
         "credits_earned": total_earned,
-        "credits_needed": req_total,
+        "credits_needed": TOTAL_REQUIRED,
         "passed": passed,
         "by_category": {
+            "中文": counted_chinese,
+            "英文": counted_english,
+            "人文": counted_humanities,
+            "社會": counted_social,
+            "自然": counted_natural,
+            "書院": counted_college,
+            "資訊通識": counted_info_literacy,
+        },
+        "raw_by_category": {
             "人文": humanities,
             "社會": social_sciences,
             "自然": natural_sciences,
             "書院": college_general_course,
-            "國+英": total_lang
-        }
+            "中文": chinese,
+            "英文": english,
+            "資訊通識": info_literacy,
+        },
+        "limits": {
+            "中文": [MIN_CHINESE, MAX_CHINESE],
+            "英文": [MIN_ENGLISH, MAX_ENGLISH],
+            "人文": [MIN_DOMAIN, MAX_DOMAIN],
+            "社會": [MIN_DOMAIN, MAX_DOMAIN],
+            "自然": [MIN_DOMAIN, MAX_DOMAIN],
+            "書院": [0, MAX_COLLEGE],
+            "資訊通識": [0, MAX_INFO_LITERACY],
+        },
+        "core_count": len(core_domains_taken),
+        "core_required": CORE_REQUIRED,
+        "core_domains_taken": sorted(core_domains_taken),
+        "core_courses": core_courses,
+        "is_info_dept": is_info_dept,
+        "info_literacy_courses": info_literacy_courses,
+        "violations": violations,
+        "taken_courses": taken_courses,
     }

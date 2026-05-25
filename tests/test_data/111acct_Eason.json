@@ -792,8 +792,7 @@
 			],
 			"alertForCreditList": [],
 			"alertForEvaluationList": [],
-			"waivedCourseList": [],
-			
+			"waivedCourseList": []
 		}
 	}
 ]

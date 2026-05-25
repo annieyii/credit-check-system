@@ -44,14 +44,14 @@ default:
         - pyproject.toml
         - .gitlab-ci.yml
 
-# ─── Job 1: Lint ───────────────────────────────────────────
+# --- Job 1: Lint ------------------------------------------------
 lint:
   stage: lint
   <<: *backend-rules
   script:
     - uv run ruff check backend/ tests/
 
-# ─── Job 2: Test ───────────────────────────────────────────
+# --- Job 2: Test ------------------------------------------------
 test:
   stage: test
   <<: *backend-rules

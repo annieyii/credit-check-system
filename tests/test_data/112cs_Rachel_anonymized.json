@@ -1,0 +1,769 @@
+[
+    {
+        "課業學習": {
+            "rankingClass": "28",
+            "aboutMe": {
+                "minor1": "",
+                "doubleMajor": "",
+                "minor2": "",
+                "registerMajor": "資訊科學系",
+                "thesisTitle": "",
+                "instructor": "",
+                "registerMinor": "",
+                "chineseName": "王睿忱",
+                "englishName": "WANG, RUI-CHEN",
+                "registrationStatus": "本系生",
+                "studentIdentity": "台生(一般)",
+                "registerDoubleMajor": "",
+                "studentIdentity2": "",
+                "registerOtherProgramList": [],
+                "collegeEnglishExemption": "未申請",
+                "addMjrYN": "Y",
+                "studentNumber": "112207304",
+                "program": "",
+                "departmentProgramGrade": "資訊三"
+            },
+            "showTcres": "",
+            "abroadGradeRecordList": [],
+            "graduationLanguageList": [],
+            "rankingDepartmentDenom": "55",
+            "rankingClassDenom": "55",
+            "waivedCourseList": [],
+            "conductRecordList": [
+                {
+                    "score": 85.0,
+                    "academicYear": "114",
+                    "semester": "1"
+                },
+                {
+                    "score": 85.0,
+                    "academicYear": "113",
+                    "semester": "2"
+                },
+                {
+                    "score": 85.0,
+                    "academicYear": "113",
+                    "semester": "1"
+                },
+                {
+                    "score": 85.0,
+                    "academicYear": "112",
+                    "semester": "2"
+                },
+                {
+                    "score": 85.0,
+                    "academicYear": "112",
+                    "semester": "1"
+                }
+            ],
+            "alertForCreditList": [],
+            "alertForEvaluationList": [],
+            "totalAverageScore": {
+                "averageCreditsOfSameGrader": "92.45",
+                "averageScoresOfSameGrader": "81.20",
+                "classRankPercentage": "50.90 %",
+                "departmentRankPercentage": "50.90 %",
+                "averageScore": "82.35",
+                "rankingClass": "28 / 55",
+                "rankingDepartmentDenom": "55",
+                "rankingClassDenom": "55",
+                "rankingClassNumer": "28",
+                "rankingDepartmentNumer": "28",
+                "totalCredits": "90",
+                "rankingDepartment": "28 / 55"
+            },
+            "gradeRecordList": [
+                {
+                    "AcademicYear": "114",
+                    "GradeRecords": [
+                        {
+                            "requiredOrElectiveCourse": "選",
+                            "academicYearSemester": "1142",
+                            "credit": "3.0",
+                            "courseName": "大學外文（二）：日文",
+                            "scoreIfPass": "",
+                            "academicYear": "114",
+                            "score": "成績未到或無成績",
+                            "remark": "",
+                            "semester": "2",
+                            "courseCode": "599950021"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "選",
+                            "academicYearSemester": "1142",
+                            "credit": "1.0",
+                            "courseName": "深度學習的原理與實務上的應用",
+                            "scoreIfPass": "",
+                            "academicYear": "114",
+                            "score": "成績未到或無成績",
+                            "remark": "",
+                            "semester": "2",
+                            "courseCode": "701908001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "必",
+                            "academicYearSemester": "1142",
+                            "credit": "3.0",
+                            "courseName": "線性代數",
+                            "scoreIfPass": "",
+                            "academicYear": "114",
+                            "score": "成績未到或無成績",
+                            "remark": "",
+                            "semester": "2",
+                            "courseCode": "703002001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "群",
+                            "academicYearSemester": "1142",
+                            "credit": "3.0",
+                            "courseName": "軟體工程概論",
+                            "scoreIfPass": "",
+                            "academicYear": "114",
+                            "score": "成績未到或無成績",
+                            "remark": "",
+                            "semester": "2",
+                            "courseCode": "703039001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "群",
+                            "academicYearSemester": "1142",
+                            "credit": "3.0",
+                            "courseName": "資訊專題（A）",
+                            "scoreIfPass": "",
+                            "academicYear": "114",
+                            "score": "成績未到或無成績",
+                            "remark": "",
+                            "semester": "2",
+                            "courseCode": "703044011"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "選",
+                            "academicYearSemester": "1142",
+                            "credit": "3.0",
+                            "courseName": "自然語言處理",
+                            "scoreIfPass": "",
+                            "academicYear": "114",
+                            "score": "成績未到或無成績",
+                            "remark": "",
+                            "semester": "2",
+                            "courseCode": "703834001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "必",
+                            "academicYearSemester": "1141",
+                            "credit": "3.0",
+                            "courseName": "微積分甲",
+                            "scoreIfPass": "",
+                            "academicYear": "114",
+                            "score": "82.19",
+                            "remark": "",
+                            "semester": "1",
+                            "courseCode": "000713031"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "必",
+                            "academicYearSemester": "1141",
+                            "credit": "1.0",
+                            "courseName": "體育[男女合班]—彼拉提斯墊上技巧",
+                            "scoreIfPass": "",
+                            "academicYear": "114",
+                            "score": "86.05",
+                            "remark": "",
+                            "semester": "1",
+                            "courseCode": "002341001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "必",
+                            "academicYearSemester": "1141",
+                            "credit": "3.0",
+                            "courseName": "電腦視覺實務與深度學習",
+                            "scoreIfPass": "",
+                            "academicYear": "114",
+                            "score": "停修",
+                            "remark": "",
+                            "semester": "1",
+                            "courseCode": "070428001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "選",
+                            "academicYearSemester": "1141",
+                            "credit": "3.0",
+                            "courseName": "大學外文（一）：日文",
+                            "scoreIfPass": "",
+                            "academicYear": "114",
+                            "score": "85.29",
+                            "remark": "",
+                            "semester": "1",
+                            "courseCode": "599946021"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "選",
+                            "academicYearSemester": "1141",
+                            "credit": "1.0",
+                            "courseName": "成為Python數據分析達人的第一堂課",
+                            "scoreIfPass": "",
+                            "academicYear": "114",
+                            "score": "92.42",
+                            "remark": "",
+                            "semester": "1",
+                            "courseCode": "701909001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "必",
+                            "academicYearSemester": "1141",
+                            "credit": "3.0",
+                            "courseName": "作業系統",
+                            "scoreIfPass": "",
+                            "academicYear": "114",
+                            "score": "81.89",
+                            "remark": "",
+                            "semester": "1",
+                            "courseCode": "703016001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "必",
+                            "academicYearSemester": "1141",
+                            "credit": "3.0",
+                            "courseName": "計算機結構與組織",
+                            "scoreIfPass": "",
+                            "academicYear": "114",
+                            "score": "90.00",
+                            "remark": "",
+                            "semester": "1",
+                            "courseCode": "703019001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "群",
+                            "academicYearSemester": "1141",
+                            "credit": "3.0",
+                            "courseName": "人機互動",
+                            "scoreIfPass": "",
+                            "academicYear": "114",
+                            "score": "91.89",
+                            "remark": "",
+                            "semester": "1",
+                            "courseCode": "703055001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "選",
+                            "academicYearSemester": "1141",
+                            "credit": "3.0",
+                            "courseName": "行動通訊網路",
+                            "scoreIfPass": "",
+                            "academicYear": "114",
+                            "score": "79.76",
+                            "remark": "",
+                            "semester": "1",
+                            "courseCode": "703819001"
+                        }
+                    ]
+                },
+                {
+                    "AcademicYear": "113",
+                    "GradeRecords": [
+                        {
+                            "requiredOrElectiveCourse": "群",
+                            "academicYearSemester": "1132",
+                            "credit": "3.0",
+                            "courseName": "大學英文（二）",
+                            "scoreIfPass": "",
+                            "academicYear": "113",
+                            "score": "90.56",
+                            "remark": "",
+                            "semester": "2",
+                            "courseCode": "032002091"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "群",
+                            "academicYearSemester": "1132",
+                            "credit": "3.0",
+                            "courseName": "教育探索與自我學習",
+                            "scoreIfPass": "",
+                            "academicYear": "113",
+                            "score": "92.85",
+                            "remark": "社會通",
+                            "semester": "2",
+                            "courseCode": "042181011"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "群",
+                            "academicYearSemester": "1132",
+                            "credit": "2.0",
+                            "courseName": "認識中醫藥",
+                            "scoreIfPass": "",
+                            "academicYear": "113",
+                            "score": "90.30",
+                            "remark": "自然通",
+                            "semester": "2",
+                            "courseCode": "090020001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "必",
+                            "academicYearSemester": "1132",
+                            "credit": "3.0",
+                            "courseName": "線性代數",
+                            "scoreIfPass": "",
+                            "academicYear": "113",
+                            "score": "停修",
+                            "remark": "",
+                            "semester": "2",
+                            "courseCode": "703002001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "必",
+                            "academicYearSemester": "1132",
+                            "credit": "3.0",
+                            "courseName": "物件導向程式設計",
+                            "scoreIfPass": "",
+                            "academicYear": "113",
+                            "score": "78.39",
+                            "remark": "",
+                            "semester": "2",
+                            "courseCode": "703009001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "必",
+                            "academicYearSemester": "1132",
+                            "credit": "3.0",
+                            "courseName": "數位系統導論",
+                            "scoreIfPass": "",
+                            "academicYear": "113",
+                            "score": "77.25",
+                            "remark": "",
+                            "semester": "2",
+                            "courseCode": "703014001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "必",
+                            "academicYearSemester": "1132",
+                            "credit": "0.0",
+                            "courseName": "數位系統實驗",
+                            "scoreIfPass": "",
+                            "academicYear": "113",
+                            "score": "83.81",
+                            "remark": "",
+                            "semester": "2",
+                            "courseCode": "703015001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "必",
+                            "academicYearSemester": "1132",
+                            "credit": "3.0",
+                            "courseName": "演算法",
+                            "scoreIfPass": "",
+                            "academicYear": "113",
+                            "score": "80.86",
+                            "remark": "",
+                            "semester": "2",
+                            "courseCode": "703022001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "必",
+                            "academicYearSemester": "1132",
+                            "credit": "0.0",
+                            "courseName": "物件導向程式設計實習",
+                            "scoreIfPass": "",
+                            "academicYear": "113",
+                            "score": "84.26",
+                            "remark": "",
+                            "semester": "2",
+                            "courseCode": "703955001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "必",
+                            "academicYearSemester": "1131",
+                            "credit": "1.0",
+                            "courseName": "體育[男女合班]—桌球初級",
+                            "scoreIfPass": "",
+                            "academicYear": "113",
+                            "score": "79.19",
+                            "remark": "",
+                            "semester": "1",
+                            "courseCode": "002303021"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "群",
+                            "academicYearSemester": "1131",
+                            "credit": "3.0",
+                            "courseName": "大學英文（一）",
+                            "scoreIfPass": "",
+                            "academicYear": "113",
+                            "score": "86.61",
+                            "remark": "",
+                            "semester": "1",
+                            "courseCode": "032001091"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "群",
+                            "academicYearSemester": "1131",
+                            "credit": "2.0",
+                            "courseName": "那些動物教我的事",
+                            "scoreIfPass": "",
+                            "academicYear": "113",
+                            "score": "93.69",
+                            "remark": "人文通、自然通",
+                            "semester": "1",
+                            "courseCode": "044114001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "必",
+                            "academicYearSemester": "1131",
+                            "credit": "3.0",
+                            "courseName": "離散數學",
+                            "scoreIfPass": "",
+                            "academicYear": "113",
+                            "score": "82.00",
+                            "remark": "",
+                            "semester": "1",
+                            "courseCode": "703007001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "必",
+                            "academicYearSemester": "1131",
+                            "credit": "3.0",
+                            "courseName": "資料結構",
+                            "scoreIfPass": "",
+                            "academicYear": "113",
+                            "score": "94.64",
+                            "remark": "",
+                            "semester": "1",
+                            "courseCode": "703008001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "必",
+                            "academicYearSemester": "1131",
+                            "credit": "3.0",
+                            "courseName": "機率論",
+                            "scoreIfPass": "",
+                            "academicYear": "113",
+                            "score": "85.99",
+                            "remark": "",
+                            "semester": "1",
+                            "courseCode": "703017001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "必",
+                            "academicYearSemester": "1131",
+                            "credit": "3.0",
+                            "courseName": "計算機程式設計（一）",
+                            "scoreIfPass": "",
+                            "academicYear": "113",
+                            "score": "95.80",
+                            "remark": "",
+                            "semester": "1",
+                            "courseCode": "703049001"
+                        }
+                    ]
+                },
+                {
+                    "AcademicYear": "112",
+                    "GradeRecords": [
+                        {
+                            "requiredOrElectiveCourse": "必",
+                            "academicYearSemester": "1122",
+                            "credit": "3.0",
+                            "courseName": "微積分甲",
+                            "scoreIfPass": "",
+                            "academicYear": "112",
+                            "score": "82.69",
+                            "remark": "",
+                            "semester": "2",
+                            "courseCode": "000713012"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "群",
+                            "academicYearSemester": "1122",
+                            "credit": "3.0",
+                            "courseName": "國文－中國思想名作選讀",
+                            "scoreIfPass": "",
+                            "academicYear": "112",
+                            "score": "93.70",
+                            "remark": "",
+                            "semester": "2",
+                            "courseCode": "031014171"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "群",
+                            "academicYearSemester": "1122",
+                            "credit": "3.0",
+                            "courseName": "心理與生活",
+                            "scoreIfPass": "",
+                            "academicYear": "112",
+                            "score": "93.05",
+                            "remark": "自然通",
+                            "semester": "2",
+                            "courseCode": "043031001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "群",
+                            "academicYearSemester": "1122",
+                            "credit": "3.0",
+                            "courseName": "生活中的資訊資源與應用",
+                            "scoreIfPass": "",
+                            "academicYear": "112",
+                            "score": "91.55",
+                            "remark": "人文通、社會通、資訊通",
+                            "semester": "2",
+                            "courseCode": "044102001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "必",
+                            "academicYearSemester": "1122",
+                            "credit": "3.0",
+                            "courseName": "計算機程式設計",
+                            "scoreIfPass": "",
+                            "academicYear": "112",
+                            "score": "93.01",
+                            "remark": "",
+                            "semester": "2",
+                            "courseCode": "207047001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "必",
+                            "academicYearSemester": "1122",
+                            "credit": "3.0",
+                            "courseName": "測量學及實習",
+                            "scoreIfPass": "",
+                            "academicYear": "112",
+                            "score": "84.03",
+                            "remark": "",
+                            "semester": "2",
+                            "courseCode": "207074001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "群",
+                            "academicYearSemester": "1122",
+                            "credit": "2.0",
+                            "courseName": "音樂鑑賞",
+                            "scoreIfPass": "",
+                            "academicYear": "112",
+                            "score": "78.33",
+                            "remark": "人文通",
+                            "semester": "2",
+                            "courseCode": "993003001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "必",
+                            "academicYearSemester": "1121",
+                            "credit": "1.0",
+                            "courseName": "體育[男女合班]—武術初級",
+                            "scoreIfPass": "",
+                            "academicYear": "112",
+                            "score": "82.95",
+                            "remark": "",
+                            "semester": "1",
+                            "courseCode": "002350001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "群",
+                            "academicYearSemester": "1121",
+                            "credit": "3.0",
+                            "courseName": "程式設計概論",
+                            "scoreIfPass": "",
+                            "academicYear": "112",
+                            "score": "78.70",
+                            "remark": "資訊通",
+                            "semester": "1",
+                            "courseCode": "046001081"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "群",
+                            "academicYearSemester": "1121",
+                            "credit": "3.0",
+                            "courseName": "生活中的數學、邏輯與運算思維",
+                            "scoreIfPass": "",
+                            "academicYear": "112",
+                            "score": "82.88",
+                            "remark": "資訊通",
+                            "semester": "1",
+                            "courseCode": "046004001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "必",
+                            "academicYearSemester": "1121",
+                            "credit": "3.0",
+                            "courseName": "都市計畫",
+                            "scoreIfPass": "",
+                            "academicYear": "112",
+                            "score": "停修",
+                            "remark": "",
+                            "semester": "1",
+                            "courseCode": "207009001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "必",
+                            "academicYearSemester": "1121",
+                            "credit": "3.0",
+                            "courseName": "民法（一）",
+                            "scoreIfPass": "",
+                            "academicYear": "112",
+                            "score": "93.95",
+                            "remark": "",
+                            "semester": "1",
+                            "courseCode": "207073001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "必",
+                            "academicYearSemester": "1121",
+                            "credit": "2.0",
+                            "courseName": "電腦繪圖與地理資訊系統",
+                            "scoreIfPass": "",
+                            "academicYear": "112",
+                            "score": "75.00",
+                            "remark": "",
+                            "semester": "1",
+                            "courseCode": "207087001"
+                        },
+                        {
+                            "requiredOrElectiveCourse": "選",
+                            "academicYearSemester": "1121",
+                            "credit": "3.0",
+                            "courseName": "計算機概論",
+                            "scoreIfPass": "",
+                            "academicYear": "112",
+                            "score": "87.72",
+                            "remark": "",
+                            "semester": "1",
+                            "courseCode": "703820001"
+                        }
+                    ]
+                }
+            ],
+            "averageScoreList": [
+                {
+                    "academicYear": "114",
+                    "rankingClassDenom": "54",
+                    "classRankPercentage": "59.26 %",
+                    "rankingClassNumer": "32",
+                    "averageCreditsOfSameGrader": "19.85",
+                    "rankingDepartmentDenom": "54",
+                    "averageScoresOfSameGrader": "83.64",
+                    "departmentRankPercentage": "59.26 %",
+                    "rankingDepartmentNumer": "32",
+                    "semester": "1",
+                    "totalCredits": "20",
+                    "averageScore": "91.22",
+                    "rankingClass": "32 / 54",
+                    "rankingDepartment": "32 / 54"
+                },
+                {
+                    "academicYear": "113",
+                    "rankingClassDenom": "51",
+                    "classRankPercentage": "68.63 %",
+                    "rankingClassNumer": "35",
+                    "averageCreditsOfSameGrader": "19.95",
+                    "rankingDepartmentDenom": "51",
+                    "averageScoresOfSameGrader": "82.95",
+                    "departmentRankPercentage": "68.63 %",
+                    "rankingDepartmentNumer": "35",
+                    "semester": "2",
+                    "totalCredits": "17",
+                    "averageScore": "83.42",
+                    "rankingClass": "35 / 51",
+                    "rankingDepartment": "35 / 51"
+                },
+                {
+                    "academicYear": "113",
+                    "rankingClassDenom": "52",
+                    "classRankPercentage": "55.77 %",
+                    "rankingClassNumer": "29",
+                    "averageCreditsOfSameGrader": "20.44",
+                    "rankingDepartmentDenom": "52",
+                    "averageScoresOfSameGrader": "82.51",
+                    "departmentRankPercentage": "55.77 %",
+                    "rankingDepartmentNumer": "29",
+                    "semester": "1",
+                    "totalCredits": "18",
+                    "averageScore": "81.01",
+                    "rankingClass": "29 / 52",
+                    "rankingDepartment": "29 / 52"
+                },
+                {
+                    "academicYear": "112",
+                    "rankingClassDenom": "46",
+                    "classRankPercentage": "56.52 %",
+                    "rankingClassNumer": "26",
+                    "averageCreditsOfSameGrader": "20.15",
+                    "rankingDepartmentDenom": "121",
+                    "averageScoresOfSameGrader": "82.73",
+                    "departmentRankPercentage": "56.52 %",
+                    "rankingDepartmentNumer": "26",
+                    "semester": "2",
+                    "totalCredits": "20",
+                    "averageScore": "88.79",
+                    "rankingClass": "26 / 46",
+                    "rankingDepartment": "26 / 121"
+                },
+                {
+                    "academicYear": "112",
+                    "rankingClassDenom": "46",
+                    "classRankPercentage": "50.00 %",
+                    "rankingClassNumer": "23",
+                    "averageCreditsOfSameGrader": "20.14",
+                    "rankingDepartmentDenom": "125",
+                    "averageScoresOfSameGrader": "82.83",
+                    "departmentRankPercentage": "50.00 %",
+                    "rankingDepartmentNumer": "23",
+                    "semester": "1",
+                    "totalCredits": "15",
+                    "averageScore": "87.58",
+                    "rankingClass": "23 / 46",
+                    "rankingDepartment": "23 / 125"
+                }
+            ],
+            "rankingDepartment": "28",
+            "enrollmentHistoryList": [
+                {
+                    "registerStatus": "註冊",
+                    "academicYearSemester": "114-2",
+                    "gradeName": "資訊三"
+                },
+                {
+                    "registerStatus": "註冊",
+                    "academicYearSemester": "114-1",
+                    "gradeName": "資訊三"
+                },
+                {
+                    "registerStatus": "註冊",
+                    "academicYearSemester": "113-2",
+                    "gradeName": "資訊二"
+                },
+                {
+                    "registerStatus": "註冊",
+                    "academicYearSemester": "113-1",
+                    "gradeName": "資訊二"
+                },
+                {
+                    "registerStatus": "註冊",
+                    "academicYearSemester": "112-2",
+                    "gradeName": "地一土資"
+                },
+                {
+                    "registerStatus": "註冊",
+                    "academicYearSemester": "112-1",
+                    "gradeName": "地一土資"
+                }
+            ],
+            "totalCredits": "90",
+            "coursePlan": {
+                "requiredPoint": "36.0",
+                "groupPoint": "15.0",
+                "groupRemark": "[群A缺1門(如有不通過之科目，亦已計入)][群B缺1門(如有不通過之科目，亦已計入)][群C缺1門(如有不通過之科目，亦已計入)][群D缺1門(如有不通過之科目，亦已計入)][群E缺1門(如有不通過之科目，亦已計入)]",
+                "programRemark": "",
+                "liberalTotal": "[通識尚缺1學分]",
+                "programName": "",
+                "commonPhysicalCount": "4",
+                "commonPhysical": "[體育欠1門]",
+                "liberalChinese": "",
+                "requiredRemark": "[缺程式能力檢定1]",
+                "graduationCredit": "128.0",
+                "coursePlanTimestamp": "20260505",
+                "coursePlanSchyy": "112",
+                "commonLanguage": "",
+                "liberalEnglish": "",
+                "commonLanguageCount": "2",
+                "liberalGeneral": ""
+            }
+        }
+    }
+]

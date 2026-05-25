@@ -128,12 +128,12 @@ const exportStudentDataSchema = z.array(
       rankingDepartmentDenom: z.string(),
       waivedCourseList: z.array(z.unknown()),
 
-      enrollmentHistoryList: z.array(enrollmentHistoryItemSchema),
-      averageScoreList: z.array(averageScoreItemSchema),
-      alertForEvaluationList: z.array(z.unknown()),
-      totalAverageScore: totalAverageScoreSchema,
-      rankingDepartment: z.string(),
-      conductRecordList: z.array(conductRecordItemSchema),
+      enrollmentHistoryList: z.array(enrollmentHistoryItemSchema).optional(),
+      averageScoreList: z.array(averageScoreItemSchema).optional(),
+      alertForEvaluationList: z.array(z.unknown()).optional(),
+      totalAverageScore: totalAverageScoreSchema.optional(),
+      rankingDepartment: z.string().optional(),
+      conductRecordList: z.array(conductRecordItemSchema).optional(),
 
       gradeRecordList: z.array(
         z.object({
@@ -141,7 +141,7 @@ const exportStudentDataSchema = z.array(
           GradeRecords: z.array(gradeRecordItemSchema),
         }).passthrough()
       ),
-      alertForCreditList: z.array(z.unknown()),
+      alertForCreditList: z.array(z.unknown()).optional(),
     }).passthrough(),
   }).passthrough()
 ).min(1)

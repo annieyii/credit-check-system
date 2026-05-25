@@ -1,6 +1,8 @@
+import traceback
 from typing import Any
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from backend.database import get_db
 from backend.general import analyze_general
@@ -18,6 +20,17 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+# 全域例外處理：確保 500 錯誤回應也帶 CORS headers，避免前端顯示為 Network Error
+@app.exception_handler(Exception)
+async def global_exception_handler(request: Request, exc: Exception):
+    traceback.print_exc()
+    return JSONResponse(
+        status_code=500,
+        content={"detail": f"伺服器內部錯誤：{type(exc).__name__}: {str(exc)}"},
+        headers={"Access-Control-Allow-Origin": "*"},
+    )
 
 # --- 1. 查所有系所清單 ---
 @app.get("/departments")
@@ -100,7 +113,10 @@ def analyze(payload: AnalyzeRequest):
         required = analyze_required(session_data, dept_name, year, conn)
         general = analyze_general(session_data, dept_name, year)
         pe = analyze_pe(session_data, dept_name, year)
-        elective = analyze_elective(session_data, dept_name, year)
+        elective = analyze_elective(
+            session_data, dept_name, year,
+            total_required_credits=required.get("credits_needed"),
+        )
         try:
             minor = analyze_minor(session_data, minor_dept, year, conn) if minor_dept else None
         except ValueError:
@@ -147,6 +163,8 @@ def analyze(payload: AnalyzeRequest):
         "required_courses": {
             "passed": required.get("passed", []),
             "missing": required.get("missing", []),
+            "main_major": required.get("main_major"),
+            "double_major": required.get("double_major"),
         },
         "general_education": general,
         "physical_education": pe,

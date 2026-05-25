@@ -86,12 +86,28 @@ def _collect_course_details(session_data: list) -> dict[str, dict]:
 
 # ── 資料庫查詢 ────────────────────────────────────────────────────────────────
 
+_DEPT_ALIAS: dict[str, str] = {
+    "日本語文學系": "日文系",
+    "韓國語文學系": "韓文系",
+    "阿拉伯語文學系": "阿語系",
+    "越南語文學系": "越文系",
+    "西班牙語文學系": "西文系",
+    "斯拉夫語文學系": "斯語系",
+    "資訊科學系": "資訊系",
+    "資訊管理學系": "資管系",
+    "財務管理學系": "財管系",
+    "金融學系": "金融系",
+    "風險管理與保險學系": "風保系",
+}
+
+
 def _get_minor_row(conn: sqlite3.Connection, dept_name: str, year: str):
     """(輔系名稱, 學年度) → minor_departments row 或 None"""
+    canonical = _DEPT_ALIAS.get(dept_name, dept_name)
     cursor = conn.cursor()
     cursor.execute(
         "SELECT * FROM minor_departments WHERE dept_name = ? AND applicable_year = ?",
-        (dept_name, year),
+        (canonical, year),
     )
     return cursor.fetchone()
 

@@ -1,4 +1,5 @@
 import traceback
+import re
 from typing import Any
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
@@ -88,6 +89,36 @@ class AnalyzeRequest(BaseModel):
     data: Any
 
 
+def _extract_minor_targets(about: dict) -> list[tuple[str, str]]:
+    register_minor_raw = about.get("registerMinor", "").strip()
+    register_minor_names = [name.strip() for name in register_minor_raw.split("、") if name.strip()]
+
+    fallback_minor_names: list[str] = []
+    fallback_minor_years: list[str] = []
+    for key in ("minor1", "minor2"):
+        raw_minor = about.get(key, "").strip()
+        if raw_minor:
+            fallback_minor_names.append(re.sub(r"（\d+）", "", raw_minor).strip())
+            year_match = re.search(r"（(\d+)）", raw_minor)
+            fallback_minor_years.append(year_match.group(1) if year_match else "")
+        else:
+            fallback_minor_years.append("")
+
+    if not register_minor_names:
+        register_minor_names = [name for name in fallback_minor_names if name]
+
+    student_year = about.get("studentNumber", "")[:3]
+
+    minor_targets: list[tuple[str, str]] = []
+    for index, minor_name in enumerate(register_minor_names):
+        if not minor_name:
+            continue
+        minor_year = fallback_minor_years[index] if index < len(fallback_minor_years) else ""
+        minor_targets.append((minor_name, minor_year or student_year))
+
+    return minor_targets
+
+
 @app.post("/api/v1/analyze")
 def analyze(payload: AnalyzeRequest):
     if not payload.data:
@@ -105,9 +136,7 @@ def analyze(payload: AnalyzeRequest):
     if not dept_name or not year:
         raise HTTPException(status_code=422, detail="無法從資料中取得系所或入學年度")
 
-    about = session_data[0].get("課業學習", {}).get("aboutMe", {})
-    register_minor_raw = about.get("registerMinor", "").strip()
-    minor_dept = register_minor_raw.split("、")[0].strip() or about.get("minor1", "").strip()
+    minor_targets = _extract_minor_targets(about)
 
     conn = get_db()
     try:
@@ -118,10 +147,18 @@ def analyze(payload: AnalyzeRequest):
             session_data, dept_name, year,
             total_required_credits=required.get("credits_needed"),
         )
-        try:
-            minor = analyze_minor(session_data, minor_dept, year, conn) if minor_dept else None
-        except ValueError:
-            minor = None
+        minor_results = []
+        for minor_dept, minor_year in minor_targets:
+            try:
+                minor_result = analyze_minor(session_data, minor_dept, minor_year, conn)
+            except ValueError:
+                minor_result = None
+            minor_results.append({
+                "dept_name": minor_dept,
+                "applicable_year": minor_year,
+                "result": minor_result,
+            })
+        minor = minor_results[0]["result"] if minor_results else None
     finally:
         conn.close()
 
@@ -172,6 +209,7 @@ def analyze(payload: AnalyzeRequest):
         "elective": elective,
         "waiver": waiver,
         "minor": minor,
+        "minor_details": minor_results,
         "is_eligible_to_graduate": is_eligible_to_graduate,
     }
 

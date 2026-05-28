@@ -1,6 +1,6 @@
 import json
 from fastapi.testclient import TestClient
-from backend.main import app
+from backend.main import app, _extract_minor_targets
 
 client = TestClient(app)
 
@@ -96,3 +96,18 @@ def test_upload_response_no_minor_key_is_none():
     body = response.json()
     assert "minor" in body
     assert body["minor"] is None
+
+
+def test_extract_minor_targets_uses_minor1_minor2_years():
+    """雙輔系時應分別使用 minor1 / minor2 的申請年度"""
+    about = {
+        "registerMinor": "統計學系、日本語文學系",
+        "minor1": "統計系（113）",
+        "minor2": "日文系（114）",
+        "studentNumber": "111303007",
+    }
+
+    assert _extract_minor_targets(about) == [
+        ("統計學系", "113"),
+        ("日本語文學系", "114"),
+    ]

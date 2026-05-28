@@ -402,6 +402,58 @@ def analyze_elective(session_data, dept_name, year, total_required_credits=None)
                            "credits": course.get("credit", "0.0"),
                            "grade": course.get("grade", "")
                         })
+
+    # --- 抵免課程（waivedCourseList）：必修與選修 ---
+    waived_list = data[0].get("課業學習", {}).get("waivedCourseList", [])
+    for course in waived_list:
+        code = course.get("courseCode", "") or ""
+        name = (course.get("courseName") or "").strip()
+        credit = int(float(course.get("credit") or 0))
+        category = course.get("requiredOrElectiveCourse", "")
+
+        if credit == 0:
+            continue
+        # 體育、國防排除
+        if code.startswith("002") or code.startswith("003"):
+            continue
+        if "體育" in name or "國防" in name:
+            continue
+        # 通識排除（由 general 模組處理）
+        if _is_general_education(course):
+            continue
+        cursor.execute("SELECT 1 FROM general_courses WHERE course_name = ?", (name,))
+        if cursor.fetchone():
+            continue
+
+        if category == "選":
+            if name in passed_required_courses:
+                continue
+            ele_classes.append({
+                "courseCode": code,
+                "courseName": name,
+                "credits": course.get("credit", "0.0"),
+                "grade": "抵免",
+            })
+            if code.startswith("student_dept"):
+                pass_credit_count_indept += credit
+            else:
+                pass_credit_count_outdept += credit
+
+        elif category == "必":
+            # 本系必修已在 required 模組計算，跳過
+            if name in required_course_names or name in passed_required_courses:
+                continue
+            ele_classes.append({
+                "courseCode": code,
+                "courseName": name,
+                "credits": course.get("credit", "0.0"),
+                "grade": "抵免",
+            })
+            if code.startswith("student_dept"):
+                pass_credit_count_indept += credit
+            else:
+                pass_credit_count_outdept += credit
+
     pass_credit_count = pass_credit_count_indept + pass_credit_count_outdept
 
     in_dept_group_names = set(

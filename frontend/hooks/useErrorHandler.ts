@@ -111,6 +111,16 @@ export interface GraduationResult {
     credits_earned: number
     credits_needed: number
   }
+  minor_details?: Array<{
+    dept_name: string
+    applicable_year: string
+    result: {
+      passed: string[]
+      missing: string[]
+      credits_earned: number
+      credits_needed: number
+    } | null
+  }>
   is_eligible_to_graduate: boolean
 }
 
@@ -137,7 +147,8 @@ export function useErrorHandler() {
 
     try {
       const payload = { role, data: parsed }
-      const res = await axios.post("http://127.0.0.1:8000/api/v1/analyze", payload, {
+      const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL ?? 'http://localhost:8000'
+      const res = await axios.post(`${backendUrl}/api/v1/analyze`, payload, {
         timeout: 30000,
       })
       setResult(res.data)

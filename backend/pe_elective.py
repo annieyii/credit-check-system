@@ -1,4 +1,8 @@
 from backend.database import get_db
+import re
+import json
+with open("/Users/chenyihua/course/SE/project2/credit-check-system/tests/test_data/113cs雙主修電子電物輔系日文哲學.json", "r", encoding="utf-8") as f:
+    data = json.load(f)
 
 
 def get_required_courses(dept_name: str, year: str) -> list:
@@ -173,15 +177,43 @@ def analyze_pe(session_data, dept_name, year):
         "senior_warning_semesters": senior_double_semesters,
     }
 
+
+
+
+
 def analyze_elective(session_data, dept_name, year, total_required_credits=None):
+    data = session_data
+    
     required_courses = get_required_courses(dept_name, year)
     required_course_names = {course["name"] for course in required_courses}
+    
+    getminor1 = data[0].get("課業學習", {}).get("aboutMe", {}).get("minor1", "")
+    getminor2 = data[0].get("課業學習", {}).get("aboutMe", {}).get("minor2", "")
+    if len(getminor1) > 0:
+        minor1_year = re.findall(r"[（(](\d+)[）)]", getminor1)[0]
+        minor1 = re.findall(r"[\u4e00-\u9fff]+", getminor1)[0]
+    else:
+        minor1_year = None
+        minor1 = None
+
+    if len(getminor2) > 0:
+        minor2_year = re.findall(r"[（(](\d+)[）)]", getminor2)[0]
+        minor2 = re.findall(r"[\u4e00-\u9fff]+", getminor2)[0]
+
+    else:
+        minor2_year = None
+        minor2 = None
+
+
 
     # 獲取已修必修課程清單（含雙主修），避免在選修中重複計算
     from backend.required import analyze_required
     conn = get_db()
     try:
         required_analysis = analyze_required(session_data, dept_name, year, conn)
+        double_major_need = 0
+        if required_analysis["double_major"] != None:
+            double_major_need = required_analysis["double_major"]["credits_needed"]
         # 收集所有已通過的必修課程名稱（含雙主修）
         passed_required_courses = set(required_analysis.get("passed", []))
     finally:
@@ -214,11 +246,12 @@ def analyze_elective(session_data, dept_name, year, total_required_credits=None)
     group_result = cursor.fetchall()
     old_group_C = [course["name"] for course in group_result]
 
-    data = session_data
+    
     graderecords = data[0].get("課業學習", {}).get("gradeRecordList", [])
     pass_credit_count_indept = 0
     pass_credit_count_outdept = 0
-    ele_classes = []
+    in_ele_classes = []
+    out_ele_classes = []
     old_group_b_threshold = 1
     old_group_c_threshold = 1
     group_b_threshold = 1
@@ -228,194 +261,339 @@ def analyze_elective(session_data, dept_name, year, total_required_credits=None)
     group_threshold = 3
     for semester in graderecords:
         for course in semester.get("GradeRecords", []):
+            getpass = 0
             classcategory= course.get("requiredOrElectiveCourse", "")
             code_prefix = course.get("courseCode", "") or ""
             # 體育(002) / 國防(003) 一律不計入選修
             if code_prefix.startswith("002") or code_prefix.startswith("003"):
                 continue
+            if _is_general_education(course):  # 通識不算選修，由 general 模組處理
+                    continue
+            if course.get("score") == "成績未到或無成績":
+                    continue
+            if(course.get("score", "") == "停修"):
+                  continue
+            if("資訊專題" in course.get("courseName","")):
+                continue
+            if(course.get("score", "") == "通過"):
+                    getpass = 1
             #處理資訊系群修的課
             if classcategory =="群":
-                if course.get("score") == "成績未到或無成績":
-                    continue
-                if(course.get("score", "") != "停修"):
-                  getpass = 0
-                  if(course.get("score", "") == "通過"):
-                    getpass = 1
-                  if (getpass or float(course.get("score","")) >= 60.0):
-                   if(year == "110" or year == "111"):
-                    if course.get("courseName","") in old_group_B:
-                        if(old_group_b_threshold > 0):
-                            old_group_b_threshold -= 1
-                        else:
-                            pass_credit_count_indept += int(float(course.get("credit", "0.0")))
-                            ele_classes.append({
-                                 "courseCode": course.get("courseCode", ""),
-                                 "courseName": course.get("courseName", ""),
-                                 "credits": course.get("credit", "0.0"),
-                                "grade": course.get("score", "")
-                            })
-                    elif course.get("courseName","") in old_group_C:
-                            if(old_group_c_threshold > 0):
-                                old_group_c_threshold -= 1
-                            else:
-                                pass_credit_count_indept += int(float(course.get("credit", "0.0")))
-                                ele_classes.append({
-                                        "courseCode": course.get("courseCode", ""),
-                                        "courseName": course.get("courseName", ""),
-                                        "credits": course.get("credit", "0.0"),
-                                        "grade": course.get("score", "")
-                                })
-                   else:
-                    if course.get("courseName","") in new_group_B:
-                        if(group_threshold > 0):
-                            if(group_b_threshold > 0):
-                               group_b_threshold -= 1
-                            else:
-                                pass_credit_count_indept += int(float(course.get("credit", "0.0")))
-                                ele_classes.append({
-                                     "courseCode": course.get("courseCode", ""),
-                                     "courseName": course.get("courseName", ""),
-                                     "credits": course.get("credit", "0.0"),
+                
+                if (getpass or float(course.get("score","")) >= 60.0):
+                        if(year == "110" or year == "111"):
+                            if course.get("courseName","") in old_group_B:
+                                if(old_group_b_threshold > 0):
+                                    old_group_b_threshold -= 1
+                                    continue
+                                else:
+                                    pass_credit_count_indept += int(float(course.get("credit", "0.0")))
+                                    in_ele_classes.append({
+                                    "courseCode": course.get("courseCode", ""),
+                                    "courseName": course.get("courseName", ""),
+                                    "credits": course.get("credit", "0.0"),
                                     "grade": course.get("score", "")
-                                })
-                        else:
-                            if(course.get("courseCode","").startswith("student_dept")):
-                               pass_credit_count_indept += int(float(course.get("credit", "0.0")))
-                               ele_classes.append({
-                                 "courseCode": course.get("courseCode", ""),
-                                 "courseName": course.get("courseName", ""),
-                                 "credits": course.get("credit", "0.0"),
-                                "grade": course.get("score", "")
-                               })
-                    elif course.get("courseName","") in new_group_C:
-                            if(group_threshold > 0):
-                                if(group_c_threshold > 0):
-                                    group_c_threshold -= 1
+                                 })
+                                    continue
+                            elif course.get("courseName","") in old_group_C:
+                                if(old_group_c_threshold > 0):
+                                    old_group_c_threshold -= 1
+                                    continue
                                 else:
                                     pass_credit_count_indept += int(float(course.get("credit", "0.0")))
-                                    ele_classes.append({
-                                            "courseCode": course.get("courseCode", ""),
-                                            "courseName": course.get("courseName", ""),
-                                            "credits": course.get("credit", "0.0"),
-                                            "grade": course.get("score", "")
-                                    })
-                            else:
-                                if(course.get("courseCode","").startswith("student_dept")):
-                                    pass_credit_count_indept += int(float(course.get("credit", "0.0")))
-                                    ele_classes.append({
-                                         "courseCode": course.get("courseCode", ""),
-                                        "courseName": course.get("courseName", ""),
-                                         "credits": course.get("credit", "0.0"),
-                                        "grade": course.get("score", "")
-                                    })
-                    elif course.get("courseName","") in new_group_D:
-                            if(group_threshold > 0):
-                                if(group_d_threshold > 0):
-                                    group_d_threshold -= 1
-                                else:
-                                    pass_credit_count_indept += int(float(course.get("credit", "0.0")))
-                                    ele_classes.append({
-                                                "courseCode": course.get("courseCode", ""),
-                                                "courseName": course.get("courseName", ""),
-                                                "credits": course.get("credit", "0.0"),
-                                                "grade": course.get("score", "")
-                                    })
-                            else:
-                                if(course.get("courseCode","").startswith("student_dept")):
-                                    pass_credit_count_indept += int(float(course.get("credit", "0.0")))
-                                    ele_classes.append({
+                                    in_ele_classes.append({
                                         "courseCode": course.get("courseCode", ""),
                                         "courseName": course.get("courseName", ""),
                                         "credits": course.get("credit", "0.0"),
                                         "grade": course.get("score", "")
                                     })
-                    elif course.get("courseName","") in new_group_E:
-                           if(group_threshold > 0):
-                               if(group_e_threshold > 0):
-                                   group_e_threshold -= 1
-                               else:
-                                    pass_credit_count_indept += int(float(course.get("credit", "0.0")))
-                                    ele_classes.append({
+                                    continue
+                        else:
+                                if course.get("courseName","") in new_group_B:
+                                    if(group_threshold > 0):
+                                        if(group_b_threshold > 0):
+                                            group_threshold -= 1
+                                            group_b_threshold -= 1
+                                            continue
+                                        else:
+                                            pass_credit_count_indept += int(float(course.get("credit", "0.0")))
+                                            in_ele_classes.append({
                                                 "courseCode": course.get("courseCode", ""),
                                                 "courseName": course.get("courseName", ""),
                                                 "credits": course.get("credit", "0.0"),
                                                 "grade": course.get("score", "")
-                                    })
-                           else:
-                                if(course.get("courseCode","").startswith("student_dept")):
-                                    pass_credit_count_indept += int(float(course.get("credit", "0.0")))
-                                    ele_classes.append({
-                                        "courseCode": course.get("courseCode", ""),
-                                        "courseName": course.get("courseName", ""),
-                                         "credits": course.get("credit", "0.0"),
-                                        "grade": course.get("score", "")
-                                    })
+                                        })
+                                            continue
+                                    else:
+                                        if(course.get("courseCode","").startswith("703") or course.get("courseCode","").startswith("753")):
+                                            pass_credit_count_indept += int(float(course.get("credit", "0.0")))
+                                            in_ele_classes.append({
+                                                "courseCode": course.get("courseCode", ""),
+                                                "courseName": course.get("courseName", ""),
+                                                "credits": course.get("credit", "0.0"),
+                                                "grade": course.get("score", "")
+                                            })
+                                            continue
+                                elif course.get("courseName","") in new_group_C:
+                                    if(group_threshold > 0):
+                                        if(group_c_threshold > 0):
+                                            group_threshold -= 1
+                                            group_c_threshold -= 1
+                                            continue
+                                        else:
+                                            pass_credit_count_indept += int(float(course.get("credit", "0.0")))
+                                            in_ele_classes.append({
+                                                "courseCode": course.get("courseCode", ""),
+                                                "courseName": course.get("courseName", ""),
+                                                "credits": course.get("credit", "0.0"),
+                                                "grade": course.get("score", "")
+                                            })
+                                            continue
+                                    else:
+                                        if(course.get("courseCode","").startswith("703") or course.get("courseCode","").startswith("753")):
+                                            pass_credit_count_indept += int(float(course.get("credit", "0.0")))
+                                            in_ele_classes.append({
+                                                "courseCode": course.get("courseCode", ""),
+                                                "courseName": course.get("courseName", ""),
+                                                "credits": course.get("credit", "0.0"),
+                                                "grade": course.get("score", "")
+                                        })
+                                        continue
+                                elif course.get("courseName","") in new_group_D:
+                                    if(group_threshold > 0):
+                                        if(group_d_threshold > 0):
+                                            group_threshold -= 1
+                                            group_d_threshold -= 1
+                                            continue
+                                        else:
+                                            pass_credit_count_indept += int(float(course.get("credit", "0.0")))
+                                            in_ele_classes.append({
+                                                "courseCode": course.get("courseCode", ""),
+                                                "courseName": course.get("courseName", ""),
+                                                "credits": course.get("credit", "0.0"),
+                                                "grade": course.get("score", "")
+                                            })
+                                            continue
+                                    
+                                    else:
+                                        if(course.get("courseCode","").startswith("703") or course.get("courseCode","").startswith("753")):
+                                            pass_credit_count_indept += int(float(course.get("credit", "0.0")))
+                                            in_ele_classes.append({
+                                                "courseCode": course.get("courseCode", ""),
+                                                "courseName": course.get("courseName", ""),
+                                                "credits": course.get("credit", "0.0"),
+                                                "grade": course.get("score", "")
+                                           })
+                                            continue
+                                elif course.get("courseName","") in new_group_E:
+                                    if(group_threshold > 0):
+                                        if(group_e_threshold > 0):
+                                            group_threshold -= 1
+                                            group_e_threshold -= 1
+                                            continue
+                                        else:
+                                            pass_credit_count_indept += int(float(course.get("credit", "0.0")))
+                                            in_ele_classes.append({
+                                                "courseCode": course.get("courseCode", ""),
+                                                "courseName": course.get("courseName", ""),
+                                                "credits": course.get("credit", "0.0"),
+                                                "grade": course.get("score", "")
+                                            })
+                                            continue
+                                    else:
+                                        if(course.get("courseCode","").startswith("703")or course.get("courseCode","").startswith("753")):
+                                            pass_credit_count_indept += int(float(course.get("credit", "0.0")))
+                                            in_ele_classes.append({
+                                                "courseCode": course.get("courseCode", ""),
+                                                "courseName": course.get("courseName", ""),
+                                                "credits": course.get("credit", "0.0"),
+                                                "grade": course.get("score", "")
+                                            })
+                                            continue
+                        pass_credit_count_outdept += int(float(course.get("credit", 0)))
+                        out_ele_classes.append({
+                            "courseCode": course.get("courseCode", ""),
+                            "courseName": course.get("courseName", ""),
+                            "credits": course.get("credit", "0.0"),
+                            "grade": course.get("score", "")
+                        })
+                        continue
             #處理選修別的課
-            if classcategory =="選":
-                if course.get("score") == "成績未到或無成績":
-                    continue
-                if course.get("courseCode").startswith("003"): #國防不算
-                    continue
-                if course.get("courseCode").startswith("002"): #體育選修不算
-                    continue
-                if _is_general_education(course):  # 通識不算選修，由 general 模組處理
-                    continue
-                if(course.get("score", "") != "停修"):
-                  getpass = 0
-                  if(course.get("score", "") == "通過"):
-                    getpass = 1
-                  if (getpass or float(course.get("score", "")) >= 60.0):
+            if classcategory == "選":
+                
+                if (getpass or float(course.get("score", "")) >= 60.0):
                     # 檢查是否為已修的必修課程（含雙主修），避免重複計算
                     course_name = course.get("courseName", "")
                     if course_name in passed_required_courses:
                         continue  # 已在必修區域計算，跳過
-                    if course.get("courseCode","").startswith("student_dept"):
+                    
+                    if(course.get("courseCode","").startswith("703")or course.get("courseCode","").startswith("753")):
+                        if(year == "110" or year == "111"):
+                            if course.get("courseName","") in old_group_B:
+                                if(old_group_b_threshold > 0):
+                                    old_group_b_threshold -= 1
+                                    continue
+                                else:
+                                    pass_credit_count_indept += int(float(course.get("credit", "0.0")))
+                                    in_ele_classes.append({
+                                        "courseCode": course.get("courseCode", ""),
+                                        "courseName": course.get("courseName", ""),
+                                        "credits": course.get("credit", "0.0"),
+                                        "grade": course.get("score", "")
+                                    })
+                                    continue
+                            elif course.get("courseName","") in old_group_C:
+                                if(old_group_c_threshold > 0):
+                                    old_group_c_threshold -= 1
+                                    continue
+                                else:
+                                    pass_credit_count_indept += int(float(course.get("credit", "0.0")))
+                                    in_ele_classes.append({
+                                        "courseCode": course.get("courseCode", ""),
+                                        "courseName": course.get("courseName", ""),
+                                        "credits": course.get("credit", "0.0"),
+                                        "grade": course.get("score", "")
+                                    })
+                                    continue
+                        else:
+                                if course.get("courseName","") in new_group_B:
+                                    if(group_threshold > 0):
+                                        if(group_b_threshold > 0):
+                                            group_threshold -= 1
+                                            group_b_threshold -= 1
+                                            continue
+                                        else:
+                                            pass_credit_count_indept += int(float(course.get("credit", "0.0")))
+                                            in_ele_classes.append({
+                                                "courseCode": course.get("courseCode", ""),
+                                                "courseName": course.get("courseName", ""),
+                                                "credits": course.get("credit", "0.0"),
+                                                "grade": course.get("score", "")
+                                            })
+                                            continue
+                                    else:
+                                        
+                                            pass_credit_count_indept += int(float(course.get("credit", "0.0")))
+                                            in_ele_classes.append({
+                                                "courseCode": course.get("courseCode", ""),
+                                                "courseName": course.get("courseName", ""),
+                                                "credits": course.get("credit", "0.0"),
+                                                "grade": course.get("score", "")
+                                            })
+                                            continue
+                                elif course.get("courseName","") in new_group_C:
+                                    if(group_threshold > 0):
+                                        if(group_c_threshold > 0):
+                                            group_threshold -= 1
+                                            group_c_threshold -= 1
+                                            continue
+                                        else:
+                                            pass_credit_count_indept += int(float(course.get("credit", "0.0")))
+                                            in_ele_classes.append({
+                                                "courseCode": course.get("courseCode", ""),
+                                                "courseName": course.get("courseName", ""),
+                                                "credits": course.get("credit", "0.0"),
+                                                "grade": course.get("score", "")
+                                            })
+                                            continue
+                                    else:
+                                        
+                                            pass_credit_count_indept += int(float(course.get("credit", "0.0")))
+                                            in_ele_classes.append({
+                                                "courseCode": course.get("courseCode", ""),
+                                                "courseName": course.get("courseName", ""),
+                                                "credits": course.get("credit", "0.0"),
+                                                "grade": course.get("score", "")
+                                        })
+                                            continue
+                                elif course.get("courseName","") in new_group_D:
+                                    if(group_threshold > 0):
+                                        if(group_d_threshold > 0):
+                                            group_threshold -= 1
+                                            group_d_threshold -= 1
+                                            continue
+                                        else:
+                                            pass_credit_count_indept += int(float(course.get("credit", "0.0")))
+                                            in_ele_classes.append({
+                                                "courseCode": course.get("courseCode", ""),
+                                                "courseName": course.get("courseName", ""),
+                                                "credits": course.get("credit", "0.0"),
+                                                "grade": course.get("score", "")
+                                            })
+                                            continue
+                                    
+                                    else:
+                                        
+                                            pass_credit_count_indept += int(float(course.get("credit", "0.0")))
+                                            in_ele_classes.append({
+                                                "courseCode": course.get("courseCode", ""),
+                                                "courseName": course.get("courseName", ""),
+                                                "credits": course.get("credit", "0.0"),
+                                                "grade": course.get("score", "")
+                                        })
+                                            continue
+                                elif course.get("courseName","") in new_group_E:
+                                    if(group_threshold > 0):
+                                        if(group_e_threshold > 0):
+                                            group_threshold -= 1
+                                            group_e_threshold -= 1
+                                            continue
+                                        else:
+                                            pass_credit_count_indept += int(float(course.get("credit", "0.0")))
+                                            in_ele_classes.append({
+                                                "courseCode": course.get("courseCode", ""),
+                                                "courseName": course.get("courseName", ""),
+                                                "credits": course.get("credit", "0.0"),
+                                                "grade": course.get("score", "")
+                                            })
+                                            continue
+                                    else:
+                                        
+                                            pass_credit_count_indept += int(float(course.get("credit", "0.0")))
+                                            in_ele_classes.append({
+                                                "courseCode": course.get("courseCode", ""),
+                                                "courseName": course.get("courseName", ""),
+                                                "credits": course.get("credit", "0.0"),
+                                                "grade": course.get("score", "")
+                                            })
+                                            continue
+                        
                         pass_credit_count_indept += int(float(course.get("credit", 0)))
+                        in_ele_classes.append({
+                            "courseCode": course.get("courseCode", ""),
+                            "courseName": course.get("courseName", ""),
+                            "credits": course.get("credit", "0.0"),
+                            "grade": course.get("score", "")
+                        })
+                        
+                        continue
                     else:
                         pass_credit_count_outdept += int(float(course.get("credit", 0)))
-                    ele_classes.append({
-                    "courseCode": course.get("courseCode", ""),
-                    "courseName": course.get("courseName", ""),
-                    "credits": course.get("credit", "0.0"),
-                    "grade": course.get("score", "")
-                   })
+                        out_ele_classes.append({
+                            "courseCode": course.get("courseCode", ""),
+                            "courseName": course.get("courseName", ""),
+                            "credits": course.get("credit", "0.0"),
+                            "grade": course.get("score", "")
+                        })
+                        
+                        continue
             #處理必修別的課
             if classcategory =="必":
-                if course.get("score") == "成績未到或無成績":
-                    continue
-                if _is_general_education(course):  # 通識不算選修，由 general 模組處理
-                    continue
-                if course.get("courseName","") not in required_course_names:
-                    if(course.get("score", "") != "停修"):
-                      getpass = 0
-                      if(course.get("score", "") == "通過"):
-                         getpass = 1
-                      if (getpass or float(course.get("score", "")) >= 60.0):
+                    if (getpass or float(course.get("score", "")) >= 60.0):
                         # 檢查是否為已修的必修課程（含雙主修），避免重複計算
                         course_name = course.get("courseName", "")
                         if course_name in passed_required_courses:
                             continue  # 已在必修區域計算，跳過
+                        
                         pass_credit_count_outdept += int(float(course.get("credit", "0.0")))
-                        ele_classes.append({
+                        out_ele_classes.append({
                            "courseCode": course.get("courseCode", ""),
                            "courseName": course.get("courseName", ""),
                            "credits": course.get("credit", "0.0"),
-                           "grade": course.get("grade", "")
+                           "grade": course.get("score", "")
                         })
+                        
     pass_credit_count = pass_credit_count_indept + pass_credit_count_outdept
-
-    in_dept_group_names = set(
-        old_group_B + old_group_C + new_group_B + new_group_C + new_group_D + new_group_E
-    )
-    in_dept_courses = []
-    out_dept_courses = []
-    for c in ele_classes:
-        code = c.get("courseCode", "") or ""
-        name = c.get("courseName", "") or ""
-        if code.startswith("student_dept") or name in in_dept_group_names:
-            in_dept_courses.append(c)
-        else:
-            out_dept_courses.append(c)
 
     if total_required_credits is None:
         cursor.execute("""
@@ -426,7 +604,24 @@ def analyze_elective(session_data, dept_name, year, total_required_credits=None)
         required_credits = cursor.fetchone()["compulsory_credits_required"]
     else:
         required_credits = total_required_credits
-    required_ele_credits = max(0, 128 - required_credits - 28 - 4)
+    
+    minor_need = 0
+    if minor1!= None:
+        cursor.execute("""
+            SELECT total_credits_required
+            FROM minor_departments
+            WHERE applicable_year = ? AND dept_name = ?
+        """, (minor1_year, minor1))
+        minor_need += cursor.fetchone()["total_credits_required"]
+    if minor2!= None:
+        cursor.execute("""
+            SELECT total_credits_required
+            FROM minor_departments
+            WHERE applicable_year = ? AND dept_name = ?
+        """, (minor2_year, minor2))
+        minor_need += cursor.fetchone()["total_credits_required"]
+    conn.close()
+    required_ele_credits = max(0, 128 - required_credits - 28 - 4 - double_major_need - minor_need)  # 總學分128 - 必修 - 通識 - 體育 - 雙主修 - 輔系
     result = True if pass_credit_count >= required_ele_credits else False
     return {
         "credits_earned": pass_credit_count,
@@ -434,6 +629,8 @@ def analyze_elective(session_data, dept_name, year, total_required_credits=None)
         "passed": result,
         "in_dept_credits": pass_credit_count_indept,
         "out_dept_credits": pass_credit_count_outdept,
-        "in_dept_courses": in_dept_courses,
-        "out_dept_courses": out_dept_courses,
+        "in_dept_courses": in_ele_classes,
+        "out_dept_courses": out_ele_classes,
     }
+resss=analyze_elective(data, "資訊科學系", "111")
+print(resss)

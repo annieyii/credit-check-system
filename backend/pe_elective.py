@@ -1,8 +1,6 @@
 from backend.database import get_db
 import re
 import json
-with open("/Users/chenyihua/course/SE/project2/credit-check-system/tests/test_data/113cs雙主修電子電物輔系日文哲學.json", "r", encoding="utf-8") as f:
-    data = json.load(f)
 
 
 def get_required_courses(dept_name: str, year: str) -> list:
@@ -632,5 +630,3 @@ def analyze_elective(session_data, dept_name, year, total_required_credits=None)
         "in_dept_courses": in_ele_classes,
         "out_dept_courses": out_ele_classes,
     }
-resss=analyze_elective(data, "資訊科學系", "111")
-print(resss)

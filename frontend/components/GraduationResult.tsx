@@ -31,9 +31,8 @@ function CreditBlock({
   const bg = done ? "bg-green-50 border-green-200" : "bg-red-50 border-red-200"
   return (
     <div className={`p-4 rounded-xl border ${bg}`}>
-      <div className="flex items-end justify-between mb-1">
+      <div className="mb-1">
         <span className="text-muted-foreground text-sm">已修 / 需修</span>
-        <span className="text-xs text-muted-foreground">{needed > 0 ? Math.min(100, Math.round((earned / needed) * 100)) : 100}%</span>
       </div>
       <div className="flex items-baseline gap-1">
         <span className="text-3xl font-bold">{earned}</span>
@@ -108,7 +107,6 @@ export default function GraduationResult({ result }: GraduationResultProps) {
                   <p className={`text-2xl font-bold ${done ? "text-green-700" : "text-red-700"}`}>{earned}</p>
                   <p className="text-xs text-muted-foreground">/ {needed} 學分</p>
                   <ProgressBar earned={earned} needed={needed} color={done ? "green" : "red"} />
-                  <p className={`text-[11px] mt-1.5 font-medium ${done ? "text-green-600" : "text-red-500"}`}>{pct}%</p>
                 </div>
               )
             })}

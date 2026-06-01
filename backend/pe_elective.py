@@ -1,7 +1,5 @@
 from backend.database import get_db
 import re
-import json
-
 
 def get_required_courses(dept_name: str, year: str) -> list:
     conn = get_db()
@@ -181,10 +179,7 @@ def analyze_pe(session_data, dept_name, year):
 
 def analyze_elective(session_data, dept_name, year, total_required_credits=None):
     data = session_data
-    
-    required_courses = get_required_courses(dept_name, year)
-    required_course_names = {course["name"] for course in required_courses}
-    
+
     getminor1 = data[0].get("課業學習", {}).get("aboutMe", {}).get("minor1", "")
     getminor2 = data[0].get("課業學習", {}).get("aboutMe", {}).get("minor2", "")
     if len(getminor1) > 0:
@@ -210,7 +205,7 @@ def analyze_elective(session_data, dept_name, year, total_required_credits=None)
     try:
         required_analysis = analyze_required(session_data, dept_name, year, conn)
         double_major_need = 0
-        if required_analysis["double_major"] != None:
+        if required_analysis["double_major"] is not None:
             double_major_need = required_analysis["double_major"]["credits_needed"]
         # 收集所有已通過的必修課程名稱（含雙主修）
         passed_required_courses = set(required_analysis.get("passed", []))
@@ -243,8 +238,6 @@ def analyze_elective(session_data, dept_name, year, total_required_credits=None)
     """, (dept["id"],))
     group_result = cursor.fetchall()
     old_group_C = [course["name"] for course in group_result]
-
-    
     graderecords = data[0].get("課業學習", {}).get("gradeRecordList", [])
     pass_credit_count_indept = 0
     pass_credit_count_outdept = 0
@@ -277,7 +270,6 @@ def analyze_elective(session_data, dept_name, year, total_required_credits=None)
                     getpass = 1
             #處理資訊系群修的課
             if classcategory =="群":
-                
                 if (getpass or float(course.get("score","")) >= 60.0):
                         if(year == "110" or year == "111"):
                             if course.get("courseName","") in old_group_B:
@@ -372,7 +364,7 @@ def analyze_elective(session_data, dept_name, year, total_required_credits=None)
                                                 "grade": course.get("score", "")
                                             })
                                             continue
-                                    
+
                                     else:
                                         if(course.get("courseCode","").startswith("703") or course.get("courseCode","").startswith("753")):
                                             pass_credit_count_indept += int(float(course.get("credit", "0.0")))
@@ -418,13 +410,11 @@ def analyze_elective(session_data, dept_name, year, total_required_credits=None)
                         continue
             #處理選修別的課
             if classcategory == "選":
-                
                 if (getpass or float(course.get("score", "")) >= 60.0):
                     # 檢查是否為已修的必修課程（含雙主修），避免重複計算
                     course_name = course.get("courseName", "")
                     if course_name in passed_required_courses:
                         continue  # 已在必修區域計算，跳過
-                    
                     if(course.get("courseCode","").startswith("703")or course.get("courseCode","").startswith("753")):
                         if(year == "110" or year == "111"):
                             if course.get("courseName","") in old_group_B:
@@ -470,7 +460,6 @@ def analyze_elective(session_data, dept_name, year, total_required_credits=None)
                                             })
                                             continue
                                     else:
-                                        
                                             pass_credit_count_indept += int(float(course.get("credit", "0.0")))
                                             in_ele_classes.append({
                                                 "courseCode": course.get("courseCode", ""),
@@ -495,7 +484,6 @@ def analyze_elective(session_data, dept_name, year, total_required_credits=None)
                                             })
                                             continue
                                     else:
-                                        
                                             pass_credit_count_indept += int(float(course.get("credit", "0.0")))
                                             in_ele_classes.append({
                                                 "courseCode": course.get("courseCode", ""),
@@ -519,9 +507,7 @@ def analyze_elective(session_data, dept_name, year, total_required_credits=None)
                                                 "grade": course.get("score", "")
                                             })
                                             continue
-                                    
                                     else:
-                                        
                                             pass_credit_count_indept += int(float(course.get("credit", "0.0")))
                                             in_ele_classes.append({
                                                 "courseCode": course.get("courseCode", ""),
@@ -546,7 +532,6 @@ def analyze_elective(session_data, dept_name, year, total_required_credits=None)
                                             })
                                             continue
                                     else:
-                                        
                                             pass_credit_count_indept += int(float(course.get("credit", "0.0")))
                                             in_ele_classes.append({
                                                 "courseCode": course.get("courseCode", ""),
@@ -555,7 +540,6 @@ def analyze_elective(session_data, dept_name, year, total_required_credits=None)
                                                 "grade": course.get("score", "")
                                             })
                                             continue
-                        
                         pass_credit_count_indept += int(float(course.get("credit", 0)))
                         in_ele_classes.append({
                             "courseCode": course.get("courseCode", ""),
@@ -563,7 +547,6 @@ def analyze_elective(session_data, dept_name, year, total_required_credits=None)
                             "credits": course.get("credit", "0.0"),
                             "grade": course.get("score", "")
                         })
-                        
                         continue
                     else:
                         pass_credit_count_outdept += int(float(course.get("credit", 0)))
@@ -573,7 +556,6 @@ def analyze_elective(session_data, dept_name, year, total_required_credits=None)
                             "credits": course.get("credit", "0.0"),
                             "grade": course.get("score", "")
                         })
-                        
                         continue
             #處理必修別的課
             if classcategory =="必":
@@ -582,7 +564,6 @@ def analyze_elective(session_data, dept_name, year, total_required_credits=None)
                         course_name = course.get("courseName", "")
                         if course_name in passed_required_courses:
                             continue  # 已在必修區域計算，跳過
-                        
                         pass_credit_count_outdept += int(float(course.get("credit", "0.0")))
                         out_ele_classes.append({
                            "courseCode": course.get("courseCode", ""),
@@ -590,9 +571,7 @@ def analyze_elective(session_data, dept_name, year, total_required_credits=None)
                            "credits": course.get("credit", "0.0"),
                            "grade": course.get("score", "")
                         })
-                        
     pass_credit_count = pass_credit_count_indept + pass_credit_count_outdept
-
     if total_required_credits is None:
         cursor.execute("""
             SELECT compulsory_credits_required
@@ -602,16 +581,15 @@ def analyze_elective(session_data, dept_name, year, total_required_credits=None)
         required_credits = cursor.fetchone()["compulsory_credits_required"]
     else:
         required_credits = total_required_credits
-    
     minor_need = 0
-    if minor1!= None:
+    if minor1 is not None:
         cursor.execute("""
             SELECT total_credits_required
             FROM minor_departments
             WHERE applicable_year = ? AND dept_name = ?
         """, (minor1_year, minor1))
         minor_need += cursor.fetchone()["total_credits_required"]
-    if minor2!= None:
+    if minor2 is not None:
         cursor.execute("""
             SELECT total_credits_required
             FROM minor_departments

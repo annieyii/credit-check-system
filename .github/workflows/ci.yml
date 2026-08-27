@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - uses: astral-sh/setup-uv@v10
+      - uses: astral-sh/setup-uv@v10.0.1  # 上游還沒放 v10 移動標籤，先釘死版本
         with:
           python-version: "3.10"
           enable-cache: true

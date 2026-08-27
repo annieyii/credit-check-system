@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: [main, 'backend-*', 'integration/**']
+    paths: &backend-paths
+      - 'backend/**'
+      - 'tests/**'
+      - 'db/**'
+      - 'pyproject.toml'
+      - 'uv.lock'
+      - '.github/workflows/ci.yml'
+  pull_request:
+    paths: *backend-paths
+
+env:
+  DB_PATH: db/database/curriculum.db
+
+jobs:
+  # ponytail: lint + test 同一個 job，省一次 uv sync。要平行跑再拆。
+  backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v10.0.1  # 上游還沒放 v10 移動標籤，先釘死版本
+        with:
+          python-version: "3.10"
+          enable-cache: true
+      - run: uv sync --all-groups
+      - run: uv run ruff check backend/ tests/
+      - run: uv run pytest tests/ --cov=backend --cov-report=term-missing -v
